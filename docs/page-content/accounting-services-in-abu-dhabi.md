@@ -107,6 +107,80 @@ Services" dropdown — check it whenever a brief's badge title implies a new pag
 since several menu entries still point at placeholder anchors (Bookkeeping→`#bookkeeping`,
 Xero Cloud Accounting→`#xero`) that may get their own pages in future briefs.
 
+## vat-registration-return-filing-dubai (new page, created 2026-07-23)
+Did not exist before this brief — first "Tax Services" page (previously all nav "Tax Services" submenu
+entries pointed at `/services#...` placeholder anchors that were never built). Created at
+`src/app/(site)/services/vat-registration-return-filing-dubai/page.tsx` using the two-column hero
+template (like payroll/financial-statement), with two extra structural additions not seen on sibling
+pages: (1) a "Bottom Statistics" 4-col trust bar directly under the hero (separate from the hero's own
+4 stat cards — brief had both, kept both per [[feedback_content_briefs_no_dropping]]); (2) three
+two-column "benefits checklist + right-side card" sections (BENEFITS, VAT RECORDS, OUR APPROACH badges)
+— a layout not used by any prior sibling page, built fresh (left: heading/paragraph/checklist pills,
+right: `bg-section`/`bg-white` card with its own checklist and sometimes a CTA button). Industries
+section (8 items) and Section 2's "Why Businesses Choose Nafaz" checklist (8 items) were title-only/
+no-description in the brief, so rendered as plain cards/pills rather than the title+description card
+shape used elsewhere. Comparison table columns were "Decision Factor / Outsourced VAT Services /
+Internal Management" — note the brief listed Outsourced before Internal, opposite of the in-house-first
+column order other sibling pages use for their comparison tables.
+
+Nav dropdown "Tax Services" > "VAT Registration & Returns" in
+`src/components/Layout/Header/Navigation/menuData.tsx` repointed from `/services#vat` to this new page.
+Also repointed every sibling page's "VAT Registration & Filing"/"VAT Registration & Return Filing"
+related-link from `/services#vat` to this new page (same follow-up pattern as payroll/financial-statement).
+Other "Tax Services" submenu entries (Corporate Tax, TRC, Transfer Pricing, Excise Tax, Tax Audit) still
+point at unbuilt `/services#...` placeholder anchors — candidates for their own pages in future briefs.
+
+## corporate-tax-registration-filing-dubai (new page, created 2026-07-23)
+Second "Tax Services" page, built identically to [[vat-registration-return-filing-dubai]]'s shape
+(same section order, same badges: WHY NAFAZ, OUR SERVICES, BENEFITS, OUR PROCESS, INDUSTRIES,
+FINANCIAL RECORDS, COMPARISON, OUR APPROACH, FAQ, CTA — "FINANCIAL RECORDS" replaces "VAT RECORDS" as
+the badge for the records section). One difference from the VAT page: only the *first* services-grid
+card ("Corporate Tax Registration") has "Learn More →" in this brief, not two — checked the brief's
+literal text rather than assuming the VAT page's two-Learn-More pattern. Comparison table again lists
+Outsourced-column before Internal-column in the brief's own header order. Industries (8, title-only)
+and Section 2 checklist (8, title-only) same plain-card/pill treatment as VAT page.
+
+Nav dropdown "Tax Services" > "Corporate Tax Registration & Filing" in menuData.tsx repointed from
+`/services#corporate-tax` to this new page. Also repointed every sibling page's "Corporate Tax
+Services"/"Corporate Tax Services UAE" related-link from `/services#corporate-tax` to this new page.
+Remaining "Tax Services" submenu placeholders still unbuilt: Tax Residency Certificates (`#trc`),
+Transfer Pricing (`#transfer-pricing`), Excise Tax (`#excise-tax`), Tax Audit & Assurance (`#audit`).
+
+## tax-residency-certificate-services-dubai (new page, created 2026-07-23)
+Third "Tax Services" page, same shape as [[vat-registration-return-filing-dubai]] and
+corporate-tax-registration-filing-dubai. Section 2 subheading is "Why Clients Choose Nafaz" (not
+"Why Businesses Choose Nafaz" — brief's own wording, since TRC serves individuals too). Section 6
+badge is "WHO WE SUPPORT" (brief's heading itself is "Who We Support Across Dubai & UAE", not an
+"Industries" framing). Section 7 badge is "DOCUMENTATION" (replacing "VAT RECORDS"/"FINANCIAL
+RECORDS"). Comparison table columns/data shape differs from the other two tax pages: brief's own
+headers are "Nafaz Assistance" vs "Self-Application" (not "Outsourced X Services" vs "Internal
+Management"), so the data array uses `nafaz`/`self` keys instead of `accountant`/`inHouse` — same
+visual layout (3-col dark table), different column semantics. Only first services-grid card ("TRC
+Eligibility Assessment") has "Learn More →", matching the corporate-tax page's one-link pattern
+rather than the VAT page's two-link pattern — always check the brief's literal count.
+
+Nav dropdown "Tax Services" > "Tax Residency Certificates" in menuData.tsx repointed from
+`/services#trc` to this new page. No sibling accounting pages had a TRC-related useful-link to
+repoint (only the nav referenced `#trc`). Remaining "Tax Services" submenu placeholders still
+unbuilt: Transfer Pricing (`#transfer-pricing`), Excise Tax (`#excise-tax`), Tax Audit & Assurance
+(`#audit`).
+
+## transfer-pricing-services-dubai (new page, created 2026-07-23)
+Fourth "Tax Services" page, same shape as the VAT/Corporate Tax/TRC pages. Note: an earlier attempt
+at this same slug was self-generated (not from a client brief) and was reverted per user instruction
+before this real brief arrived — this version replaces it entirely with the client-provided content.
+Section 9's right-side card is titled "What You'll Receive" here (not "What You Receive" as on the
+other three tax pages) — brief's own literal text, kept as given rather than normalized to match
+siblings. Comparison table columns "Outsourced Transfer Pricing" vs "Internal Management" (data keys
+`outsourced`/`inHouse`, outsourced-column first per the brief's own header order, same convention as
+VAT/Corporate Tax). Industries (8, title-only) same plain-card treatment as sibling tax pages.
+
+Nav dropdown "Tax Services" > "Transfer Pricing" in menuData.tsx repointed from
+`/services#transfer-pricing` to this new page. No sibling accounting pages referenced
+`/services#transfer-pricing` (only the nav did), so no other files needed link updates. Remaining
+"Tax Services" submenu placeholders still unbuilt: Excise Tax (`#excise-tax`), Tax Audit & Assurance
+(`#audit` — referenced by 5 sibling pages' "Audit Support" related-links, repoint those too once built).
+
 ## Sibling pages with the same template shape
 `src/app/(site)/services/{premier-accounting-services-in-dubai, bookkeeping-firm-dubai,
 ecommerce-accounting-dubai, amazon-accounting-dubai, accurate-affordable-bookkeeping-dubai,

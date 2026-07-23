@@ -6,12 +6,12 @@ export const headerData: HeaderItem[] = [
     label: "Tax Services",
     href: "/services",
     submenu: [
-      { label: "VAT Registration & Returns", href: "/services#vat" },
-      { label: "Corporate Tax Registration & Filing", href: "/services#corporate-tax" },
-      { label: "Tax Residency Certificates", href: "/services#trc" },
-      { label: "Transfer Pricing", href: "/services#transfer-pricing" },
-      { label: "Excise Tax", href: "/services#excise-tax" },
-      { label: "Tax Audit & Assurance", href: "/services#audit" },
+      { label: "VAT Registration & Returns", href: "/services/vat-registration-return-filing-dubai" },
+      { label: "Corporate Tax Registration & Filing", href: "/services/corporate-tax-registration-filing-dubai" },
+      { label: "Tax Residency Certificates", href: "/services/tax-residency-certificate-services-dubai" },
+      { label: "Transfer Pricing", href: "/services/transfer-pricing-services-dubai" },
+      { label: "Excise Tax", href: "/services/excise-tax-services-dubai" },
+      { label: "Tax Audit & Assurance", href: "/services/tax-audit-assurance-services-dubai" },
     ],
   },
   {

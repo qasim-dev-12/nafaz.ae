@@ -14,20 +14,41 @@ const Hero = () => {
           <div className='flex gap-2 items-center'>
             <span className='w-3 h-3 rounded-full bg-success'></span>
             <span className='font-medium text-midnight_text text-sm dark:text-white/50'>
-              FTA-registered tax agency
+              UAE Accounting • Tax • Business Compliance
             </span>
           </div>
           <h1 className='text-midnight_text font-bold dark:text-white text-4xl  md:text-5xl md:leading-[1.15]'>
-            Tax Consultants in Dubai — Trusted by UAE Businesses
+            Trusted Accounting &amp; Tax Consultants in Dubai for Growing Businesses
           </h1>
           <p className='text-grey dark:text-white/70 text-xl font-semibold'>
-            FTA-registered tax agents helping Dubai SMEs with VAT, Corporate Tax and full compliance. Free consultation available.
+            Simplify your finances with expert accounting, bookkeeping, VAT, Corporate Tax, payroll, and business
+            compliance services. Nafaz helps startups, SMEs, and established businesses stay compliant, make
+            informed financial decisions, and grow with confidence across the UAE.
           </p>
-          <a
-            href='#contact'
-            className='py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-300 px-8'>
-            Book a Free Consultation
-          </a>
+          <ul className='grid grid-cols-2 gap-x-6 gap-y-2'>
+            {[
+              'Accounting & Bookkeeping',
+              'VAT & Corporate Tax',
+              'Payroll & WPS',
+              'Business Compliance',
+            ].map((item) => (
+              <li key={item} className='text-grey dark:text-white/70 text-sm font-medium'>
+                ✔ {item}
+              </li>
+            ))}
+          </ul>
+          <div className='flex items-center gap-4 flex-wrap'>
+            <a
+              href='#contact'
+              className='py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-300 px-8'>
+              Book a Free Consultation
+            </a>
+            <a
+              href='#services'
+              className='py-3 border border-primary text-primary rounded-md hover:bg-primary hover:text-white transition duration-300 px-8'>
+              Explore Our Services
+            </a>
+          </div>
           <div className='flex items-center mt-12 gap-4'>
             <div className='flex items-center'>
               <Image
@@ -76,6 +97,23 @@ const Hero = () => {
             quality={100}
             style={{ width: '100%', height: 'auto' }}
           />
+          <div
+            className='relative z-20 -mt-14 md:-mt-16 mx-4 md:mx-10 bg-white dark:bg-darkmode rounded-xl shadow-service px-4 md:px-6 py-5 grid grid-cols-2 sm:grid-cols-4 gap-4'
+            data-aos='fade-up'
+            data-aos-delay='400'
+            data-aos-duration='1000'>
+            {[
+              { value: '500+', label: 'Businesses Supported' },
+              { value: '100%', label: 'Compliance Focus' },
+              { value: '10+', label: 'Years Experience' },
+              { value: 'UAE Wide', label: 'Dubai • Abu Dhabi • Sharjah' },
+            ].map((item) => (
+              <div key={item.label} className='text-center'>
+                <p className='text-xl md:text-2xl font-bold text-midnight_text dark:text-white'>{item.value}</p>
+                <p className='text-xs md:text-sm text-grey dark:text-white/50'>{item.label}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

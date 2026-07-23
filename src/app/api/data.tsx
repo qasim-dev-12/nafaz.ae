@@ -9,20 +9,25 @@ export const menuItems = [
 export const count = [
     {
         icon: "/images/counter/star.svg",
-        value: "5.0",
-        description: "Google Business rating from 300+ verified client reviews",
+        value: "500+",
+        description: "Businesses Supported Across UAE",
     },
     {
         icon: "/images/counter/admin.svg",
         value: "100%",
-        description: "FTA compliance rate across all client filings",
+        description: "Commitment to Compliance",
     },
     {
         icon: "/images/counter/bag.svg",
         value: "10+",
-        description: "Years supporting SMEs across Dubai, Sharjah and Abu Dhabi",
+        description: "Years Combined Industry Experience",
     },
 ];
+
+export const counterTagline = {
+    label: "VAT • Corporate Tax • Payroll • Bookkeeping",
+    description: "Complete Business Support",
+};
 
 export const Progress = [
     { title: 'FTA Compliance Rate', Progress: 100 },
@@ -30,23 +35,107 @@ export const Progress = [
     { title: 'Client Retention Rate', Progress: 98 }
 ];
 
-export const Servicebox = [
+const serviceIcons = [
+    '/images/services/ux-design-product_1.svg',
+    '/images/services/perfomance-optimization.svg',
+    '/images/services/ux-design-product_2.svg',
+];
+
+export const TaxServices = [
     {
-        icon: '/images/services/ux-design-product_1.svg',
+        icon: serviceIcons[0],
         title: 'VAT Registration & Returns',
         description: 'FTA registration, quarterly VAT filing, refund claims and penalty support for UAE businesses.',
+        href: '/services/vat-registration-return-filing-dubai',
     },
     {
-        icon: '/images/services/perfomance-optimization.svg',
-        title: 'Corporate Tax UAE',
+        icon: serviceIcons[1],
+        title: 'Corporate Tax Registration & Filing',
         description: 'Corporate Tax registration, return filing, tax planning and Free Zone compliance under UAE law.',
+        href: '/services/corporate-tax-registration-filing-dubai',
     },
     {
-        icon: '/images/services/ux-design-product_2.svg',
-        title: 'Tax Audit & Assurance',
-        description: 'FTA audit representation, internal audit, due diligence and bank-ready financial reports.',
+        icon: serviceIcons[2],
+        title: 'Tax Residency Certificates',
+        description: 'Eligibility assessment, documentation and Ministry of Finance TRC applications for DTAA benefits.',
+        href: '/services/tax-residency-certificate-services-dubai',
     },
-]
+    {
+        icon: serviceIcons[0],
+        title: 'Transfer Pricing',
+        description: 'Related-party transaction review, Local File and Master File preparation, and benchmarking studies.',
+        href: '/services/transfer-pricing-services-dubai',
+    },
+    {
+        icon: serviceIcons[1],
+        title: 'Excise Tax',
+        description: 'Excise Tax registration, return filing, designated zone advisory and compliance reviews.',
+        href: '/services/excise-tax-services-dubai',
+    },
+    {
+        icon: serviceIcons[2],
+        title: 'Tax Audit & Assurance',
+        description: 'FTA audit representation, internal tax reviews, due diligence and audit-ready documentation.',
+        href: '/services/tax-audit-assurance-services-dubai',
+    },
+];
+
+export const AccountingServices = [
+    {
+        icon: serviceIcons[0],
+        title: 'Premier Accounting Services',
+        description: 'Full-service accounting and bookkeeping for startups, SMEs and established UAE businesses.',
+        href: '/services/premier-accounting-services-in-dubai',
+    },
+    {
+        icon: serviceIcons[1],
+        title: 'Accounting Services in Abu Dhabi',
+        description: 'Dedicated accounting, bookkeeping and compliance support for businesses in Abu Dhabi.',
+        href: '/services/accounting-services-in-abu-dhabi',
+    },
+    {
+        icon: serviceIcons[2],
+        title: 'Accounting Services in Sharjah',
+        description: 'Accounting and financial reporting services tailored to Sharjah businesses.',
+        href: '/services/accounting-services-in-sharjah',
+    },
+    {
+        icon: serviceIcons[0],
+        title: 'Amazon Accounting Dubai',
+        description: 'Specialized bookkeeping and reconciliation for Amazon sellers across the UAE.',
+        href: '/services/amazon-accounting-dubai',
+    },
+    {
+        icon: serviceIcons[1],
+        title: 'Ecommerce Accounting',
+        description: 'Accounting and inventory-aware bookkeeping built for online and marketplace sellers.',
+        href: '/services/ecommerce-accounting-dubai',
+    },
+    {
+        icon: serviceIcons[2],
+        title: 'Bookkeeping Firm in Dubai',
+        description: 'Accurate, up-to-date bookkeeping that keeps your business audit-ready year round.',
+        href: '/services/bookkeeping-firm-dubai',
+    },
+    {
+        icon: serviceIcons[0],
+        title: 'Accurate & Affordable Bookkeeping',
+        description: 'Budget-friendly bookkeeping packages for startups and small businesses.',
+        href: '/services/accurate-affordable-bookkeeping-dubai',
+    },
+    {
+        icon: serviceIcons[1],
+        title: 'Payroll (WPS) Services',
+        description: 'End-to-end payroll processing, WPS compliance and gratuity calculations.',
+        href: '/services/payroll-services-dubai',
+    },
+    {
+        icon: serviceIcons[2],
+        title: 'Financial Statement Services',
+        description: 'Professionally prepared financial statements for reporting, lenders and regulators.',
+        href: '/services/financial-statement-services-dubai',
+    },
+];
 
 export const portfolioinfo = [
     {

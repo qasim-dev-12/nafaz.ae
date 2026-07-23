@@ -101,12 +101,12 @@ const faqs = [
 const usefulLinks = [
   { text: "Accounting Services Dubai", href: "/services/premier-accounting-services-in-dubai" },
   { text: "Professional Bookkeeping Services", href: "/services/bookkeeping-firm-dubai" },
-  { text: "Corporate Tax Services UAE", href: "/services#corporate-tax" },
-  { text: "VAT Registration & Filing", href: "/services#vat" },
+  { text: "Corporate Tax Services UAE", href: "/services/corporate-tax-registration-filing-dubai" },
+  { text: "VAT Registration & Filing", href: "/services/vat-registration-return-filing-dubai" },
   { text: "Payroll Services", href: "/services/payroll-services-dubai" },
   { text: "QuickBooks Accounting Services", href: "/services#quickbooks" },
   { text: "Financial Reporting", href: "/services/financial-statement-services-dubai" },
-  { text: "Audit Support", href: "/services#audit" },
+  { text: "Audit Support", href: "/services/tax-audit-assurance-services-dubai" },
   { text: "Business Advisory", href: "/services#advisory" },
   { text: "Business Setup Services", href: "/services#business-setup" },
 ];

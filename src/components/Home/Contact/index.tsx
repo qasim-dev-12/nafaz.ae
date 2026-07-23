@@ -14,23 +14,33 @@ const Contactform = () => {
             <div className='flex gap-2 items-center justify-start'>
               <span className='w-3 h-3 rounded-full bg-success'></span>
               <span className='font-medium text-sm text-white'>
-                free consultation
+                Free consultation
               </span>
             </div>
             <h2 className='sm:text-4xl text-[28px] leading-tight font-bold text-white py-12'>
-              Let's discuss your VAT, Corporate Tax and compliance needs.
+              Let's Build a Stronger Financial Future for Your Business
             </h2>
+            <p className='text-white/70 text-lg -mt-8 mb-8'>
+              Whether you're launching a startup, expanding your operations, or looking for a reliable
+              accounting partner, Nafaz is here to help you stay compliant, improve financial visibility, and
+              achieve sustainable growth.
+            </p>
+            <a
+              href='/contact'
+              className='inline-block mb-8 py-3 px-8 border border-white text-white rounded-md hover:bg-white hover:text-darkmode transition duration-300'>
+              Contact Our Experts
+            </a>
             <div className='grid grid-cols-6 pb-12 border-b border-dark_border '>
               <div className='col-span-3'>
                 <span className='text-white/50 text-lg'>Phone</span>
                 <p className='bg-transparent border-0 text-white text-lg'>
-                  +971 4 XXX XXXX
+                  +971 XX XXX XXXX
                 </p>
               </div>
               <div className='col-span-3'>
                 <span className='text-white/50 text-lg'>Email</span>
                 <p className='bg-transparent border-0 text-white text-lg'>
-                  info@yourfirm.ae
+                  info@nafaz.ae
                 </p>
               </div>
               <div className='col-span-6 pt-8'>
@@ -92,36 +102,38 @@ const Contactform = () => {
                 Book a Free Consultation
               </h2>
               <form className='flex w-full m-auto justify-between flex-wrap gap-4'>
-                <div className='flex gap-4'>
+                <div className='w-full'>
                   <input
                     className='text-midnight_text w-full text-base transition-[0.5s] bg-transparent dark:border-dark_border dark:text-white px-[0.9375rem] py-[0.830rem] border border-border border-solid focus:border-primary dark:focus:border-primary placeholder:text-grey rounded-lg focus-visible:outline-0'
                     type='text'
-                    placeholder='First name'
-                  />
-                  <input
-                    type='text'
-                    className='text-midnight_text w-full text-base transition-[0.5s] bg-transparent dark:border-dark_border dark:text-white px-[0.9375rem] py-[0.830rem] border border-border border-solid focus:border-primary dark:focus:border-primary placeholder:text-grey rounded-lg focus-visible:outline-0'
-                    placeholder='Last name'
+                    placeholder='Full Name'
                   />
                 </div>
                 <div className='w-full'>
                   <input
                     type='email'
                     className='text-midnight_text w-full text-base transition-[0.5s] bg-transparent dark:border-dark_border dark:text-white px-[0.9375rem] py-[0.830rem] border border-border border-solid focus:border-primary dark:focus:border-primary placeholder:text-grey rounded-lg focus-visible:outline-0'
-                    placeholder='youremail@website.com'
+                    placeholder='Email Address'
+                  />
+                </div>
+                <div className='w-full'>
+                  <input
+                    type='tel'
+                    className='text-midnight_text w-full text-base transition-[0.5s] bg-transparent dark:border-dark_border dark:text-white px-[0.9375rem] py-[0.830rem] border border-border border-solid focus:border-primary dark:focus:border-primary placeholder:text-grey rounded-lg focus-visible:outline-0'
+                    placeholder='Phone Number'
                   />
                 </div>
                 <div className='w-full'>
                   <input
                     className='text-midnight_text w-full text-base transition-[0.5s] bg-transparent dark:border-dark_border dark:text-white px-[0.9375rem] py-[0.830rem] border border-border border-solid focus:border-primary dark:focus:border-primary placeholder:text-grey rounded-lg focus-visible:outline-0'
                     type='text'
-                    placeholder='Country'
+                    placeholder='Company Name'
                   />
                 </div>
                 <div className='w-full'>
                   <textarea
                     className='text-midnight_text h-[9.375rem] w-full text-base transition-[0.5s] bg-transparent dark:border-dark_border dark:text-white px-[0.9375rem] py-[0.830rem] border! border-border border-solid! focus:border-primary dark:focus:border-primary placeholder:text-grey rounded-lg focus-visible:outline-0'
-                    placeholder='Tell us about your VAT, tax or accounting needs'></textarea>
+                    placeholder='Your Message'></textarea>
                 </div>
                 <div className='flex'>
                   <input

@@ -1,22 +1,17 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Image from 'next/image'
-import { Progress as ProgressData } from '@/app/api/data' // Assuming Progress is correctly imported
 
-// Define the interface for ProgressItem
-interface ProgressItem {
-  title: string
-  Progress: number
-}
+const whyClientsTrustNafaz = [
+  'Dedicated Accounting Professionals',
+  'Transparent Pricing',
+  'Timely Reporting',
+  'FTA Compliance Support',
+  'Business-Focused Advice',
+  'Personalized Service',
+]
 
 const Progresswork = ({ isColorMode }: { isColorMode: Boolean }) => {
-  const [progressValues, setProgressValues] = useState<ProgressItem[]>([]) // Initialize with ProgressItem[]
-
-  useEffect(() => {
-    // Fetch progress data or use static data (Progress array)
-    setProgressValues(ProgressData)
-  }, [])
-
   return (
     <section
       className={`scroll-mt-25 ${
@@ -46,34 +41,32 @@ const Progresswork = ({ isColorMode }: { isColorMode: Boolean }) => {
             <div className='flex gap-2 items-center'>
               <span className='w-3 h-3 rounded-full bg-success'></span>
               <span className='font-medium text-midnight_text text-sm dark:text-white/50'>
-                why choose us
+                Why nafaz
               </span>
             </div>
             <h2 className='pt-9 pb-8 text-midnight_text font-bold dark:text-white text-4xl'>
-              Not just your tax agent. Your compliance partner.
+              More Than Accountants. Your Long-Term Business Partner.
             </h2>
             <p className='text-gray dark:text-white/70 text-base font-semibold'>
-              Dubai has 300+ accounting and tax firms. Most file your numbers
-              and disappear. We stay engaged year-round — flagging risk before
-              deadlines hit and advising like an in-house tax team.
+              At Nafaz, we believe accounting should do more than keep your books balanced. It should help you
+              make better business decisions, remain compliant with UAE regulations, and create a strong
+              financial foundation for growth. Our experienced professionals work closely with startups, SMEs,
+              entrepreneurs, and established companies, delivering tailored accounting and tax solutions backed
+              by responsive support and practical advice.
             </p>
 
-            <div className='block mx-auto pt-12'>
-              {progressValues.map((item, index) => (
+            <h3 className='pt-10 pb-4 text-midnight_text dark:text-white text-lg font-bold'>
+              Why Clients Trust Nafaz
+            </h3>
+            <div className='grid sm:grid-cols-2 grid-cols-1 gap-4'>
+              {whyClientsTrustNafaz.map((item, index) => (
                 <div
                   key={index}
-                  className='progress_bar_item flex flex-wrap mb-8'>
-                  <div className='flex-1 w-auto text-sm font-normal text-grey mb-2 dark:text-white/50'>
-                    {item.title}
-                  </div>
-                  <div className='item_value shrink text-sm font-normal text-grey mb-2 dark:text-white/50'>
-                    {item.Progress}%
-                  </div>
-                  <div className='relative h-1 w-full bg-primary/30 rounded-md'>
-                    <div
-                      className='progress absolute left-0 top-0 bottom-0 h-full bg-primary rounded-md duration-100 ease-in-out'
-                      style={{ width: `${item.Progress}%` }}></div>
-                  </div>
+                  className='text-sm font-medium text-grey dark:text-white/70'
+                  data-aos='fade-up'
+                  data-aos-delay={`${(index % 3) * 150}`}
+                  data-aos-duration='1000'>
+                  ✔ {item}
                 </div>
               ))}
             </div>

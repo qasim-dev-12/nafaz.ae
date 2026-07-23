@@ -88,12 +88,12 @@ const usefulLinks = [
   { text: "Accounting Services in Dubai", href: "/services/premier-accounting-services-in-dubai" },
   { text: "Bookkeeping Services", href: "/services/bookkeeping-firm-dubai" },
   { text: "QuickBooks Accounting Services", href: "/services#quickbooks" },
-  { text: "VAT Registration & Filing", href: "/services#vat" },
-  { text: "Corporate Tax Services", href: "/services#corporate-tax" },
+  { text: "VAT Registration & Filing", href: "/services/vat-registration-return-filing-dubai" },
+  { text: "Corporate Tax Services", href: "/services/corporate-tax-registration-filing-dubai" },
   { text: "Financial Reporting", href: "/services#reporting" },
   { text: "Business Advisory", href: "/services#advisory" },
   { text: "CFO Services", href: "/services#cfo" },
-  { text: "Audit Support", href: "/services#audit" },
+  { text: "Audit Support", href: "/services/tax-audit-assurance-services-dubai" },
   { text: "HR & Payroll Compliance", href: "/services#payroll" },
 ];
 
