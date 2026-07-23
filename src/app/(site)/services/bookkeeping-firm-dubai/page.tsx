@@ -3,88 +3,113 @@ import Link from "next/link";
 import { Metadata } from "next";
 import FAQAccordion from "@/components/SharedComponent/FAQAccordion";
 
-export const metadata: Metadata = { title: "Bookkeeping Firm in Dubai | Venus" };
+export const metadata: Metadata = {
+  title: "Bookkeeping Firm in Dubai | QuickBooks Bookkeeping Services | Nafaz",
+  description:
+    "Looking for a professional bookkeeping firm in Dubai? Nafaz provides expert bookkeeping services, QuickBooks bookkeeping, bank reconciliation, VAT-ready records, monthly financial reporting, and outsourced bookkeeping solutions for startups, SMEs, and growing businesses across Dubai.",
+  keywords: [
+    "Bookkeeping Firm Dubai",
+    "Bookkeeping Services Dubai",
+    "Outsourced Bookkeeping Dubai",
+    "QuickBooks Bookkeeping Dubai",
+    "Professional Bookkeeper Dubai",
+    "Bank Reconciliation Services Dubai",
+    "VAT Bookkeeping Dubai",
+    "Monthly Bookkeeping Dubai",
+    "SME Bookkeeping Dubai",
+    "Financial Record Management Dubai",
+    "Cloud Bookkeeping Dubai",
+    "Bookkeeping Company Dubai",
+  ],
+};
 
-const heroChecklist = ["Daily, Weekly or Monthly Bookkeeping", "FTA Compliance Support", "Cloud Accounting Experts", "Dedicated Bookkeeper"];
+const heroChecklist = ["Daily, Weekly & Monthly Bookkeeping", "QuickBooks Bookkeeping", "FTA Compliance", "Monthly Financial Reports"];
 const heroStats = [
-  { label: "500+", description: "Businesses booked monthly" },
-  { label: "100%", description: "Books reconciled" },
-  { label: "24h", description: "Average response time" },
-  { label: "SME", description: "Focused packages" },
+  { label: "500+", description: "Businesses Supported" },
+  { label: "100%", description: "Confidential & Secure" },
+  { label: "24 Hours", description: "Quick Response" },
+  { label: "SMEs", description: "Trusted by Growing Businesses" },
 ];
 const whyChooseUs = [
-  { title: "Dedicated Bookkeeper", description: "One consistent bookkeeper who knows your business and deadlines." },
-  { title: "Flexible Cadence", description: "Daily, weekly or monthly bookkeeping based on your transaction volume." },
-  { title: "Fixed Monthly Pricing", description: "Transparent packages based on transactions and reporting needs." },
-  { title: "FTA Compliance Focus", description: "Books maintained with VAT and corporate tax documentation in mind." },
-  { title: "Cloud Accounting", description: "Xero and QuickBooks for real-time visibility into your books." },
-  { title: "Clean Handover", description: "Organized records ready for your auditor or tax filing at year end." },
+  { title: "Dedicated Bookkeeper", description: "A dedicated professional who understands your business and maintains accurate financial records." },
+  { title: "Reliable Bookkeeping", description: "Consistent recording of income, expenses, invoices, payments, and bank transactions." },
+  { title: "Fixed Monthly Pricing", description: "Transparent bookkeeping packages with predictable monthly costs." },
+  { title: "FTA Compliance Focus", description: "Maintain VAT-ready books that comply with UAE accounting and tax regulations." },
+  { title: "QuickBooks Specialists", description: "Professional QuickBooks bookkeeping, reconciliation, reporting, and ongoing support." },
+  { title: "Clean Financial Records", description: "Organized books that simplify accounting, audits, and financial reporting." },
 ];
 const services = [
-  { badge: "Bookkeeping", title: "Daily Bookkeeping", description: "We record sales, purchases, expenses and bank movements as they happen." },
-  { badge: "Reconciliation", title: "Bank Reconciliation", description: "We match every transaction to bank statements and flag discrepancies." },
-  { badge: "Payables", title: "Accounts Payable & Receivable", description: "We track supplier bills and customer invoices to keep cash flow clear." },
-  { badge: "Reporting", title: "Monthly Financial Reporting", description: "Profit and loss, balance sheet and cash flow reports every month." },
-  { badge: "VAT", title: "VAT-Ready Bookkeeping", description: "Books structured to support VAT registration, filing and review." },
-  { badge: "Payroll", title: "Payroll Bookkeeping", description: "Salary journals, WPS records and staff cost tracking." },
+  { badge: "Bookkeeping", title: "Daily Bookkeeping", description: "Record daily financial transactions accurately to keep your books updated.", includes: ["Sales & Purchase Entries", "Expense Recording", "Cash Transactions"] },
+  { badge: "Reconciliation", title: "Bank Reconciliation", description: "Match bank statements with accounting records to ensure complete financial accuracy.", includes: ["Bank Reconciliation", "Credit Card Reconciliation", "Cash Reconciliation"] },
+  { badge: "Payables", title: "Accounts Payable & Receivable", description: "Track supplier payments, customer invoices, outstanding balances, and collections.", includes: ["Supplier Management", "Customer Invoicing", "Outstanding Receivables"] },
+  { badge: "Reporting", title: "Monthly Financial Reporting", description: "Receive clear monthly reports that provide visibility into your business performance.", includes: ["Profit & Loss Statement", "Balance Sheet", "Cash Flow Report"] },
+  { badge: "VAT", title: "VAT-Ready Bookkeeping", description: "Maintain bookkeeping records that are fully prepared for VAT filing and FTA compliance.", includes: ["VAT Transaction Recording", "VAT Reconciliation", "VAT Documentation"] },
+  { badge: "QuickBooks", title: "QuickBooks Bookkeeping", description: "Professional bookkeeping using QuickBooks Online for automated and cloud-based financial management.", includes: ["QuickBooks Setup", "Monthly Bookkeeping", "Financial Dashboard"] },
 ];
 const industries = [
-  { title: "Startups & SMEs", description: "Affordable bookkeeping to keep records clean from day one." },
-  { title: "Trading Companies", description: "Supplier ledgers, import costs and inventory bookkeeping." },
-  { title: "Consultants & Agencies", description: "Retainers, expenses and profitability tracking." },
-  { title: "Restaurants & Retail", description: "Daily sales, POS reconciliation and supplier bookkeeping." },
-  { title: "Real Estate", description: "Rental income, service charges and expense tracking." },
-  { title: "Free Zone Companies", description: "Bookkeeping aligned to free zone reporting requirements." },
+  { title: "Startups & SMEs", description: "Affordable bookkeeping solutions designed for growing businesses." },
+  { title: "Trading Companies", description: "Wholesale, import/export, distribution, and retail businesses." },
+  { title: "Consultants & Agencies", description: "Marketing agencies, consultants, legal firms, and professional service providers." },
+  { title: "Restaurants & Cafés", description: "Restaurants, coffee shops, food businesses, and hospitality companies." },
+  { title: "Retail Businesses", description: "Retail stores, supermarkets, and showroom businesses." },
+  { title: "Free Zone Companies", description: "Bookkeeping services for businesses operating in Dubai free zones." },
 ];
 const comparison = [
-  { area: "Cost", inHouse: "Salary, visa and benefits", accountant: "Fixed monthly bookkeeping fee" },
-  { area: "Consistency", inHouse: "Depends on one hire", accountant: "Backed by a full bookkeeping team" },
-  { area: "Reporting", inHouse: "Often delayed", accountant: "Monthly reports and cloud dashboards" },
-  { area: "Compliance", inHouse: "Depends on individual experience", accountant: "FTA-focused bookkeeping process" },
-  { area: "Scalability", inHouse: "Harder to scale", accountant: "Flexible support as transactions grow" },
+  { area: "Cost", inHouse: "Full-time salary & benefits", accountant: "Affordable monthly packages" },
+  { area: "Expertise", inHouse: "Limited experience", accountant: "Experienced bookkeeping specialists" },
+  { area: "Technology", inHouse: "Manual processes", accountant: "QuickBooks cloud bookkeeping" },
+  { area: "Compliance", inHouse: "Basic knowledge", accountant: "VAT-ready financial records" },
+  { area: "Reporting", inHouse: "Basic reports", accountant: "Detailed monthly financial reports" },
+  { area: "Scalability", inHouse: "Difficult to expand", accountant: "Flexible solutions as your business grows" },
 ];
 const process = [
-  { step: "01", title: "Free Consultation", description: "We review your current books and bookkeeping needs." },
-  { step: "02", title: "Records Review", description: "We review bank statements, invoices and existing ledgers." },
-  { step: "03", title: "System Setup", description: "We configure Xero, QuickBooks or your preferred workflow." },
-  { step: "04", title: "Bookkeeping", description: "We record transactions and reconcile accounts on your cadence." },
-  { step: "05", title: "Reporting", description: "You receive clear monthly reports for decision-making." },
-  { step: "06", title: "Handover", description: "Clean, organized books ready for tax filing or audit." },
+  { step: "01", title: "Free Consultation", description: "Understand your bookkeeping requirements and business operations." },
+  { step: "02", title: "Records Review", description: "Review invoices, receipts, bank statements, and existing accounting records." },
+  { step: "03", title: "QuickBooks Setup", description: "Configure or optimize your QuickBooks Online account for efficient bookkeeping." },
+  { step: "04", title: "Bookkeeping", description: "Record daily transactions, reconcile accounts, and maintain accurate books." },
+  { step: "05", title: "Monthly Reporting", description: "Deliver organized financial statements and management reports." },
+  { step: "06", title: "Continuous Support", description: "Provide ongoing bookkeeping assistance as your business grows." },
 ];
 const localAreas = [
-  { title: "Dubai Mainland", description: "Bookkeeping for mainland-licensed SMEs and trading companies." },
-  { title: "Dubai Free Zones", description: "DMCC, IFZA, Meydan and JAFZA bookkeeping support." },
-  { title: "UAE-Wide", description: "Remote bookkeeping support for businesses across the UAE." },
+  { title: "Dubai Mainland", description: "Bookkeeping services for trading companies, consultants, restaurants, and SMEs." },
+  { title: "Dubai Free Zones", description: "Accounting support for businesses operating in DMCC, IFZA, Meydan, DAFZA, Dubai South, JAFZA, and other free zones." },
+  { title: "Across the UAE", description: "Remote bookkeeping services using QuickBooks Online for businesses across all Emirates." },
 ];
 const faqs = [
-  { question: "What does a bookkeeping firm do?", answer: "A bookkeeping firm records daily transactions, reconciles bank accounts, tracks payables and receivables, and prepares reports for VAT, tax and decision-making." },
-  { question: "How much does bookkeeping cost in Dubai?", answer: "Costs depend on transaction volume, number of bank accounts, payroll size and reporting frequency." },
-  { question: "Is bookkeeping mandatory in the UAE?", answer: "Yes, UAE law requires businesses to maintain accounting records that support VAT, corporate tax and audit obligations." },
-  { question: "How often should bookkeeping be done?", answer: "Most SMEs benefit from weekly or monthly bookkeeping, while high-volume businesses may need daily bookkeeping." },
-  { question: "What software do you use?", answer: "We primarily work with Xero and QuickBooks for cloud bookkeeping." },
-  { question: "How do I start?", answer: "Book a free consultation and we will review your records and recommend a bookkeeping cadence." },
+  { question: "What does a bookkeeping firm do?", answer: "A bookkeeping firm records financial transactions, reconciles bank accounts, manages invoices, prepares financial reports, and maintains accurate accounting records for businesses." },
+  { question: "How much does bookkeeping cost in Dubai?", answer: "The cost depends on transaction volume, business size, and service requirements. Nafaz offers flexible monthly bookkeeping packages tailored to your business." },
+  { question: "Is bookkeeping mandatory in the UAE?", answer: "Yes. Businesses are required to maintain proper accounting records under UAE regulations for tax compliance and financial reporting." },
+  { question: "How often should bookkeeping be updated?", answer: "We recommend daily or weekly bookkeeping to ensure accurate financial records and timely reporting." },
+  { question: "Do you use QuickBooks?", answer: "Yes. Nafaz specializes in QuickBooks Online bookkeeping, setup, migration, reconciliation, and financial reporting." },
+  { question: "How do I get started?", answer: "Book a free consultation, and our bookkeeping specialists will assess your business and recommend the most suitable bookkeeping solution." },
 ];
 const usefulLinks = [
-  { text: "Accurate and Affordable Bookkeeping in Dubai", href: "/services/accurate-affordable-bookkeeping-dubai" },
+  { text: "Accounting & Bookkeeping Services", href: "/services/accurate-affordable-bookkeeping-dubai" },
   { text: "Premier Accounting Services in Dubai", href: "/services/premier-accounting-services-in-dubai" },
-  { text: "VAT Registration and Returns", href: "/services#vat" },
-  { text: "Xero Accountant Dubai", href: "/services#xero" },
-  { text: "Federal Tax Authority", href: "https://tax.gov.ae" },
+  { text: "VAT Registration & Return Filing", href: "/services#vat" },
+  { text: "Corporate Tax Services", href: "/services#corporate-tax" },
+  { text: "QuickBooks Accounting Services", href: "/services#quickbooks" },
+  { text: "Financial Reporting", href: "/services/financial-statement-services-dubai" },
+  { text: "Payroll Services", href: "/services/payroll-services-dubai" },
+  { text: "Business Advisory", href: "/services#advisory" },
+  { text: "Audit Support", href: "/services#audit" },
+  { text: "CFO Services", href: "/services#cfo" },
 ];
 
 const Page = () => {
   return (
     <>
       <section className="bg-midnight_text dark:bg-darkmode text-center md:py-28 py-20 md:pt-44 pt-36 px-4">
+        <span className="inline-block bg-yellow-400 text-midnight_text font-semibold rounded-full px-6 py-2 mb-6" data-aos="fade-up" data-aos-duration="1000">Professional Bookkeeping Services in Dubai</span>
         <h1 className="text-white md:text-[52px] text-4xl font-bold leading-tight max-w-4xl mx-auto" data-aos="fade-up" data-aos-duration="1000">
           Bookkeeping Firm in Dubai
         </h1>
         <p className="text-white/70 md:text-xl text-lg max-w-2xl mx-auto my-7" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-          The Accountant LLC keeps your books accurate, reconciled and VAT-ready with a dedicated bookkeeper and monthly reporting.
+          Keep your financial records accurate, organized, and compliant with professional bookkeeping services from Nafaz. We help startups, SMEs, and growing businesses maintain clean books through expert bookkeeping, QuickBooks management, bank reconciliation, VAT-ready records, and monthly financial reporting.
         </p>
         <div className="flex flex-wrap gap-4 justify-center" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
           <Link href="/contact" className="bg-yellow-400 font-semibold text-midnight_text px-8 py-4 rounded-full hover:opacity-90">Book Free Consultation</Link>
-          <Link href="/contact" className="border border-white/40 text-white font-semibold px-8 py-4 rounded-full hover:bg-white/10">Speak With a Bookkeeper</Link>
+          <Link href="/contact" className="border border-white/40 text-white font-semibold px-8 py-4 rounded-full hover:bg-white/10">Speak With Our Bookkeeper</Link>
         </div>
         <div className="max-w-2xl mx-auto mt-12 aspect-video rounded-md border-2 border-dashed border-white/20 flex items-center justify-center text-white/30 text-sm" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
           Image placeholder
@@ -110,11 +135,19 @@ const Page = () => {
         </div>
       </section>
 
+      <section className="bg-white dark:bg-darkmode py-20 px-4 text-center">
+        <div className="container mx-auto max-w-4xl">
+          <span className="bg-section dark:bg-darklight text-primary font-semibold rounded-full px-6 py-2" data-aos="fade-up" data-aos-duration="1000">WHY BOOKKEEPING</span>
+          <h2 className="text-midnight_text dark:text-white text-3xl md:text-4xl font-bold leading-tight mt-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Not Just Data Entry. A Real Bookkeeping Partner.</h2>
+          <p className="text-grey dark:text-white/50 text-lg mt-6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">Bookkeeping is more than recording transactions—it's about maintaining accurate financial records that help your business stay compliant, understand cash flow, and make confident financial decisions. Nafaz ensures your books are always organized, up to date, and ready for tax and audit requirements.</p>
+        </div>
+      </section>
+
       <section className="bg-section dark:bg-darklight py-20 px-4">
         <div className="container mx-auto max-w-6xl text-center">
-          <span className="bg-white dark:bg-darkmode text-primary font-semibold rounded-full px-6 py-2" data-aos="fade-up" data-aos-duration="1000">WHY CHOOSE US</span>
-          <h2 className="text-midnight_text dark:text-white text-3xl md:text-4xl font-bold leading-tight mt-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Not just data entry. A real bookkeeping partner.</h2>
-          <p className="text-grey dark:text-white/50 text-lg max-w-3xl mx-auto mt-6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">Bookkeeping discipline, UAE tax knowledge and cloud reporting for Dubai businesses.</p>
+          <span className="bg-white dark:bg-darkmode text-primary font-semibold rounded-full px-6 py-2" data-aos="fade-up" data-aos-duration="1000">WHY NAFAZ</span>
+          <h2 className="text-midnight_text dark:text-white text-3xl md:text-4xl font-bold leading-tight mt-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Why Businesses Choose Nafaz for Bookkeeping</h2>
+          <p className="text-grey dark:text-white/50 text-lg max-w-3xl mx-auto mt-6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">Our bookkeeping specialists combine accounting expertise with modern cloud technology to deliver reliable financial records and ongoing support.</p>
           <div className="grid md:grid-cols-3 grid-cols-1 gap-7 mt-12">
             {whyChooseUs.map((item, index) => (
               <div key={index} className="bg-white dark:bg-darkmode rounded-md shadow-service p-8 text-left" data-aos="fade-up" data-aos-delay={`${index * 200}`} data-aos-duration="1000" data-aos-offset="300">
@@ -129,15 +162,20 @@ const Page = () => {
 
       <section className="bg-white dark:bg-darkmode py-20 px-4">
         <div className="container mx-auto max-w-6xl text-center">
-          <span className="bg-section dark:bg-darklight text-primary font-semibold rounded-full px-6 py-2" data-aos="fade-up" data-aos-duration="1000">SERVICES</span>
-          <h2 className="text-midnight_text dark:text-white text-3xl md:text-4xl font-bold leading-tight mt-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Bookkeeping services in Dubai</h2>
-          <p className="text-grey dark:text-white/50 text-lg max-w-3xl mx-auto mt-6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">Built for startups, SMEs, trading companies and free zone businesses across Dubai.</p>
+          <span className="bg-section dark:bg-darklight text-primary font-semibold rounded-full px-6 py-2" data-aos="fade-up" data-aos-duration="1000">OUR SERVICES</span>
+          <h2 className="text-midnight_text dark:text-white text-3xl md:text-4xl font-bold leading-tight mt-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Bookkeeping Services in Dubai</h2>
+          <p className="text-grey dark:text-white/50 text-lg max-w-3xl mx-auto mt-6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">Our bookkeeping solutions help businesses stay financially organized while ensuring compliance with UAE regulations.</p>
           <div className="grid md:grid-cols-2 grid-cols-1 gap-7 mt-12">
             {services.map((service, index) => (
               <div key={index} className="bg-section dark:bg-darklight rounded-md shadow-service p-10 text-left" data-aos="fade-up" data-aos-delay={`${index * 200}`} data-aos-duration="1000" data-aos-offset="300">
                 <span className="bg-white dark:bg-darkmode text-primary font-semibold rounded-full px-5 py-2">{service.badge}</span>
                 <h3 className="text-2xl font-bold text-midnight_text dark:text-white mt-6">{service.title}</h3>
                 <p className="text-grey dark:text-white/50 mt-4">{service.description}</p>
+                <div className="flex flex-wrap gap-2 mt-4">
+                  {service.includes.map((item, itemIndex) => (
+                    <span key={itemIndex} className="bg-white dark:bg-darkmode text-midnight_text dark:text-white text-sm font-medium rounded-full px-4 py-2">✔ {item}</span>
+                  ))}
+                </div>
               </div>
             ))}
           </div>
@@ -146,9 +184,9 @@ const Page = () => {
 
       <section className="bg-section dark:bg-darklight py-20 px-4 text-center">
         <div className="container mx-auto max-w-6xl">
-          <span className="bg-white dark:bg-darkmode text-primary font-semibold rounded-full px-6 py-2" data-aos="fade-up" data-aos-duration="1000">INDUSTRIES</span>
-          <h2 className="text-midnight_text dark:text-white text-3xl md:text-4xl font-bold leading-tight mt-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Industries we serve</h2>
-          <p className="text-grey dark:text-white/50 text-lg max-w-3xl mx-auto mt-6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">We structure bookkeeping based on your industry and transaction volume.</p>
+          <span className="bg-white dark:bg-darkmode text-primary font-semibold rounded-full px-6 py-2" data-aos="fade-up" data-aos-duration="1000">INDUSTRIES WE SERVE</span>
+          <h2 className="text-midnight_text dark:text-white text-3xl md:text-4xl font-bold leading-tight mt-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Industries We Support</h2>
+          <p className="text-grey dark:text-white/50 text-lg max-w-3xl mx-auto mt-6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">We provide bookkeeping services for businesses across a wide range of industries in Dubai.</p>
           <div className="grid md:grid-cols-3 grid-cols-1 gap-7 mt-12">
             {industries.map((item, index) => (
               <div key={index} className="bg-white dark:bg-darkmode rounded-md shadow-service p-8 text-left" data-aos="fade-up" data-aos-delay={`${index * 200}`} data-aos-duration="1000" data-aos-offset="300">
@@ -162,12 +200,11 @@ const Page = () => {
 
       <section className="bg-midnight_text dark:bg-darkmode py-20 px-4">
         <div className="container mx-auto max-w-6xl text-center">
-          <span className="bg-white/10 text-yellow-400 font-semibold rounded-full px-6 py-2" data-aos="fade-up" data-aos-duration="1000">COMPARISON</span>
-          <h2 className="text-white text-3xl md:text-4xl font-bold leading-tight mt-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Why outsource bookkeeping?</h2>
-          <p className="text-white/60 text-lg max-w-3xl mx-auto mt-6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">Access bookkeeping, VAT and reporting expertise without hiring an in-house bookkeeper.</p>
+          <span className="bg-white/10 text-yellow-400 font-semibold rounded-full px-6 py-2" data-aos="fade-up" data-aos-duration="1000">WHY OUTSOURCE</span>
+          <h2 className="text-white text-3xl md:text-4xl font-bold leading-tight mt-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Why Outsource Your Bookkeeping?</h2>
           <div className="bg-white/5 rounded-md mt-12 text-left overflow-x-auto" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
             <div className="grid grid-cols-3 gap-4 px-8 py-6 font-bold text-white border-b border-white/10 min-w-[600px]">
-              <span>Area</span><span>In-House Bookkeeper</span><span>The Accountant LLC</span>
+              <span>Feature</span><span>In-House Bookkeeper</span><span>Nafaz</span>
             </div>
             {comparison.map((row, index) => (
               <div key={index} className="grid grid-cols-3 gap-4 px-8 py-6 border-b border-white/10 min-w-[600px]">
@@ -182,8 +219,8 @@ const Page = () => {
 
       <section className="bg-white dark:bg-darkmode py-20 px-4">
         <div className="container mx-auto max-w-6xl text-center">
-          <span className="bg-section dark:bg-darklight text-primary font-semibold rounded-full px-6 py-2" data-aos="fade-up" data-aos-duration="1000">PROCESS</span>
-          <h2 className="text-midnight_text dark:text-white text-3xl md:text-4xl font-bold leading-tight mt-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Our bookkeeping process</h2>
+          <span className="bg-section dark:bg-darklight text-primary font-semibold rounded-full px-6 py-2" data-aos="fade-up" data-aos-duration="1000">OUR PROCESS</span>
+          <h2 className="text-midnight_text dark:text-white text-3xl md:text-4xl font-bold leading-tight mt-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Our Bookkeeping Process</h2>
           <p className="text-grey dark:text-white/50 text-lg max-w-3xl mx-auto mt-6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">A simple process designed for accuracy, compliance and clear reporting.</p>
           <div className="grid md:grid-cols-3 grid-cols-1 gap-7 mt-12">
             {process.map((item, index) => (
@@ -199,9 +236,9 @@ const Page = () => {
 
       <section className="bg-section dark:bg-darklight py-20 px-4 text-center">
         <div className="container mx-auto max-w-6xl">
-          <span className="bg-white dark:bg-darkmode text-primary font-semibold rounded-full px-6 py-2" data-aos="fade-up" data-aos-duration="1000">COVERAGE</span>
-          <h2 className="text-midnight_text dark:text-white text-3xl md:text-4xl font-bold leading-tight mt-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Bookkeeping support across Dubai</h2>
-          <p className="text-grey dark:text-white/50 text-lg max-w-3xl mx-auto mt-6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">We support mainland and free zone businesses across Dubai and the wider UAE.</p>
+          <span className="bg-white dark:bg-darkmode text-primary font-semibold rounded-full px-6 py-2" data-aos="fade-up" data-aos-duration="1000">SERVICE AREAS</span>
+          <h2 className="text-midnight_text dark:text-white text-3xl md:text-4xl font-bold leading-tight mt-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Bookkeeping Support Across Dubai</h2>
+          <p className="text-grey dark:text-white/50 text-lg max-w-3xl mx-auto mt-6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">Nafaz provides professional bookkeeping services to businesses throughout Dubai and surrounding areas.</p>
           <div className="grid md:grid-cols-3 grid-cols-1 gap-7 mt-12">
             {localAreas.map((item, index) => (
               <div key={index} className="bg-white dark:bg-darkmode rounded-md shadow-service p-8 text-left" data-aos="fade-up" data-aos-delay={`${index * 200}`} data-aos-duration="1000" data-aos-offset="300">
@@ -225,8 +262,8 @@ const Page = () => {
 
       <section className="bg-midnight_text dark:bg-darkmode py-20 px-4 text-center">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-white text-3xl md:text-4xl font-bold leading-tight" data-aos="fade-up" data-aos-duration="1000">Ready For Clean, Reconciled Books?</h2>
-          <p className="text-white/70 text-lg max-w-2xl mx-auto mt-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Get a dedicated bookkeeper, monthly reporting and VAT-ready records from a trusted Dubai bookkeeping firm.</p>
+          <h2 className="text-white text-3xl md:text-4xl font-bold leading-tight" data-aos="fade-up" data-aos-duration="1000">Ready for Clean, Accurate Books?</h2>
+          <p className="text-white/70 text-lg max-w-2xl mx-auto mt-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Let Nafaz manage your bookkeeping while you focus on growing your business. Our experienced bookkeepers ensure your records remain accurate, organized, and fully compliant.</p>
           <div className="flex flex-wrap gap-4 justify-center mt-8" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
             <Link href="/contact" className="bg-yellow-400 font-semibold text-midnight_text px-8 py-4 rounded-full hover:opacity-90">Book Your Free Consultation Today</Link>
             <Link href="/contact" className="border border-white/40 text-white font-semibold px-8 py-4 rounded-full hover:bg-white/10">WhatsApp Us</Link>
@@ -237,11 +274,21 @@ const Page = () => {
       <section className="bg-section dark:bg-darklight py-20 px-4 text-center">
         <div className="container mx-auto max-w-6xl">
           <span className="bg-white dark:bg-darkmode text-primary font-semibold rounded-full px-6 py-2" data-aos="fade-up" data-aos-duration="1000">USEFUL LINKS</span>
-          <h2 className="text-midnight_text dark:text-white text-3xl md:text-4xl font-bold leading-tight mt-6 mb-12" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Related accounting and tax services</h2>
+          <h2 className="text-midnight_text dark:text-white text-3xl md:text-4xl font-bold leading-tight mt-6 mb-12" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Related Services</h2>
           <div className="flex flex-wrap gap-4 justify-center">
             {usefulLinks.map((link, index) => (
               <Link key={index} href={link.href} className="bg-white dark:bg-darkmode text-midnight_text dark:text-white font-semibold rounded-full px-6 py-3 shadow-service">{link.text}</Link>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-primary py-16 px-4 text-center">
+        <div className="container mx-auto max-w-3xl">
+          <h2 className="text-white text-3xl md:text-4xl font-bold leading-tight" data-aos="fade-up" data-aos-duration="1000">Ready to Get Your Books in Order?</h2>
+          <p className="text-white/80 text-lg mt-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Partner with Nafaz for reliable bookkeeping services that keep your business organized, compliant, and ready for growth.</p>
+          <div className="mt-8" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+            <Link href="/contact" className="inline-block bg-yellow-400 font-semibold text-midnight_text px-8 py-4 rounded-full hover:opacity-90">Book Your Free Consultation</Link>
           </div>
         </div>
       </section>

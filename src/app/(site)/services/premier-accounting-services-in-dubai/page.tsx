@@ -4,46 +4,62 @@ import { Metadata } from "next";
 import FAQAccordion from "@/components/SharedComponent/FAQAccordion";
 
 export const metadata: Metadata = {
-  title: "Premier Accounting Services in Dubai | Venus",
+  title: "Premier Accounting Services in Dubai | QuickBooks Experts | Nafaz",
+  description:
+    "Looking for professional accounting services in Dubai? Nafaz specializes in QuickBooks accounting, bookkeeping, VAT, Corporate Tax, payroll, financial reporting, and business advisory services for startups, SMEs, and enterprises across Dubai.",
+  keywords: [
+    "Premier Accounting Services Dubai",
+    "QuickBooks Experts Dubai",
+    "QuickBooks Accounting Dubai",
+    "QuickBooks Bookkeeping Dubai",
+    "Accounting Services Dubai",
+    "Accounting Firm Dubai",
+    "Bookkeeping Services Dubai",
+    "VAT Services Dubai",
+    "Corporate Tax Dubai",
+    "QuickBooks Online Dubai",
+    "Payroll Services Dubai",
+    "Business Advisory Dubai",
+  ],
 };
 
 const trustTicker = [
   "Corporate Tax Support",
   "Fixed Monthly Packages",
-  "Cloud Reporting",
-  "FTA Approved Tax Agency",
+  "QuickBooks Experts",
+  "FTA Registered Tax Agents",
 ];
 
 const whyChooseUs = [
   {
-    title: "Dedicated Accountant",
+    title: "Dedicated Account Manager",
     description:
-      "A consistent point of contact who understands your business, documents, deadlines, and reporting needs.",
+      "A dedicated accounting professional who understands your business and provides continuous support.",
   },
   {
-    title: "FTA Compliance Focus",
+    title: "FTA Compliance Experts",
     description:
-      "Books maintained with VAT, corporate tax, audit readiness, and FTA documentation requirements in mind.",
+      "Complete VAT and Corporate Tax compliance with proactive professional guidance.",
   },
   {
-    title: "Xero Cloud Accounting",
+    title: "QuickBooks Specialists",
     description:
-      "Real-time reporting, clean dashboards, better visibility, and less manual work for owners.",
+      "Certified expertise in QuickBooks Online implementation, migration, bookkeeping, reporting, and training.",
   },
   {
     title: "Fixed Monthly Pricing",
     description:
-      "Transparent monthly packages based on transactions, VAT status, payroll, and reporting complexity.",
+      "Transparent pricing with no hidden fees.",
   },
   {
     title: "Fast Response",
     description:
-      "Practical support for bookkeeping, VAT, corporate tax, payroll, and financial reporting questions.",
+      "Responsive accounting support whenever your business needs assistance.",
   },
   {
     title: "Business Advisory",
     description:
-      "We help you understand profitability, margins, receivables, cash flow, and growth risks.",
+      "Financial insights designed to improve profitability, cash flow, and long-term growth.",
   },
 ];
 
@@ -52,105 +68,106 @@ const services = [
     badge: "Bookkeeping",
     title: "Bookkeeping Services Dubai",
     description:
-      "We record sales, purchases, expenses, bank movements, accounts payable, accounts receivable, and monthly reconciliations.",
-    points: ["Bank reconciliation", "Sales and purchase ledgers", "Monthly close and review"],
+      "Maintain accurate financial records with professional bookkeeping, bank reconciliation, expense tracking, ledger management, and monthly reporting.",
+    points: ["Bank reconciliation", "General Ledger Maintenance", " Monthly Financial Reports"],
   },
   {
     badge: "VAT",
     title: "VAT Services Dubai",
     description:
-      "We support VAT registration, VAT return preparation, input VAT review, output VAT review, and FTA-ready documentation.",
-    points: ["VAT registration and returns", "VAT filing UAE", "VAT health checks"],
+      "Complete VAT solutions including registration, filing, advisory, VAT health checks, and FTA support.",
+    points: ["VAT registration and returns", "VAT Return filing", "VAT health checks"],
   },
   {
     badge: "Corporate Tax",
-    title: "Corporate Tax Services UAE",
+    title: "Corporate Tax Services Dubai",
     description:
-      "We help businesses maintain corporate tax-ready accounts, review taxable income, and prepare supporting schedules for filing.",
-    points: ["Corporate tax services UAE", "Tax computation support", "FTA filing readiness"],
+      "Professional Corporate Tax registration, advisory, tax planning, return filing, and compliance support.",
+    points: ["Corporate Tax Registration", "Tax Planning", "Corporate Tax Return Filing"],
   },
   {
     badge: "Cloud",
-    title: "Xero Accountant Dubai",
+    title: "QuickBooks Accounting Services",
     description:
-      "We set up, migrate, clean, and manage Xero accounting systems for UAE businesses that need faster reporting.",
-    points: ["Xero accountant Dubai", "Chart of accounts setup", "Cloud reporting dashboard"],
+      "Leverage the power of QuickBooks Online with professional setup, migration, bookkeeping, automation, reporting, and ongoing support from certified experts.",
+    points: ["QuickBooks Setup & Configuration", "QuickBooks Migration", "Monthly Bookkeeping"," Financial Dashboard Reporting","Staff Training & Support"],
   },
 ];
 
 const comparison = [
-  { old: ["Manual spreadsheets", "Slow"], neu: ["Xero cloud accounting", "Modern"] },
-  { old: ["Reactive tax support", "Risky"], neu: ["VAT & corporate tax ready", "Compliant"] },
-  { old: ["Delayed reports", "Late"], neu: ["Monthly reporting", "Clear"] },
-  { old: ["Generic advice", "Basic"], neu: ["Business advisory", "Strategic"] },
-  { old: ["Unclear pricing", "Variable"], neu: ["Fixed monthly packages", "Transparent"] },
+  { old: "Manual bookkeeping", neu: "QuickBooks Cloud Accounting" },
+  { old: "Generic accounting support", neu: "Dedicated Account Manager" },
+  { old: "Limited reporting", neu: "Real-Time Financial Dashboard" },
+  { old: "Slow communication", neu: "Fast Response Times" },
+  { old: "Compliance only", neu: "Compliance + Business Growth" },
+  { old: "Hidden fees", neu: "Transparent Fixed Pricing" },
 ];
 
 const journey = [
-  { step: "01", title: "Discovery", description: "We understand your activity, current accounts, tax status, and goals." },
-  { step: "02", title: "Review", description: "We review bank statements, invoices, ledgers, and VAT filings." },
-  { step: "03", title: "Setup", description: "We configure Xero, chart of accounts, workflows, and reporting." },
-  { step: "04", title: "Manage", description: "We record transactions, reconcile banks, and review expenses." },
-  { step: "05", title: "Grow", description: "You receive monthly reports, insights, and ongoing advisory." },
+  { step: "01", title: "Discovery", description: "Understand your business, financial structure, and accounting requirements." },
+  { step: "02", title: "Assessment", description: "Review current bookkeeping, accounting systems, and compliance status." },
+  { step: "03", title: "QuickBooks Setup", description: "Configure QuickBooks Online, migrate data if required, and establish an efficient accounting workflow." },
+  { step: "04", title: "Ongoing Accounting", description: "Manage bookkeeping, payroll, VAT, Corporate Tax, reconciliations, and monthly compliance." },
+  { step: "05", title: "Financial Growth", description: "Provide detailed reports and business insights that support smarter financial decisions." },
 ];
 
 const trustStats = [
-  { label: "FTA", description: "Compliance-focused accounting support" },
-  { label: "Xero", description: "Cloud accounting setup and reporting" },
-  { label: "500+", description: "Businesses supported across the UAE" },
-  { label: "SME", description: "Accounting packages for growing companies" },
+  { label: "FTA", description: "Fully compliant with UAE Federal Tax Authority regulations." },
+  { label: "QuickBooks", description: "Cloud-based accounting specialists." },
+  { label: "500+", description: "Businesses supported across multiple industries." },
+  { label: "SMEs & Enterprises", description: "Scalable accounting solutions for every stage of business." },
 ];
 
 const caseStudies = [
   {
-    title: "Trading Company",
-    problem: "Messy supplier ledgers and delayed VAT records.",
-    solution: "Monthly bookkeeping, reconciliation, and VAT review.",
-    result: "Faster VAT preparation",
+    title: "Retail Businesses",
+    description:
+      "Improve inventory control, profitability, and cash flow through accurate bookkeeping and QuickBooks reporting.",
+    result: "Real-Time Financial Visibility",
   },
   {
-    title: "Technology Startup",
-    problem: "No investor-ready reporting or cloud accounting.",
-    solution: "Xero setup, payroll journals, and dashboards.",
-    result: "Better funding visibility",
+    title: "Technology Companies",
+    description:
+      "Access cloud-based financial reports from anywhere while automating accounting processes.",
+    result: "Scalable Financial Management",
   },
   {
-    title: "Professional Firm",
-    problem: "Weak receivables control and unclear margins.",
-    solution: "Revenue tracking and CFO reporting.",
-    result: "Stronger cash flow",
+    title: "Professional Services",
+    description:
+      "Simplify compliance while improving profitability through strategic accounting and business advisory.",
+    result: "Smarter Business Growth",
   },
 ];
 
 const faqs = [
   {
-    question: "How much do accounting services cost in Dubai?",
+    question: "Are you QuickBooks experts?",
     answer:
-      "Accounting costs depend on transaction volume, VAT status, payroll size, number of bank accounts, reporting frequency, and business complexity.",
+      "Yes. Nafaz specializes in QuickBooks Online implementation, migration, bookkeeping, reporting, staff training, and ongoing support for businesses across Dubai.",
   },
   {
-    question: "Is bookkeeping mandatory in the UAE?",
+    question: "Can you migrate my existing accounting system to QuickBooks?",
     answer:
-      "Yes. UAE law requires businesses to maintain accounting records that support VAT, corporate tax, and audit obligations.",
+      "Absolutely. We securely migrate financial data from spreadsheets or other accounting software to QuickBooks Online with minimal disruption.",
   },
   {
-    question: "Do SMEs need accounting services?",
+    question: "Do you provide QuickBooks training?",
     answer:
-      "Most SMEs benefit from professional bookkeeping to stay VAT and corporate tax compliant while getting clear visibility into cash flow.",
+      "Yes. We offer personalized QuickBooks training to help business owners and finance teams efficiently manage their accounting.",
   },
   {
-    question: "What accounting software do you use?",
-    answer: "We primarily set up, migrate, and manage businesses on Xero cloud accounting.",
+    question: "Do you provide VAT registration?",
+    answer: "Yes. We assist with VAT registration, filing, advisory, and FTA compliance.",
   },
   {
-    question: "Can you manage VAT and corporate tax?",
+    question: "Can you manage Corporate Tax together with QuickBooks accounting?",
     answer:
-      "Yes, we handle VAT registration, VAT returns, and corporate tax-ready bookkeeping and filing support.",
+      "Yes. We provide complete accounting, VAT, and UAE Corporate Tax services integrated with QuickBooks.",
   },
   {
-    question: "Do free zone companies need accounting?",
+    question: "Do you offer outsourced accounting?",
     answer:
-      "Yes, free zone companies must maintain accounting records and may have VAT and corporate tax obligations depending on activity.",
+      "Yes. Many businesses outsource their complete finance function to Nafaz while using QuickBooks for real-time financial management.",
   },
 ];
 
@@ -186,9 +203,7 @@ const Page = () => {
           data-aos-delay="200"
           data-aos-duration="1000"
         >
-          The Accountant LLC helps UAE businesses maintain accurate books, prepare VAT records,
-          stay corporate tax ready, process payroll, and make sharper decisions through Xero
-          cloud accounting and monthly financial reporting.
+          Focus on growing your business while Nafaz takes care of your finances. We provide professional accounting, bookkeeping, VAT, corporate tax, payroll, financial reporting, and QuickBooks-powered cloud accounting solutions tailored to startups, SMEs, and established businesses across Dubai.
         </p>
         <div
           className="flex flex-wrap gap-4 justify-center"
@@ -249,8 +264,7 @@ const Page = () => {
             data-aos-delay="200"
             data-aos-duration="1000"
           >
-            When records are delayed, VAT is unclear, receivables are messy, and reports arrive
-            too late, owners make decisions without financial confidence.
+            Without accurate financial records, businesses struggle to monitor cash flow, understand profitability, meet compliance requirements, and make informed decisions. Nafaz transforms financial data into meaningful insights through professional accounting and QuickBooks cloud solutions.
           </p>
           <div className="grid md:grid-cols-2 grid-cols-1 gap-7 mt-12">
             <div
@@ -265,6 +279,19 @@ const Page = () => {
               <h3 className="text-2xl font-bold text-midnight_text dark:text-white">
                 Messy books, tax stress, and late decisions.
               </h3>
+              <ul className="mt-6 space-y-3">
+                {[
+                  "Unorganized bookkeeping",
+                  "Delayed financial reports",
+                  "VAT filing concerns",
+                  "Cash flow uncertainty",
+                  "Compliance risks",
+                ].map((item, i) => (
+                  <li key={i} className="flex items-center gap-3 text-midnight_text dark:text-white">
+                    <span className="text-red-600">✕</span> {item}
+                  </li>
+                ))}
+              </ul>
             </div>
             <div
               className="bg-green-50 dark:bg-darklight rounded-md p-10 text-left"
@@ -278,6 +305,22 @@ const Page = () => {
               <h3 className="text-2xl font-bold text-midnight_text dark:text-white">
                 Clean books, monthly reporting, and confidence.
               </h3>
+              <h4 className="text-lg font-bold text-midnight_text dark:text-white mt-6">
+                Financial Clarity with Nafaz
+              </h4>
+              <ul className="mt-6 space-y-3">
+                {[
+                  "Organized bookkeeping",
+                  "Real-time QuickBooks reports",
+                  "Timely VAT & Corporate Tax compliance",
+                  "Improved financial planning",
+                  "Better business decisions",
+                ].map((item, i) => (
+                  <li key={i} className="flex items-center gap-3 text-midnight_text dark:text-white">
+                    <span className="text-success">✓</span> {item}
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
@@ -299,7 +342,7 @@ const Page = () => {
             data-aos-delay="200"
             data-aos-duration="1000"
           >
-            Not just accountants. Your UAE compliance partner.
+           More Than Accountants. Your Trusted Financial Partner.
           </h2>
           <p
             className="text-grey dark:text-white/50 text-lg max-w-3xl mx-auto mt-6"
@@ -307,8 +350,7 @@ const Page = () => {
             data-aos-delay="400"
             data-aos-duration="1000"
           >
-            The Accountant LLC combines bookkeeping discipline, UAE tax knowledge, cloud
-            reporting, and practical business advisory.
+          We help businesses across Dubai stay compliant, improve financial visibility, and make smarter business decisions with experienced accountants and QuickBooks-certified expertise.
           </p>
           <div className="grid md:grid-cols-3 grid-cols-1 gap-7 mt-12">
             {whyChooseUs.map((item, index) => (
@@ -349,7 +391,7 @@ const Page = () => {
             data-aos-delay="200"
             data-aos-duration="1000"
           >
-            Premium accounting services built for UAE businesses.
+            Premium Accounting Services Built for Dubai Businesses
           </h2>
           <p
             className="text-grey dark:text-white/50 text-lg max-w-3xl mx-auto mt-6"
@@ -357,9 +399,7 @@ const Page = () => {
             data-aos-delay="400"
             data-aos-duration="1000"
           >
-            Our accounting services support startups, SMEs, trading companies, ecommerce
-            businesses, consultants, free zone companies, mainland companies, and international
-            businesses entering the UAE.
+           Whether you're a startup, SME, or established enterprise, our accounting services simplify financial management while ensuring complete compliance.
           </p>
           <div className="grid md:grid-cols-2 grid-cols-1 gap-7 mt-12">
             {services.map((service, index) => (
@@ -399,7 +439,7 @@ const Page = () => {
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            Typical accounting firm vs The Accountant.
+            Typical accounting firm vs Nafaz.
           </h2>
           <p
             className="text-white/60 text-lg max-w-3xl mx-auto mt-6"
@@ -417,11 +457,10 @@ const Page = () => {
               data-aos-delay="200"
               data-aos-duration="1000"
             >
-              <h3 className="text-white text-2xl font-bold mb-6">Typical Accounting Firm</h3>
+              <h3 className="text-white text-2xl font-bold mb-6">Traditional Accounting Firm</h3>
               {comparison.map((row, index) => (
-                <div key={index} className="flex justify-between border-b border-white/10 py-4">
-                  <span className="text-white/70">{row.old[0]}</span>
-                  <span className="text-white font-bold">{row.old[1]}</span>
+                <div key={index} className="border-b border-white/10 py-4">
+                  <span className="text-white/70">{row.old}</span>
                 </div>
               ))}
             </div>
@@ -431,11 +470,10 @@ const Page = () => {
               data-aos-delay="200"
               data-aos-duration="1000"
             >
-              <h3 className="text-white text-2xl font-bold mb-6">The Accountant LLC</h3>
+              <h3 className="text-white text-2xl font-bold mb-6">Nafaz</h3>
               {comparison.map((row, index) => (
-                <div key={index} className="flex justify-between border-b border-white/10 py-4">
-                  <span className="text-white/70">{row.neu[0]}</span>
-                  <span className="text-white font-bold">{row.neu[1]}</span>
+                <div key={index} className="border-b border-white/10 py-4">
+                  <span className="text-white font-bold">✔ {row.neu}</span>
                 </div>
               ))}
             </div>
@@ -451,7 +489,7 @@ const Page = () => {
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            A finance journey designed for clarity.
+            A Financial Journey Designed for Clarity
           </h2>
           <p
             className="text-grey dark:text-white/50 text-lg max-w-3xl mx-auto mt-6"
@@ -493,7 +531,7 @@ const Page = () => {
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            TRUST WALL
+            TRUSTED BY BUSINESSES
           </span>
           <h2
             className="text-midnight_text dark:text-white text-3xl md:text-4xl font-bold leading-tight mt-6"
@@ -501,7 +539,7 @@ const Page = () => {
             data-aos-delay="200"
             data-aos-duration="1000"
           >
-            Built for UAE compliance and business growth.
+            Built for Dubai Compliance and QuickBooks-Powered Growth
           </h2>
           <p
             className="text-grey dark:text-white/50 text-lg max-w-3xl mx-auto mt-6"
@@ -509,8 +547,8 @@ const Page = () => {
             data-aos-delay="400"
             data-aos-duration="1000"
           >
-            The Accountant LLC supports UAE businesses with accounting, VAT, corporate tax,
-            payroll, reporting, and cloud systems.
+            Businesses trust Nafaz because we combine accounting expertise with modern
+            QuickBooks cloud technology.
           </p>
           <div className="grid md:grid-cols-4 grid-cols-2 gap-7 mt-12">
             {trustStats.map((item, index) => (
@@ -534,13 +572,21 @@ const Page = () => {
 
       {/* Case studies */}
       <section className="bg-section dark:bg-darklight py-20 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <h2
-            className="text-midnight_text dark:text-white text-3xl md:text-4xl font-bold leading-tight text-center mb-12"
+        <div className="container mx-auto max-w-6xl text-center">
+          <span
+            className="bg-white dark:bg-darkmode text-primary font-semibold rounded-full px-6 py-2"
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            Real business problems. Cleaner financial outcomes.
+            CLIENT RESULTS
+          </span>
+          <h2
+            className="text-midnight_text dark:text-white text-3xl md:text-4xl font-bold leading-tight mt-6 mb-12"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+          >
+            Real Business Challenges. Better Financial Outcomes.
           </h2>
           <div className="grid md:grid-cols-3 grid-cols-1 gap-7">
             {caseStudies.map((item, index) => (
@@ -555,16 +601,10 @@ const Page = () => {
                 <h3 className="text-2xl font-bold text-midnight_text dark:text-white mb-4">
                   {item.title}
                 </h3>
-                <p className="text-grey dark:text-white/50 mb-4">
-                  <span className="font-bold text-midnight_text dark:text-white">Problem: </span>
-                  {item.problem}
-                </p>
-                <p className="text-grey dark:text-white/50 mb-6">
-                  <span className="font-bold text-midnight_text dark:text-white">Solution: </span>
-                  {item.solution}
-                </p>
+                <p className="text-grey dark:text-white/50 mb-6">{item.description}</p>
                 <p className="bg-green-50 dark:bg-white/5 text-success font-bold rounded-md p-4">
-                  Result: {item.result}
+                  <span className="text-midnight_text dark:text-white">Result: </span>
+                  {item.result}
                 </p>
               </div>
             ))}
@@ -574,8 +614,25 @@ const Page = () => {
 
       {/* FAQ */}
       <section className="bg-white dark:bg-darkmode py-20 px-4">
-        <div className="container mx-auto max-w-4xl" data-aos="fade-up" data-aos-duration="1000">
-          <FAQAccordion items={faqs} />
+        <div className="container mx-auto max-w-4xl">
+          <span
+            className="bg-section dark:bg-darklight text-primary font-semibold rounded-full px-6 py-2"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            FAQ
+          </span>
+          <h2
+            className="text-midnight_text dark:text-white text-3xl md:text-4xl font-bold leading-tight mt-6 mb-12"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+          >
+            Premier Accounting Services in Dubai FAQs
+          </h2>
+          <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+            <FAQAccordion items={faqs} />
+          </div>
         </div>
       </section>
 
@@ -587,7 +644,7 @@ const Page = () => {
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            Ready To Build A Stronger Financial Future?
+            Ready to Build a Stronger Financial Future?
           </h2>
           <p
             className="text-white/70 text-lg max-w-2xl mx-auto mt-6"
@@ -595,8 +652,9 @@ const Page = () => {
             data-aos-delay="200"
             data-aos-duration="1000"
           >
-            Get accurate books, timely reports, VAT-ready records, corporate tax support, payroll
-            assistance, and Xero cloud accounting from UAE accounting specialists.
+            Partner with Nafaz for professional accounting, bookkeeping, QuickBooks cloud
+            accounting, VAT, and Corporate Tax services that keep your business compliant while
+            supporting long-term growth.
           </p>
           <div
             className="flex flex-wrap gap-4 justify-center mt-8"

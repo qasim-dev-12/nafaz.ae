@@ -3,73 +3,97 @@ import Link from "next/link";
 import { Metadata } from "next";
 import FAQAccordion from "@/components/SharedComponent/FAQAccordion";
 
-export const metadata: Metadata = { title: "Accounting Services in Sharjah | Venus" };
+export const metadata: Metadata = {
+  title: "Accounting Services in Sharjah | QuickBooks, VAT & Corporate Tax | Nafaz",
+  description:
+    "Looking for professional accounting services in Sharjah? Nafaz provides bookkeeping, QuickBooks accounting, VAT, Corporate Tax, payroll, financial reporting, and business advisory services for mainland businesses and free zone companies across Sharjah.",
+  keywords: [
+    "Accounting Services Sharjah",
+    "Accountants Sharjah",
+    "Bookkeeping Services Sharjah",
+    "QuickBooks Sharjah",
+    "QuickBooks Accounting Sharjah",
+    "Corporate Tax Sharjah",
+    "VAT Services Sharjah",
+    "Payroll Services Sharjah",
+    "Accounting Firm Sharjah",
+    "Financial Reporting Sharjah",
+    "SAIF Zone Accounting",
+    "Hamriyah Free Zone Accounting",
+  ],
+};
 
-const heroChecklist = ["UAE Accounting Experts", "Free Zone Specialists", "FTA Compliance Support", "Cloud Accounting Experts"];
+const heroChecklist = ["Bookkeeping Services", "QuickBooks Experts", "FTA Registered Tax Agents", "Corporate Tax Specialists"];
 const heroStats = [
-  { label: "AED 190k", description: "Monthly revenue tracked" },
-  { label: "100%", description: "Books updated" },
-  { label: "VAT", description: "Records reviewed" },
-  { label: "CT", description: "Tax ready accounts" },
+  { label: "500+", description: "Businesses Supported" },
+  { label: "99%", description: "Client Satisfaction" },
+  { label: "VAT", description: "FTA Compliant" },
+  { label: "CT", description: "Corporate Tax Specialists" },
 ];
 const whyChooseUs = [
-  { title: "Dedicated Accountant", description: "One consistent account manager who knows your business and deadlines." },
-  { title: "Fast Response", description: "Timely support for bookkeeping, VAT, corporate tax and payroll questions." },
-  { title: "Fixed Monthly Pricing", description: "Transparent packages based on transaction volume and reporting needs." },
-  { title: "Free Zone Expertise", description: "Experience with Hamriyah, SAIF Zone, Shams and mainland Sharjah entities." },
-  { title: "Cloud Accounting", description: "Xero and cloud systems for faster access to financial information." },
-  { title: "Growth Insights", description: "Understand profitability, receivables, cash flow and performance." },
+  { title: "Dedicated Account Manager", description: "Receive personalized accounting support from professionals who understand your business." },
+  { title: "Fast Response", description: "Our accounting team provides timely assistance for bookkeeping, VAT, payroll, and tax matters." },
+  { title: "Fixed Monthly Pricing", description: "Affordable accounting packages with transparent pricing and no hidden costs." },
+  { title: "Free Zone Expertise", description: "Specialized accounting services for SAIF Zone, Hamriyah Free Zone, Shams, and other Sharjah free zones." },
+  { title: "QuickBooks Specialists", description: "Professional QuickBooks Online setup, bookkeeping, migration, reporting, and ongoing support." },
+  { title: "Business Growth Insights", description: "Actionable financial reports that help improve profitability and cash flow." },
 ];
 const services = [
-  { badge: "Bookkeeping", title: "Bookkeeping Services Sharjah", description: "We record sales, purchases, expenses, bank movements and reconciliations." },
-  { badge: "Reporting", title: "Financial Reporting", description: "Monthly reports covering profit, cash flow, balance sheet and performance." },
-  { badge: "Corporate Tax", title: "Corporate Tax Services Sharjah", description: "Tax-ready accounts, taxable income review and supporting schedules." },
-  { badge: "VAT", title: "VAT Services Sharjah", description: "VAT registration, return preparation, reconciliation and FTA-ready records." },
-  { badge: "Payroll", title: "Payroll Services", description: "Payroll records, salary journals, leave balances and gratuity calculations." },
-  { badge: "Cloud Accounting", title: "Xero & QuickBooks Accounting", description: "Cloud setup, migration, cleanup and reporting dashboards." },
+  { badge: "Bookkeeping", title: "Bookkeeping Services Sharjah", description: "Maintain accurate books through professional bookkeeping, reconciliations, expense tracking, and monthly reporting.", includes: ["Bank Reconciliation", "General Ledger", "Monthly Financial Reports"] },
+  { badge: "Reporting", title: "Financial Reporting", description: "Prepare accurate monthly, quarterly, and annual financial statements to monitor business performance.", includes: ["Profit & Loss Statements", "Balance Sheet", "Cash Flow Reports"] },
+  { badge: "Corporate Tax", title: "Corporate Tax Services Sharjah", description: "Complete Corporate Tax registration, planning, compliance, advisory, and return filing services.", includes: ["Corporate Tax Registration", "Tax Planning", "Return Filing"] },
+  { badge: "VAT", title: "VAT Services Sharjah", description: "Professional VAT registration, filing, advisory, VAT health checks, and FTA compliance support.", includes: ["VAT Registration", "VAT Return Filing", "VAT Advisory"] },
+  { badge: "Payroll", title: "Payroll Services", description: "Payroll processing, WPS compliance, employee salary management, gratuity calculations, and payroll reporting.", includes: ["WPS Processing", "Payroll Management", "Salary Reports"] },
+  { badge: "QuickBooks", title: "QuickBooks Accounting", description: "Cloud accounting powered by QuickBooks Online with setup, migration, bookkeeping, financial reporting, and staff training.", includes: ["QuickBooks Setup", "Data Migration", "Cloud Bookkeeping"] },
 ];
 const industries = [
-  { title: "Manufacturing", description: "Costing, raw materials, WIP and production overhead tracking." },
-  { title: "Trading & Import-Export", description: "Customs, supplier ledgers, multi-currency and margin control." },
-  { title: "Free Zone Companies", description: "Hamriyah, SAIF Zone and Shams entity accounting and compliance." },
-  { title: "Education", description: "Fee collection, payroll and grant/subsidy reporting." },
-  { title: "Logistics", description: "Fleet costs, fuel, contracts and cash flow visibility." },
-  { title: "Retail", description: "POS reconciliation, inventory and margin reporting." },
+  { title: "Manufacturing", description: "Factories, industrial companies, and production businesses." },
+  { title: "Trading & Import/Export", description: "Wholesale distributors, import/export companies, and trading businesses." },
+  { title: "Free Zone Companies", description: "Businesses operating in SAIF Zone, Hamriyah Free Zone, and Shams." },
+  { title: "Education", description: "Schools, universities, training institutes, and educational organizations." },
+  { title: "Logistics", description: "Transport companies, warehousing businesses, freight forwarding, and supply chain providers." },
+  { title: "Retail", description: "Retail stores, supermarkets, showrooms, and e-commerce businesses." },
 ];
 const comparison = [
-  { area: "Cost", inHouse: "Salary, visa and benefits", accountant: "Fixed monthly accounting fee" },
-  { area: "Expertise", inHouse: "One person", accountant: "Accounting, VAT, corporate tax and advisory team" },
-  { area: "Reporting", inHouse: "Often delayed", accountant: "Monthly reports and cloud dashboards" },
-  { area: "Compliance", inHouse: "Depends on individual experience", accountant: "FTA and UAE tax-focused process" },
-  { area: "Scalability", inHouse: "Harder to scale", accountant: "Flexible support as business grows" },
+  { area: "Bookkeeping", inHouse: "Manual", accountant: "✔ QuickBooks Cloud Accounting" },
+  { area: "Financial Reports", inHouse: "Basic", accountant: "✔ Real-Time Business Insights" },
+  { area: "Tax Compliance", inHouse: "Limited", accountant: "✔ VAT & Corporate Tax Specialists" },
+  { area: "Communication", inHouse: "Delayed", accountant: "✔ Dedicated Account Manager" },
+  { area: "Pricing", inHouse: "Variable", accountant: "✔ Transparent Monthly Packages" },
+  { area: "Scalability", inHouse: "Limited", accountant: "✔ Flexible Business Solutions" },
 ];
 const process = [
-  { step: "01", title: "Free Consultation", description: "We review your business activity and accounting needs." },
-  { step: "02", title: "Business Assessment", description: "We review records, bank accounts and tax status." },
-  { step: "03", title: "System Setup", description: "We configure Xero, QuickBooks or your preferred workflow." },
-  { step: "04", title: "Bookkeeping", description: "We record transactions and reconcile accounts monthly." },
-  { step: "05", title: "Reporting", description: "You receive useful reports for decision-making." },
-  { step: "06", title: "Advisory", description: "We support tax readiness, cash flow and growth decisions." },
+  { step: "01", title: "Free Consultation", description: "Understand your business, industry, and accounting requirements." },
+  { step: "02", title: "Business Assessment", description: "Evaluate current accounting records and compliance status." },
+  { step: "03", title: "QuickBooks Setup", description: "Configure QuickBooks Online or migrate existing financial data." },
+  { step: "04", title: "Bookkeeping", description: "Manage day-to-day accounting, reconciliations, payroll, and tax compliance." },
+  { step: "05", title: "Reporting", description: "Provide detailed monthly financial reports and business insights." },
+  { step: "06", title: "Business Advisory", description: "Support business growth with strategic financial recommendations." },
 ];
 const localAreas = [
-  { title: "Hamriyah & SAIF Zone", description: "Accounting support for free zone trading and industrial companies." },
-  { title: "Industrial Area & Al Sajaa", description: "Manufacturing, warehousing and logistics accounting." },
-  { title: "Al Majaz, Al Nahda & Mainland", description: "Bookkeeping, VAT, payroll and reporting for SMEs." },
+  { title: "Hamriyah Free Zone", description: "Accounting and tax services for industrial, logistics, and trading businesses." },
+  { title: "Industrial Area & Al Sajaa", description: "Professional bookkeeping and accounting support for manufacturing companies." },
+  { title: "Al Majaz, Al Nahda & Mainland", description: "Accounting services for consultants, retail businesses, service companies, and SMEs." },
 ];
 const faqs = [
-  { question: "How do you handle manufacturing cost accounting?", answer: "We track raw material purchases, work-in-progress and production overhead separately, so your cost of goods sold reflects actual factory output, not just invoiced sales." },
-  { question: "How much do accounting services cost in Sharjah?", answer: "Pricing depends on order volume, whether you import raw materials in multiple currencies, and how many free zone or mainland entities need consolidating." },
-  { question: "Do Hamriyah or SAIF Zone companies need accounting?", answer: "Yes, both free zones require proper accounting records for license renewal, and many activities carry VAT and Corporate Tax obligations regardless of free zone status." },
-  { question: "Can you handle import/export and customs documentation?", answer: "Yes, we reconcile customs declarations, freight costs and supplier terms into your landed cost and inventory records." },
-  { question: "What software do you use?", answer: "We primarily work with Xero and QuickBooks, configured for multi-currency trading and inventory tracking." },
-  { question: "How do I start?", answer: "Book a free consultation and we will review your production, import and free zone structure before recommending a setup." },
+  { question: "How much do accounting services cost in Sharjah?", answer: "Our pricing depends on business size, transaction volume, and service requirements. We offer flexible monthly accounting packages." },
+  { question: "Do you work with businesses in Sharjah Free Zones?", answer: "Yes. We support companies operating in SAIF Zone, Hamriyah Free Zone, Shams, and other Sharjah Free Zones." },
+  { question: "Can I use QuickBooks for my business?", answer: "Absolutely. Nafaz specializes in QuickBooks Online setup, migration, bookkeeping, reporting, and staff training." },
+  { question: "Do you provide VAT registration?", answer: "Yes. We assist with VAT registration, return filing, advisory, and Federal Tax Authority compliance." },
+  { question: "Do you offer Corporate Tax services?", answer: "Yes. We provide complete Corporate Tax registration, planning, compliance, and return filing services." },
+  { question: "How do I get started?", answer: "Book a free consultation, and our accounting experts will recommend the most suitable solution for your business." },
 ];
 const usefulLinks = [
-  { text: "Premier Accounting Services in Dubai", href: "/services/premier-accounting-services-in-dubai" },
+  { text: "Accounting Services in Dubai", href: "/services/premier-accounting-services-in-dubai" },
   { text: "Accounting Services in Abu Dhabi", href: "/services/accounting-services-in-abu-dhabi" },
-  { text: "Bookkeeping Firm in Dubai", href: "/services/bookkeeping-firm-dubai" },
-  { text: "VAT Registration and Returns", href: "/services#vat" },
-  { text: "Federal Tax Authority", href: "https://tax.gov.ae" },
+  { text: "Professional Bookkeeping Services", href: "/services/bookkeeping-firm-dubai" },
+  { text: "VAT Registration & Filing", href: "/services#vat" },
+  { text: "Corporate Tax Services", href: "/services#corporate-tax" },
+  { text: "Payroll Management", href: "/services/payroll-services-dubai" },
+  { text: "QuickBooks Accounting Services", href: "/services#quickbooks" },
+  { text: "Financial Reporting", href: "/services/financial-statement-services-dubai" },
+  { text: "Business Advisory", href: "/services#advisory" },
+  { text: "Audit Support Services", href: "/services#audit" },
 ];
 
 const Page = () => {
@@ -78,12 +102,12 @@ const Page = () => {
       <section className="bg-midnight_text dark:bg-darkmode py-20 md:pt-44 pt-36 px-4">
         <div className="container mx-auto max-w-6xl grid md:grid-cols-2 grid-cols-1 gap-10 items-center">
           <div data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
-            <span className="inline-block bg-yellow-400 text-midnight_text font-semibold rounded-full px-6 py-2 mb-6">ACCOUNTING SERVICES SHARJAH</span>
+            <span className="inline-block bg-yellow-400 text-midnight_text font-semibold rounded-full px-6 py-2 mb-6">Professional Accounting Services in Sharjah</span>
             <h1 className="text-white text-4xl md:text-5xl font-bold leading-tight">Accounting Services in Sharjah</h1>
-            <p className="text-white/70 text-lg my-7">Built for Sharjah's industrial and free zone economy — production costing, import/export bookkeeping, VAT and corporate tax accounting for Hamriyah, SAIF Zone and mainland manufacturers.</p>
+            <p className="text-white/70 text-lg my-7">Simplify your business finances with professional accounting services from Nafaz. We provide expert bookkeeping, QuickBooks accounting, VAT, Corporate Tax, payroll, financial reporting, and business advisory services for startups, SMEs, and established businesses throughout Sharjah.</p>
             <div className="flex flex-wrap gap-4 mb-8">
               <Link href="/contact" className="bg-yellow-400 font-semibold text-midnight_text px-8 py-4 rounded-full hover:opacity-90">Book Free Consultation</Link>
-              <Link href="/contact" className="border border-white/40 text-white font-semibold px-8 py-4 rounded-full hover:bg-white/10">Speak With an Accountant</Link>
+              <Link href="/contact" className="border border-white/40 text-white font-semibold px-8 py-4 rounded-full hover:bg-white/10">Speak With Our Accountant</Link>
             </div>
             <div className="grid grid-cols-2 gap-3">
               {heroChecklist.map((item, index) => (
@@ -105,17 +129,17 @@ const Page = () => {
 
       <section className="bg-white dark:bg-darkmode py-20 px-4 text-center">
         <div className="container mx-auto max-w-4xl">
-          <span className="bg-section dark:bg-darklight text-primary font-semibold rounded-full px-6 py-2" data-aos="fade-up" data-aos-duration="1000">SHORT ANSWER</span>
-          <h2 className="text-midnight_text dark:text-white text-3xl md:text-4xl font-bold leading-tight mt-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">What makes Sharjah accounting different?</h2>
-          <p className="text-grey dark:text-white/50 text-lg mt-6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">Sharjah's economy leans manufacturing, trading and free zone industrial activity, so accounting needs to track landed costs, production overhead and multi-currency supplier ledgers alongside standard VAT and Corporate Tax compliance.</p>
+          <span className="bg-section dark:bg-darklight text-primary font-semibold rounded-full px-6 py-2" data-aos="fade-up" data-aos-duration="1000">ABOUT ACCOUNTING</span>
+          <h2 className="text-midnight_text dark:text-white text-3xl md:text-4xl font-bold leading-tight mt-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">What Makes Sharjah Accounting Different?</h2>
+          <p className="text-grey dark:text-white/50 text-lg mt-6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">Sharjah is home to a diverse business landscape that includes mainland companies, manufacturing businesses, trading firms, educational institutions, and multiple free zones. Professional accounting services help businesses maintain accurate financial records, meet UAE compliance requirements, and make confident financial decisions.</p>
         </div>
       </section>
 
       <section className="bg-section dark:bg-darklight py-20 px-4">
         <div className="container mx-auto max-w-6xl text-center">
-          <span className="bg-white dark:bg-darkmode text-primary font-semibold rounded-full px-6 py-2" data-aos="fade-up" data-aos-duration="1000">WHY CHOOSE US</span>
-          <h2 className="text-midnight_text dark:text-white text-3xl md:text-4xl font-bold leading-tight mt-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Why businesses in Sharjah choose The Accountant</h2>
-          <p className="text-grey dark:text-white/50 text-lg max-w-3xl mx-auto mt-6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">Accounting discipline, UAE tax knowledge, cloud reporting and practical financial advisory for Sharjah businesses.</p>
+          <span className="bg-white dark:bg-darkmode text-primary font-semibold rounded-full px-6 py-2" data-aos="fade-up" data-aos-duration="1000">WHY NAFAZ</span>
+          <h2 className="text-midnight_text dark:text-white text-3xl md:text-4xl font-bold leading-tight mt-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Why Businesses in Sharjah Choose Nafaz</h2>
+          <p className="text-grey dark:text-white/50 text-lg max-w-3xl mx-auto mt-6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">Businesses across Sharjah trust Nafaz for accurate accounting, transparent pricing, QuickBooks expertise, and responsive financial support that keeps them compliant and focused on growth.</p>
           <div className="grid md:grid-cols-3 grid-cols-1 gap-7 mt-12">
             {whyChooseUs.map((item, index) => (
               <div key={index} className="bg-white dark:bg-darkmode rounded-md shadow-service p-8 text-left" data-aos="fade-up" data-aos-delay={`${index * 200}`} data-aos-duration="1000" data-aos-offset="300">
@@ -130,15 +154,20 @@ const Page = () => {
 
       <section className="bg-white dark:bg-darkmode py-20 px-4">
         <div className="container mx-auto max-w-6xl text-center">
-          <span className="bg-section dark:bg-darklight text-primary font-semibold rounded-full px-6 py-2" data-aos="fade-up" data-aos-duration="1000">SERVICES</span>
-          <h2 className="text-midnight_text dark:text-white text-3xl md:text-4xl font-bold leading-tight mt-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Comprehensive accounting services in Sharjah</h2>
-          <p className="text-grey dark:text-white/50 text-lg max-w-3xl mx-auto mt-6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">Designed for Sharjah startups, SMEs, trading companies, free zone entities and growing UAE businesses.</p>
+          <span className="bg-section dark:bg-darklight text-primary font-semibold rounded-full px-6 py-2" data-aos="fade-up" data-aos-duration="1000">OUR SERVICES</span>
+          <h2 className="text-midnight_text dark:text-white text-3xl md:text-4xl font-bold leading-tight mt-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Comprehensive Accounting Services in Sharjah</h2>
+          <p className="text-grey dark:text-white/50 text-lg max-w-3xl mx-auto mt-6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">Our accounting solutions are designed to simplify compliance while supporting sustainable business growth for organizations of every size.</p>
           <div className="grid md:grid-cols-2 grid-cols-1 gap-7 mt-12">
             {services.map((service, index) => (
               <div key={index} className="bg-section dark:bg-darklight rounded-md shadow-service p-10 text-left" data-aos="fade-up" data-aos-delay={`${index * 200}`} data-aos-duration="1000" data-aos-offset="300">
                 <span className="bg-white dark:bg-darkmode text-primary font-semibold rounded-full px-5 py-2">{service.badge}</span>
                 <h3 className="text-2xl font-bold text-midnight_text dark:text-white mt-6">{service.title}</h3>
                 <p className="text-grey dark:text-white/50 mt-4">{service.description}</p>
+                <div className="flex flex-wrap gap-2 mt-4">
+                  {service.includes.map((item, itemIndex) => (
+                    <span key={itemIndex} className="bg-white dark:bg-darkmode text-midnight_text dark:text-white text-sm font-medium rounded-full px-4 py-2">✔ {item}</span>
+                  ))}
+                </div>
               </div>
             ))}
           </div>
@@ -147,9 +176,9 @@ const Page = () => {
 
       <section className="bg-section dark:bg-darklight py-20 px-4 text-center">
         <div className="container mx-auto max-w-6xl">
-          <span className="bg-white dark:bg-darkmode text-primary font-semibold rounded-full px-6 py-2" data-aos="fade-up" data-aos-duration="1000">INDUSTRIES</span>
-          <h2 className="text-midnight_text dark:text-white text-3xl md:text-4xl font-bold leading-tight mt-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Industries we serve in Sharjah</h2>
-          <p className="text-grey dark:text-white/50 text-lg max-w-3xl mx-auto mt-6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">We structure accounting based on your industry, VAT treatment and reporting requirements.</p>
+          <span className="bg-white dark:bg-darkmode text-primary font-semibold rounded-full px-6 py-2" data-aos="fade-up" data-aos-duration="1000">INDUSTRIES WE SERVE</span>
+          <h2 className="text-midnight_text dark:text-white text-3xl md:text-4xl font-bold leading-tight mt-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Industries We Support in Sharjah</h2>
+          <p className="text-grey dark:text-white/50 text-lg max-w-3xl mx-auto mt-6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">We understand the accounting requirements of businesses operating across Sharjah's growing economy.</p>
           <div className="grid md:grid-cols-3 grid-cols-1 gap-7 mt-12">
             {industries.map((item, index) => (
               <div key={index} className="bg-white dark:bg-darkmode rounded-md shadow-service p-8 text-left" data-aos="fade-up" data-aos-delay={`${index * 200}`} data-aos-duration="1000" data-aos-offset="300">
@@ -163,12 +192,11 @@ const Page = () => {
 
       <section className="bg-midnight_text dark:bg-darkmode py-20 px-4">
         <div className="container mx-auto max-w-6xl text-center">
-          <span className="bg-white/10 text-yellow-400 font-semibold rounded-full px-6 py-2" data-aos="fade-up" data-aos-duration="1000">COMPARISON</span>
-          <h2 className="text-white text-3xl md:text-4xl font-bold leading-tight mt-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Why outsource accounting in Sharjah?</h2>
-          <p className="text-white/60 text-lg max-w-3xl mx-auto mt-6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">Access accounting, VAT, corporate tax and reporting expertise without building a full internal finance department.</p>
+          <span className="bg-white/10 text-yellow-400 font-semibold rounded-full px-6 py-2" data-aos="fade-up" data-aos-duration="1000">WHY NAFAZ</span>
+          <h2 className="text-white text-3xl md:text-4xl font-bold leading-tight mt-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Why Outsource Accounting in Sharjah?</h2>
           <div className="bg-white/5 rounded-md mt-12 text-left overflow-x-auto" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
             <div className="grid grid-cols-3 gap-4 px-8 py-6 font-bold text-white border-b border-white/10 min-w-[600px]">
-              <span>Area</span><span>In-House Accountant</span><span>The Accountant LLC</span>
+              <span>Feature</span><span>Traditional Accounting</span><span>Nafaz</span>
             </div>
             {comparison.map((row, index) => (
               <div key={index} className="grid grid-cols-3 gap-4 px-8 py-6 border-b border-white/10 min-w-[600px]">
@@ -183,8 +211,8 @@ const Page = () => {
 
       <section className="bg-white dark:bg-darkmode py-20 px-4">
         <div className="container mx-auto max-w-6xl text-center">
-          <span className="bg-section dark:bg-darklight text-primary font-semibold rounded-full px-6 py-2" data-aos="fade-up" data-aos-duration="1000">PROCESS</span>
-          <h2 className="text-midnight_text dark:text-white text-3xl md:text-4xl font-bold leading-tight mt-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Our accounting process</h2>
+          <span className="bg-section dark:bg-darklight text-primary font-semibold rounded-full px-6 py-2" data-aos="fade-up" data-aos-duration="1000">OUR PROCESS</span>
+          <h2 className="text-midnight_text dark:text-white text-3xl md:text-4xl font-bold leading-tight mt-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Our Accounting Process</h2>
           <p className="text-grey dark:text-white/50 text-lg max-w-3xl mx-auto mt-6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">A simple process designed for accuracy, compliance and clear reporting.</p>
           <div className="grid md:grid-cols-3 grid-cols-1 gap-7 mt-12">
             {process.map((item, index) => (
@@ -200,9 +228,9 @@ const Page = () => {
 
       <section className="bg-section dark:bg-darklight py-20 px-4 text-center">
         <div className="container mx-auto max-w-6xl">
-          <span className="bg-white dark:bg-darkmode text-primary font-semibold rounded-full px-6 py-2" data-aos="fade-up" data-aos-duration="1000">LOCAL SEO</span>
-          <h2 className="text-midnight_text dark:text-white text-3xl md:text-4xl font-bold leading-tight mt-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Accounting support across Sharjah</h2>
-          <p className="text-grey dark:text-white/50 text-lg max-w-3xl mx-auto mt-6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">We support businesses across Hamriyah, SAIF Zone, Industrial Area, Al Majaz, Al Nahda and Mainland Sharjah.</p>
+          <span className="bg-white dark:bg-darkmode text-primary font-semibold rounded-full px-6 py-2" data-aos="fade-up" data-aos-duration="1000">SERVICE AREAS</span>
+          <h2 className="text-midnight_text dark:text-white text-3xl md:text-4xl font-bold leading-tight mt-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Accounting Support Across Sharjah</h2>
+          <p className="text-grey dark:text-white/50 text-lg max-w-3xl mx-auto mt-6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">Nafaz proudly serves businesses across Sharjah Mainland and Free Zones with reliable accounting and compliance solutions.</p>
           <div className="grid md:grid-cols-3 grid-cols-1 gap-7 mt-12">
             {localAreas.map((item, index) => (
               <div key={index} className="bg-white dark:bg-darkmode rounded-md shadow-service p-8 text-left" data-aos="fade-up" data-aos-delay={`${index * 200}`} data-aos-duration="1000" data-aos-offset="300">
@@ -218,7 +246,7 @@ const Page = () => {
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12" data-aos="fade-up" data-aos-duration="1000">
             <span className="bg-section dark:bg-darklight text-primary font-semibold rounded-full px-6 py-2">FAQ</span>
-            <h2 className="text-midnight_text dark:text-white text-3xl md:text-4xl font-bold leading-tight mt-6">Accounting Services Sharjah FAQs</h2>
+            <h2 className="text-midnight_text dark:text-white text-3xl md:text-4xl font-bold leading-tight mt-6">Accounting Services in Sharjah FAQs</h2>
           </div>
           <FAQAccordion items={faqs} />
         </div>
@@ -226,10 +254,10 @@ const Page = () => {
 
       <section className="bg-midnight_text dark:bg-darkmode py-20 px-4 text-center">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-white text-3xl md:text-4xl font-bold leading-tight" data-aos="fade-up" data-aos-duration="1000">Looking For Reliable Accounting Services In Sharjah?</h2>
-          <p className="text-white/70 text-lg max-w-2xl mx-auto mt-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">From factory floor to free zone filing, get accounting that understands Sharjah's manufacturing and trading economy — not a generic city template.</p>
+          <h2 className="text-white text-3xl md:text-4xl font-bold leading-tight" data-aos="fade-up" data-aos-duration="1000">Looking for Reliable Accounting Services in Sharjah?</h2>
+          <p className="text-white/70 text-lg max-w-2xl mx-auto mt-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Whether you're a startup, SME, manufacturer, retailer, or free zone company, Nafaz provides reliable accounting solutions that help your business remain compliant and financially organized.</p>
           <div className="flex flex-wrap gap-4 justify-center mt-8" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-            <Link href="/contact" className="bg-yellow-400 font-semibold text-midnight_text px-8 py-4 rounded-full hover:opacity-90">Book Your Free Consultation Today</Link>
+            <Link href="/contact" className="bg-yellow-400 font-semibold text-midnight_text px-8 py-4 rounded-full hover:opacity-90">Book Your Free Consultation</Link>
             <Link href="/contact" className="border border-white/40 text-white font-semibold px-8 py-4 rounded-full hover:bg-white/10">WhatsApp Us</Link>
           </div>
         </div>
@@ -238,11 +266,21 @@ const Page = () => {
       <section className="bg-section dark:bg-darklight py-20 px-4 text-center">
         <div className="container mx-auto max-w-6xl">
           <span className="bg-white dark:bg-darkmode text-primary font-semibold rounded-full px-6 py-2" data-aos="fade-up" data-aos-duration="1000">USEFUL LINKS</span>
-          <h2 className="text-midnight_text dark:text-white text-3xl md:text-4xl font-bold leading-tight mt-6 mb-12" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Related accounting and tax services</h2>
+          <h2 className="text-midnight_text dark:text-white text-3xl md:text-4xl font-bold leading-tight mt-6 mb-12" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Related Accounting & Tax Services</h2>
           <div className="flex flex-wrap gap-4 justify-center">
             {usefulLinks.map((link, index) => (
               <Link key={index} href={link.href} className="bg-white dark:bg-darkmode text-midnight_text dark:text-white font-semibold rounded-full px-6 py-3 shadow-service">{link.text}</Link>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-primary py-16 px-4 text-center">
+        <div className="container mx-auto max-w-3xl">
+          <h2 className="text-white text-3xl md:text-4xl font-bold leading-tight" data-aos="fade-up" data-aos-duration="1000">Ready to Get Compliant?</h2>
+          <p className="text-white/80 text-lg mt-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Let Nafaz manage your accounting while you focus on growing your business with confidence.</p>
+          <div className="mt-8" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+            <Link href="/contact" className="inline-block bg-yellow-400 font-semibold text-midnight_text px-8 py-4 rounded-full hover:opacity-90">Book Your Free Consultation</Link>
           </div>
         </div>
       </section>

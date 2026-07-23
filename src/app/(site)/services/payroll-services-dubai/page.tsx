@@ -4,111 +4,97 @@ import { Metadata } from "next";
 import FAQAccordion from "@/components/SharedComponent/FAQAccordion";
 
 export const metadata: Metadata = {
-  title: "Accounting Services in Abu Dhabi | Bookkeeping, QuickBooks & Corporate Tax | Nafaz",
+  title: "Payroll (WPS) Services in Dubai | WPS Payroll Management | Nafaz",
   description:
-    "Looking for professional accounting services in Abu Dhabi? Nafaz provides bookkeeping, QuickBooks accounting, VAT, Corporate Tax, payroll, financial reporting, and business advisory services for startups, SMEs, and enterprises across Abu Dhabi.",
+    "Looking for payroll services in Dubai? Nafaz provides professional Payroll and WPS services, salary processing, gratuity calculations, leave salary management, MOHRE compliance, QuickBooks integration, and payroll reporting for businesses across the UAE.",
   keywords: [
-    "Accounting Services Abu Dhabi",
-    "Accountants Abu Dhabi",
-    "Bookkeeping Services Abu Dhabi",
-    "QuickBooks Abu Dhabi",
-    "QuickBooks Accounting Abu Dhabi",
-    "Corporate Tax Abu Dhabi",
-    "VAT Services Abu Dhabi",
-    "Payroll Services Abu Dhabi",
-    "Accounting Firm Abu Dhabi",
-    "Financial Reporting Abu Dhabi",
-    "Business Advisory Abu Dhabi",
-    "Outsourced Accounting Abu Dhabi",
+    "Payroll Services Dubai",
+    "WPS Services Dubai",
+    "WPS Payroll Dubai",
+    "Payroll Management Dubai",
+    "Salary Processing Dubai",
+    "Wage Protection System UAE",
+    "Payroll Company Dubai",
+    "Payroll Outsourcing Dubai",
+    "Gratuity Calculation UAE",
+    "Leave Salary Calculation Dubai",
+    "QuickBooks Payroll Dubai",
+    "MOHRE Payroll Compliance",
   ],
 };
 
-const heroChecklist = [
-  "Accounting Services",
-  "Bookkeeping Services",
-  "QuickBooks Experts",
-  "FTA Registered Tax Agents",
-];
-
+const heroChecklist = ["WPS Salary Processing", "MOHRE Compliance", "Payroll Management", "Gratuity Calculations"];
 const heroStats = [
   { label: "500+", description: "Businesses Supported" },
-  { label: "99%", description: "Client Satisfaction" },
-  { label: "VAT", description: "FTA Compliant Services" },
-  { label: "CT", description: "Corporate Tax Specialists" },
+  { label: "100%", description: "WPS Compliant" },
+  { label: "99%", description: "Payroll Accuracy" },
+  { label: "24 Hours", description: "Quick Payroll Support" },
 ];
-
 const whyChooseUs = [
-  { title: "Dedicated Account Manager", description: "Receive personalized support from an accountant who understands your business operations and financial objectives." },
-  { title: "Fast Response", description: "Quick responses from experienced accounting professionals whenever your business requires assistance." },
-  { title: "Fixed Monthly Pricing", description: "Transparent pricing with no hidden charges, making budgeting simple and predictable." },
-  { title: "Corporate Tax Specialists", description: "Professional guidance for Corporate Tax registration, compliance, planning, and return filing." },
-  { title: "QuickBooks Specialists", description: "Certified QuickBooks Online setup, migration, bookkeeping, financial reporting, and ongoing support." },
-  { title: "Business Growth Insights", description: "Monthly financial reports and expert advice that help improve profitability and cash flow." },
+  { title: "WPS Specialists", description: "Complete payroll processing that complies with UAE Wage Protection System requirements." },
+  { title: "Accurate Salary Processing", description: "Timely calculation of salaries, allowances, overtime, deductions, commissions, and bonuses." },
+  { title: "Fixed Monthly Pricing", description: "Transparent payroll packages with predictable monthly costs." },
+  { title: "UAE Labour Law Compliance", description: "Payroll prepared in accordance with UAE Labour Law and MOHRE requirements." },
+  { title: "QuickBooks Integration", description: "Payroll records integrated with QuickBooks Online for seamless accounting and financial reporting." },
+  { title: "Confidential Payroll Management", description: "Secure handling of employee payroll information with complete confidentiality." },
 ];
-
 const services = [
-  { badge: "Bookkeeping", title: "Bookkeeping Services Abu Dhabi", description: "Professional bookkeeping, bank reconciliation, ledger maintenance, expense tracking, and monthly financial reporting.", includes: ["Bank Reconciliation", "General Ledger", "Monthly Reports"] },
-  { badge: "Reporting", title: "Accounting & Financial Reporting", description: "Prepare accurate monthly, quarterly, and annual financial reports that support informed business decisions.", includes: ["Profit & Loss Statements", "Balance Sheet", "Cash Flow Reports"] },
-  { badge: "Corporate Tax", title: "Corporate Tax Services Abu Dhabi", description: "Complete UAE Corporate Tax registration, advisory, planning, compliance, and return filing services.", includes: ["Corporate Tax Registration", "Tax Planning", "Return Filing"] },
-  { badge: "VAT", title: "VAT Services Abu Dhabi", description: "Comprehensive VAT registration, filing, health checks, advisory, and Federal Tax Authority compliance.", includes: ["VAT Registration", "VAT Filing", "VAT Advisory"] },
-  { badge: "Payroll", title: "Payroll Services", description: "Accurate payroll processing, WPS support, gratuity calculations, employee records, and salary management.", includes: ["WPS Processing", "Salary Calculation", "Payroll Reports"] },
-  { badge: "QuickBooks", title: "QuickBooks Accounting", description: "Cloud accounting solutions using QuickBooks Online, including setup, migration, automation, bookkeeping, reporting, and support.", includes: ["QuickBooks Setup", "Data Migration", "Cloud Bookkeeping"] },
+  { badge: "Payroll", title: "Payroll Processing", description: "Accurate monthly salary processing for businesses of all sizes.", includes: ["Salary Calculation", "Overtime Calculation", "Allowances & Deductions"] },
+  { badge: "WPS", title: "WPS Salary File Preparation", description: "Preparation and verification of WPS files for salary transfer through approved UAE banking channels.", includes: ["WPS File Generation", "Salary Verification", "Bank Upload Support"] },
+  { badge: "Leave Pay", title: "Leave Salary Management", description: "Calculate annual leave salaries according to UAE Labour Law.", includes: ["Annual Leave Pay", "Leave Encashment", "Leave Balance Tracking"] },
+  { badge: "Gratuity", title: "End-of-Service Gratuity", description: "Accurate gratuity calculations based on UAE Labour Law.", includes: ["Gratuity Calculation", "Final Settlement", "Employee Exit Reports"] },
+  { badge: "Reporting", title: "Payroll Reports", description: "Detailed payroll reports for management and accounting purposes.", includes: ["Payroll Summary", "Employee Reports", "Cost Analysis"] },
+  { badge: "QuickBooks", title: "QuickBooks Payroll Integration", description: "Synchronize payroll information with QuickBooks Online for accurate financial reporting.", includes: ["Payroll Journal Entries", "Expense Allocation", "Payroll Reconciliation"] },
 ];
-
 const industries = [
-  { title: "Contracting", description: "Construction companies, contractors, and engineering firms." },
-  { title: "Real Estate", description: "Property developers, brokers, leasing companies, and facility management." },
-  { title: "Healthcare", description: "Medical centers, clinics, pharmacies, and healthcare providers." },
-  { title: "Restaurants & Cafés", description: "Restaurants, cafés, catering businesses, and food service companies." },
-  { title: "E-commerce", description: "Online retailers, Amazon sellers, Shopify businesses, and digital stores." },
-  { title: "Professional Services", description: "Consultants, law firms, IT companies, architects, and marketing agencies." },
+  { title: "Construction", description: "Payroll management for large workforce operations." },
+  { title: "Retail", description: "Salary processing for retail stores and shopping outlets." },
+  { title: "Hospitality", description: "Payroll solutions for hotels, restaurants, cafés, and tourism businesses." },
+  { title: "Healthcare", description: "Payroll management for clinics, hospitals, and healthcare providers." },
+  { title: "Professional Services", description: "Payroll support for consultants, agencies, legal firms, and IT companies." },
+  { title: "Manufacturing", description: "Payroll solutions for factories, warehouses, and industrial businesses." },
 ];
-
 const comparison = [
-  { area: "Account Management", inHouse: "General Support", accountant: "Dedicated Account Manager" },
-  { area: "Accounting Software", inHouse: "Traditional Systems", accountant: "QuickBooks Cloud Accounting" },
-  { area: "Reporting", inHouse: "Periodic", accountant: "Real-Time Financial Reports" },
-  { area: "Tax Support", inHouse: "Basic", accountant: "VAT & Corporate Tax Specialists" },
-  { area: "Communication", inHouse: "Delayed", accountant: "Fast Response" },
-  { area: "Pricing", inHouse: "Variable", accountant: "Transparent Monthly Packages" },
+  { area: "Monthly Cost", inHouse: "Full-Time Payroll Staff", accountant: "Affordable Monthly Service" },
+  { area: "WPS Knowledge", inHouse: "Internal Training Required", accountant: "Experienced Payroll Specialists" },
+  { area: "Compliance", inHouse: "Higher Risk of Errors", accountant: "UAE Labour Law Compliant" },
+  { area: "Payroll Accuracy", inHouse: "Manual Processing", accountant: "Automated & Verified" },
+  { area: "Confidentiality", inHouse: "Internal Access", accountant: "Secure Payroll Management" },
+  { area: "Scalability", inHouse: "Limited Resources", accountant: "Flexible Payroll Solutions" },
 ];
-
 const process = [
-  { step: "01", title: "Free Consultation", description: "Discuss your business goals and accounting requirements." },
-  { step: "02", title: "Business Assessment", description: "Review your financial records and identify opportunities for improvement." },
-  { step: "03", title: "QuickBooks Setup", description: "Implement or migrate your accounting system into QuickBooks Online." },
-  { step: "04", title: "Bookkeeping", description: "Manage daily accounting transactions and maintain accurate financial records." },
-  { step: "05", title: "Reporting", description: "Receive detailed financial reports every month." },
-  { step: "06", title: "Advisory", description: "Strategic financial advice that supports business growth and profitability." },
+  { step: "01", title: "Free Consultation", description: "Understand your payroll requirements and employee structure." },
+  { step: "02", title: "Employee Data Collection", description: "Review salary structures, allowances, deductions, and employee records." },
+  { step: "03", title: "Payroll Setup", description: "Configure payroll system, WPS requirements, and QuickBooks integration." },
+  { step: "04", title: "Monthly Payroll Processing", description: "Calculate salaries, overtime, leave, bonuses, deductions, and gratuity." },
+  { step: "05", title: "WPS File Preparation", description: "Generate payroll files ready for salary transfer." },
+  { step: "06", title: "Reports & Ongoing Support", description: "Monthly payroll reports and continuous payroll assistance." },
 ];
-
 const localAreas = [
-  { title: "ADGM (Abu Dhabi Global Market)", description: "Professional accounting and tax compliance for financial institutions and businesses." },
-  { title: "Musaffah", description: "Reliable bookkeeping and accounting services for manufacturing, logistics, and industrial businesses." },
-  { title: "Al Reem Island", description: "Accounting support for startups, consultants, and growing businesses." },
+  { title: "Dubai Mainland", description: "Payroll management for SMEs and large enterprises." },
+  { title: "Dubai Free Zones", description: "Payroll solutions for businesses operating in DMCC, DIFC, IFZA, DAFZA, Dubai South, JAFZA, and other free zones." },
+  { title: "Across the UAE", description: "Remote payroll management for businesses across all Emirates." },
 ];
-
 const faqs = [
-  { question: "How much do accounting services cost in Abu Dhabi?", answer: "Pricing depends on your business size, transaction volume, and required services. Nafaz offers flexible monthly accounting packages." },
-  { question: "Is bookkeeping mandatory in Abu Dhabi?", answer: "Yes. Businesses operating in Abu Dhabi are required to maintain proper accounting records under UAE regulations." },
-  { question: "Do you provide Corporate Tax services?", answer: "Yes. We provide registration, tax planning, compliance, advisory, and return filing." },
-  { question: "Can you support businesses located in Free Zones?", answer: "Absolutely. We work with Mainland companies as well as Free Zone businesses across Abu Dhabi." },
-  { question: "What accounting software do you use?", answer: "We specialize in QuickBooks Online and also support businesses using other leading accounting platforms when required." },
-  { question: "Do you offer outsourced accounting?", answer: "Yes. Many businesses outsource their accounting department to Nafaz for professional and cost-effective financial management." },
-  { question: "How do I get started?", answer: "Simply book a free consultation, and our accounting experts will recommend the right solution for your business." },
+  { question: "What is WPS?", answer: "The Wage Protection System (WPS) is an electronic salary transfer system introduced by the UAE Ministry of Human Resources and Emiratisation (MOHRE) to ensure employees are paid accurately and on time." },
+  { question: "Is WPS mandatory in the UAE?", answer: "Yes. Most private sector businesses registered with MOHRE are required to pay employees through the Wage Protection System, subject to applicable regulations." },
+  { question: "Can you calculate gratuity?", answer: "Yes. We calculate end-of-service gratuity, leave salary, final settlements, and employee benefits in accordance with UAE Labour Law." },
+  { question: "Do you prepare WPS salary files?", answer: "Yes. We prepare, verify, and support WPS salary file submissions." },
+  { question: "Can payroll integrate with QuickBooks?", answer: "Absolutely. Nafaz integrates payroll with QuickBooks Online for accurate accounting and financial reporting." },
+  { question: "How much do payroll services cost?", answer: "Pricing depends on the number of employees and payroll complexity. We offer flexible monthly payroll packages for businesses of all sizes." },
+  { question: "How do I get started?", answer: "Book a free consultation, and our payroll specialists will recommend the most suitable payroll solution for your business." },
 ];
-
 const usefulLinks = [
-  { text: "Accounting Services Dubai", href: "/services/premier-accounting-services-in-dubai" },
-  { text: "Professional Bookkeeping Services", href: "/services/bookkeeping-firm-dubai" },
-  { text: "Corporate Tax Services UAE", href: "/services#corporate-tax" },
-  { text: "VAT Registration & Filing", href: "/services#vat" },
-  { text: "Payroll Services", href: "/services/payroll-services-dubai" },
+  { text: "Accounting Services in Dubai", href: "/services/premier-accounting-services-in-dubai" },
+  { text: "Bookkeeping Services", href: "/services/bookkeeping-firm-dubai" },
   { text: "QuickBooks Accounting Services", href: "/services#quickbooks" },
-  { text: "Financial Reporting", href: "/services/financial-statement-services-dubai" },
-  { text: "Audit Support", href: "/services#audit" },
+  { text: "VAT Registration & Filing", href: "/services#vat" },
+  { text: "Corporate Tax Services", href: "/services#corporate-tax" },
+  { text: "Financial Reporting", href: "/services#reporting" },
   { text: "Business Advisory", href: "/services#advisory" },
-  { text: "Business Setup Services", href: "/services#business-setup" },
+  { text: "CFO Services", href: "/services#cfo" },
+  { text: "Audit Support", href: "/services#audit" },
+  { text: "HR & Payroll Compliance", href: "/services#payroll" },
 ];
 
 const Page = () => {
@@ -119,23 +105,23 @@ const Page = () => {
         <div className="container mx-auto max-w-6xl grid md:grid-cols-2 grid-cols-1 gap-10 items-center">
           <div data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
             <span className="inline-block bg-yellow-400 text-midnight_text font-semibold rounded-full px-6 py-2 mb-6">
-              Trusted Accounting Services in Abu Dhabi
+              Professional Payroll (WPS) Services in Dubai
             </span>
             <h1 className="text-white text-4xl md:text-5xl font-bold leading-tight">
-              Accounting Services in Abu Dhabi
+              Payroll (WPS) Services in Dubai
             </h1>
             <p className="text-white/70 text-lg my-7">
-              Keep your business financially organized and fully compliant with expert accounting
-              solutions from Nafaz. We provide professional bookkeeping, VAT, Corporate Tax,
-              payroll, QuickBooks accounting, financial reporting, and business advisory services
-              for startups, SMEs, and established businesses across Abu Dhabi.
+              Simplify payroll management with Nafaz's professional Payroll and Wage Protection System (WPS)
+              services. We accurately process employee salaries, ensure UAE Labour Law compliance, manage WPS
+              submissions, calculate leave salaries and gratuity, and deliver secure payroll solutions for
+              businesses across Dubai.
             </p>
             <div className="flex flex-wrap gap-4 mb-8">
               <Link href="/contact" className="bg-yellow-400 font-semibold text-midnight_text px-8 py-4 rounded-full hover:opacity-90">
                 Book Free Consultation
               </Link>
               <Link href="/contact" className="border border-white/40 text-white font-semibold px-8 py-4 rounded-full hover:bg-white/10">
-                Speak With Our Experts
+                Speak With Our Payroll Expert
               </Link>
             </div>
             <div className="grid grid-cols-2 gap-3">
@@ -165,7 +151,7 @@ const Page = () => {
         </div>
       </section>
 
-      {/* Short answer */}
+      {/* About */}
       <section className="bg-white dark:bg-darkmode py-20 px-4 text-center">
         <div className="container mx-auto max-w-4xl">
           <span
@@ -173,7 +159,7 @@ const Page = () => {
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            ABOUT ACCOUNTING
+            ABOUT PAYROLL
           </span>
           <h2
             className="text-midnight_text dark:text-white text-3xl md:text-4xl font-bold leading-tight mt-6"
@@ -181,7 +167,7 @@ const Page = () => {
             data-aos-delay="200"
             data-aos-duration="1000"
           >
-            What Are Accounting Services in Abu Dhabi?
+            What Are Payroll (WPS) Services?
           </h2>
           <p
             className="text-grey dark:text-white/50 text-lg mt-6"
@@ -189,15 +175,15 @@ const Page = () => {
             data-aos-delay="400"
             data-aos-duration="1000"
           >
-            Professional accounting services help businesses maintain accurate financial records,
-            comply with UAE regulations, manage VAT and Corporate Tax obligations, and make
-            informed financial decisions. At Nafaz, we provide reliable accounting solutions that
-            simplify financial management while supporting long-term business growth in Abu Dhabi.
+            Payroll services involve calculating employee salaries, allowances, overtime, deductions, leave pay,
+            end-of-service benefits, and ensuring salaries are processed through the UAE Wage Protection System
+            (WPS). Professional payroll management reduces errors, ensures legal compliance, and gives employees
+            confidence that they will be paid accurately and on time.
           </p>
         </div>
       </section>
 
-      {/* Why choose us */}
+      {/* Why Nafaz */}
       <section className="bg-section dark:bg-darklight py-20 px-4">
         <div className="container mx-auto max-w-6xl text-center">
           <span
@@ -205,7 +191,7 @@ const Page = () => {
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            WHY CHOOSE US
+            WHY NAFAZ
           </span>
           <h2
             className="text-midnight_text dark:text-white text-3xl md:text-4xl font-bold leading-tight mt-6"
@@ -213,7 +199,7 @@ const Page = () => {
             data-aos-delay="200"
             data-aos-duration="1000"
           >
-            Why Businesses in Abu Dhabi Choose Nafaz
+            Why Businesses Choose Nafaz for Payroll Services
           </h2>
           <p
             className="text-grey dark:text-white/50 text-lg max-w-3xl mx-auto mt-6"
@@ -221,9 +207,8 @@ const Page = () => {
             data-aos-delay="400"
             data-aos-duration="1000"
           >
-            Businesses trust Nafaz because we combine experienced accountants, modern QuickBooks
-            cloud accounting, and proactive compliance support to deliver financial clarity and
-            peace of mind.
+            Managing payroll requires accuracy, confidentiality, and compliance with UAE regulations. Nafaz helps
+            businesses simplify payroll processing while ensuring every salary payment is accurate and compliant.
           </p>
           <div className="grid md:grid-cols-3 grid-cols-1 gap-7 mt-12">
             {whyChooseUs.map((item, index) => (
@@ -262,7 +247,7 @@ const Page = () => {
             data-aos-delay="200"
             data-aos-duration="1000"
           >
-            Comprehensive Accounting Services in Abu Dhabi
+            Payroll (WPS) Services in Dubai
           </h2>
           <p
             className="text-grey dark:text-white/50 text-lg max-w-3xl mx-auto mt-6"
@@ -270,8 +255,8 @@ const Page = () => {
             data-aos-delay="400"
             data-aos-duration="1000"
           >
-            Our accounting solutions are tailored to businesses of every size, helping you stay
-            compliant while improving operational efficiency and financial performance.
+            Comprehensive payroll solutions that simplify employee salary management while ensuring complete
+            compliance.
           </p>
           <div className="grid md:grid-cols-2 grid-cols-1 gap-7 mt-12">
             {services.map((service, index) => (
@@ -312,7 +297,7 @@ const Page = () => {
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            INDUSTRIES
+            INDUSTRIES WE SERVE
           </span>
           <h2
             className="text-midnight_text dark:text-white text-3xl md:text-4xl font-bold leading-tight mt-6"
@@ -320,7 +305,7 @@ const Page = () => {
             data-aos-delay="200"
             data-aos-duration="1000"
           >
-            Industries We Serve in Abu Dhabi
+            Payroll Solutions for Every Industry
           </h2>
           <p
             className="text-grey dark:text-white/50 text-lg max-w-3xl mx-auto mt-6"
@@ -328,8 +313,7 @@ const Page = () => {
             data-aos-delay="400"
             data-aos-duration="1000"
           >
-            We provide specialized accounting services across a wide range of industries, ensuring
-            compliance and financial efficiency for every business.
+            We provide payroll services for businesses across various industries throughout Dubai.
           </p>
           <div className="grid md:grid-cols-3 grid-cols-1 gap-7 mt-12">
             {industries.map((item, index) => (
@@ -357,7 +341,7 @@ const Page = () => {
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            WHY NAFAZ
+            WHY OUTSOURCE
           </span>
           <h2
             className="text-white text-3xl md:text-4xl font-bold leading-tight mt-6"
@@ -365,7 +349,7 @@ const Page = () => {
             data-aos-delay="200"
             data-aos-duration="1000"
           >
-            Why Choose Nafaz for Accounting Services?
+            Why Outsource Payroll?
           </h2>
           <div
             className="bg-white/5 rounded-md mt-12 text-left overflow-x-auto"
@@ -375,7 +359,7 @@ const Page = () => {
           >
             <div className="grid grid-cols-3 gap-4 px-8 py-6 font-bold text-white border-b border-white/10 min-w-[600px]">
               <span>Feature</span>
-              <span>Traditional Firms</span>
+              <span>In-House Payroll</span>
               <span>Nafaz</span>
             </div>
             {comparison.map((row, index) => (
@@ -405,16 +389,8 @@ const Page = () => {
             data-aos-delay="200"
             data-aos-duration="1000"
           >
-            Our Accounting Process
+            Our Payroll Process
           </h2>
-          <p
-            className="text-grey dark:text-white/50 text-lg max-w-3xl mx-auto mt-6"
-            data-aos="fade-up"
-            data-aos-delay="400"
-            data-aos-duration="1000"
-          >
-            A simple process designed for accuracy, compliance and clear reporting.
-          </p>
           <div className="grid md:grid-cols-3 grid-cols-1 gap-7 mt-12">
             {process.map((item, index) => (
               <div
@@ -436,7 +412,7 @@ const Page = () => {
         </div>
       </section>
 
-      {/* Local SEO */}
+      {/* Service areas */}
       <section className="bg-section dark:bg-darklight py-20 px-4 text-center">
         <div className="container mx-auto max-w-6xl">
           <span
@@ -452,7 +428,7 @@ const Page = () => {
             data-aos-delay="200"
             data-aos-duration="1000"
           >
-            Accounting Support Across Abu Dhabi
+            Payroll Services Across Dubai
           </h2>
           <p
             className="text-grey dark:text-white/50 text-lg max-w-3xl mx-auto mt-6"
@@ -460,8 +436,7 @@ const Page = () => {
             data-aos-delay="400"
             data-aos-duration="1000"
           >
-            Nafaz proudly provides accounting services throughout Abu Dhabi, supporting businesses
-            across Mainland, Free Zones, and industrial areas.
+            Nafaz supports businesses throughout Dubai with reliable payroll and WPS services.
           </p>
           <div className="grid md:grid-cols-3 grid-cols-1 gap-7 mt-12">
             {localAreas.map((item, index) => (
@@ -484,16 +459,12 @@ const Page = () => {
       {/* FAQ */}
       <section className="bg-white dark:bg-darkmode py-20 px-4">
         <div className="container mx-auto max-w-4xl">
-          <div
-            className="text-center mb-12"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
+          <div className="text-center mb-12" data-aos="fade-up" data-aos-duration="1000">
             <span className="bg-section dark:bg-darklight text-primary font-semibold rounded-full px-6 py-2">
               FAQ
             </span>
             <h2 className="text-midnight_text dark:text-white text-3xl md:text-4xl font-bold leading-tight mt-6">
-              Accounting Services in Abu Dhabi FAQs
+              Payroll (WPS) Services FAQs
             </h2>
           </div>
           <FAQAccordion items={faqs} />
@@ -508,7 +479,7 @@ const Page = () => {
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            Looking for Reliable Accounting Services in Abu Dhabi?
+            Payroll Made Simple. Compliance Made Easy.
           </h2>
           <p
             className="text-white/70 text-lg max-w-2xl mx-auto mt-6"
@@ -516,9 +487,8 @@ const Page = () => {
             data-aos-delay="200"
             data-aos-duration="1000"
           >
-            Partner with Nafaz for professional accounting, bookkeeping, QuickBooks accounting,
-            VAT, and Corporate Tax services that keep your business compliant while supporting
-            sustainable growth.
+            Let Nafaz handle your payroll, WPS processing, and employee salary calculations while you focus on
+            growing your business with confidence.
           </p>
           <div
             className="flex flex-wrap gap-4 justify-center mt-8"
@@ -527,7 +497,7 @@ const Page = () => {
             data-aos-duration="1000"
           >
             <Link href="/contact" className="bg-yellow-400 font-semibold text-midnight_text px-8 py-4 rounded-full hover:opacity-90">
-              Book Your Free Consultation
+              Book Your Free Consultation Today
             </Link>
             <Link href="/contact" className="border border-white/40 text-white font-semibold px-8 py-4 rounded-full hover:bg-white/10">
               WhatsApp Us
@@ -552,7 +522,7 @@ const Page = () => {
             data-aos-delay="200"
             data-aos-duration="1000"
           >
-            Related Accounting & Tax Services
+            Related Services
           </h2>
           <div className="flex flex-wrap gap-4 justify-center">
             {usefulLinks.map((link, index) => (
@@ -576,7 +546,7 @@ const Page = () => {
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            Ready to Get Compliant?
+            Accurate Payroll. Happy Employees.
           </h2>
           <p
             className="text-white/80 text-lg mt-6"
@@ -584,13 +554,11 @@ const Page = () => {
             data-aos-delay="200"
             data-aos-duration="1000"
           >
-            Focus on growing your business while Nafaz manages your accounting, taxes, and compliance.
+            Partner with Nafaz for reliable payroll and WPS services that ensure timely salary processing and
+            full UAE compliance.
           </p>
           <div className="mt-8" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-            <Link
-              href="/contact"
-              className="inline-block bg-yellow-400 font-semibold text-midnight_text px-8 py-4 rounded-full hover:opacity-90"
-            >
+            <Link href="/contact" className="inline-block bg-yellow-400 font-semibold text-midnight_text px-8 py-4 rounded-full hover:opacity-90">
               Book Your Free Consultation
             </Link>
           </div>
