@@ -1,6 +1,7 @@
 import React, { FC } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { Icon } from '@iconify/react/dist/iconify.js'
 
 const Footer: FC = () => {
   return (
@@ -9,14 +10,14 @@ const Footer: FC = () => {
         <div className='grid md:grid-cols-12 grid-cols-1 sm:grid-cols-12'>
           <div className='md:col-span-4 sm:col-span-6 col-span-12 sm:border-r border-b border-solid border-dark_border flex items-center sm:border-b-0 sm:min-h-25 py-10 shrink-0 '>
             <div className='sm:content-normal sm:text-start text-center content-center sm:w-auto w-full'>
-              <Link href='/' className='md:block flex justify-center'>
+              <Link href='/' className='md:inline-flex flex justify-center items-center bg-white rounded-lg p-2 w-fit'>
                 <Image
-                  src='/images/logo/logo-white.svg'
-                  alt='logo'
-                  width={160}
-                  height={50}
-                  style={{ width: 'auto', height: 'auto' }}
+                  src='/images/logo/nafaz-logo-cropped.png'
+                  alt='Nafaz Logo'
+                  width={130}
+                  height={123}
                   quality={100}
+                  className='h-16 w-auto'
                   unoptimized
                 />
               </Link>
@@ -24,9 +25,12 @@ const Footer: FC = () => {
                 Ready to get compliant?
               </h2>
               <Link
-                href='/contact'
-                className='px-9 py-3 rounded-lg bg-primary text-white hover:bg-blue-700 hover:shadow-none'>
-                Book a Free Consultation
+                href='https://wa.me/9714XXXXXXX'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='inline-flex items-center gap-2 px-9 py-3 rounded-lg bg-[#25D366] text-white hover:bg-[#1ebe57] hover:shadow-none animate-wobble-left'>
+                <Icon icon='ic:baseline-whatsapp' className='text-xl' />
+                WhatsApp Us
               </Link>
             </div>
           </div>

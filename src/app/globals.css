@@ -57,6 +57,30 @@
     from 180deg at 50% 50%,
     var(--tw-gradient-stops)
   );
+
+  --animate-wobble-left: wobble-left 1.8s ease-in-out infinite;
+}
+
+@keyframes wobble-left {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  15% {
+    transform: translateX(-6px);
+  }
+  30% {
+    transform: translateX(4px);
+  }
+  45% {
+    transform: translateX(-3px);
+  }
+  60% {
+    transform: translateX(2px);
+  }
+  75% {
+    transform: translateX(-1px);
+  }
 }
 
 /*

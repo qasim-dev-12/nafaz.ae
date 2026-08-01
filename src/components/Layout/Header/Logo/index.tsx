@@ -4,24 +4,14 @@ import Link from 'next/link';
 const Logo: React.FC = () => {
 
   return (
-    <Link href="/">
+    <Link href="/" className="flex items-center">
       <Image
-        src="/images/logo/logo.svg"
-        alt="logo"
-        width={160}
-        height={50}
-        style={{ width: 'auto', height: 'auto' }}
+        src="/images/logo/nafaz-logo-cropped.png"
+        alt="Nafaz Logo"
+        width={130}
+        height={123}
         quality={100}
-        className='dark:hidden'
-      />
-      <Image
-        src="/images/logo/logo-white.svg"
-        alt="logo"
-        width={160}
-        height={50}
-        style={{ width: 'auto', height: 'auto' }}
-        quality={100}
-        className='dark:block hidden'
+        className="h-14 w-auto"
       />
     </Link>
   );

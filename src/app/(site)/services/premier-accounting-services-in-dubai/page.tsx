@@ -1,5 +1,7 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
+import { Icon } from "@iconify/react/dist/iconify.js";
 import { Metadata } from "next";
 import FAQAccordion from "@/components/SharedComponent/FAQAccordion";
 
@@ -23,11 +25,18 @@ export const metadata: Metadata = {
   ],
 };
 
-const trustTicker = [
+const heroChecklist = [
   "Corporate Tax Support",
   "Fixed Monthly Packages",
   "QuickBooks Experts",
   "FTA Registered Tax Agents",
+];
+
+const heroStats = [
+  { label: "500+", description: "Businesses Supported" },
+  { label: "99%", description: "Client Satisfaction" },
+  { label: "QuickBooks", description: "Certified Experts" },
+  { label: "24 Hours", description: "Quick Response Time" },
 ];
 
 const whyChooseUs = [
@@ -189,62 +198,60 @@ const Page = () => {
   return (
     <>
       {/* Hero */}
-      <section className="bg-midnight_text dark:bg-darkmode text-center md:py-28 py-20 md:pt-44 pt-36 px-4">
-        <h1
-          className="text-white md:text-[52px] text-4xl font-bold leading-tight max-w-4xl mx-auto"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          Premier Accounting Services in Dubai
-        </h1>
-        <p
-          className="text-white/70 md:text-xl text-lg max-w-2xl mx-auto my-7"
-          data-aos="fade-up"
-          data-aos-delay="200"
-          data-aos-duration="1000"
-        >
-          Focus on growing your business while Nafaz takes care of your finances. We provide professional accounting, bookkeeping, VAT, corporate tax, payroll, financial reporting, and QuickBooks-powered cloud accounting solutions tailored to startups, SMEs, and established businesses across Dubai.
-        </p>
-        <div
-          className="flex flex-wrap gap-4 justify-center"
-          data-aos="fade-up"
-          data-aos-delay="400"
-          data-aos-duration="1000"
-        >
-          <Link
-            href="/contact"
-            className="bg-yellow-400 font-semibold text-midnight_text px-8 py-4 rounded-full hover:opacity-90"
-          >
-            Book Free Consultation
-          </Link>
-          <Link
-            href="/contact"
-            className="border border-white/40 text-white font-semibold px-8 py-4 rounded-full hover:bg-white/10"
-          >
-            Speak With an Accountant
-          </Link>
-        </div>
-        <div
-          className="max-w-2xl mx-auto mt-12 aspect-video rounded-md border-2 border-dashed border-white/20 flex items-center justify-center text-white/30 text-sm"
-          data-aos="fade-up"
-          data-aos-delay="600"
-          data-aos-duration="1000"
-        >
-          Image placeholder
-        </div>
-      </section>
-
-      {/* Trust ticker */}
-      <section className="bg-midnight_text dark:bg-darkmode py-6 overflow-hidden">
-        <div className="flex flex-wrap gap-4 justify-center">
-          {trustTicker.map((item, index) => (
-            <span
-              key={index}
-              className="bg-white text-midnight_text font-semibold rounded-full px-6 py-3 whitespace-nowrap"
-            >
-              ✓ {item}
+      <section className="bg-midnight_text dark:bg-darkmode py-20 md:pt-44 pt-36 px-4">
+        <div className="container mx-auto max-w-6xl grid md:grid-cols-2 grid-cols-1 gap-10 items-center">
+          <div data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
+            <span className="inline-block bg-yellow-400 text-midnight_text font-semibold rounded-full px-6 py-2 mb-6">
+              Premier Accounting Partner in Dubai
             </span>
-          ))}
+            <h1 className="text-white text-4xl md:text-5xl font-bold leading-tight">
+              Premier Accounting Services in Dubai
+            </h1>
+            <p className="text-white/70 text-lg my-7">
+              Focus on growing your business while Nafaz takes care of your finances. We provide
+              professional accounting, bookkeeping, VAT, corporate tax, payroll, financial
+              reporting, and QuickBooks-powered cloud accounting solutions tailored to startups,
+              SMEs, and established businesses across Dubai.
+            </p>
+            <div className="grid grid-cols-2 gap-3">
+              {heroChecklist.map((item, index) => (
+                <span key={index} className="bg-white/10 text-white text-sm font-medium rounded-full px-4 py-3">
+                  ✓ {item}
+                </span>
+              ))}
+            </div>
+          </div>
+          <div
+            className="grid grid-cols-2 gap-4"
+            data-aos="fade-left"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+          >
+            {heroStats.map((stat, index) => (
+              <div key={index} className="bg-white rounded-md p-6 text-center shadow-service">
+                <h3 className="text-2xl font-bold text-midnight_text">{stat.label}</h3>
+                <p className="text-grey text-sm mt-2">{stat.description}</p>
+              </div>
+            ))}
+            <div className="col-span-2 aspect-video rounded-md overflow-hidden relative">
+              <Image
+                src="/images/services-images/01-Premier Accounting Services in Dubai.png"
+                alt="Premier Accounting Services in Dubai"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+          <div className="col-span-full flex flex-wrap gap-4 justify-center mt-4">
+            <Link href="https://wa.me/9714XXXXXXX" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 bg-[#25D366] text-white font-semibold px-8 py-4 rounded-lg hover:bg-[#1ebe57] animate-wobble-left">
+              <Icon icon="ic:baseline-whatsapp" className="text-xl" />
+              WhatsApp Us
+            </Link>
+            <Link href="tel:+9714XXXXXXX" className="flex items-center justify-center gap-2 bg-primary text-white font-semibold px-8 py-4 rounded-lg hover:bg-blue-700 animate-wobble-left">
+              <Icon icon="ic:baseline-call" className="text-xl" />
+              Call Us
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -375,6 +382,7 @@ const Page = () => {
         </div>
       </section>
 
+
       {/* Services */}
       <section className="bg-white dark:bg-darkmode py-20 px-4">
         <div className="container mx-auto max-w-6xl text-center">
@@ -428,10 +436,33 @@ const Page = () => {
               </div>
             ))}
           </div>
+                  <div
+            className="flex flex-wrap gap-4 justify-center mt-8"
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-duration="1000"
+          >
+            <Link
+              href="https://wa.me/9714XXXXXXX"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 bg-[#25D366] text-white font-semibold px-8 py-4 rounded-lg hover:bg-[#1ebe57] animate-wobble-left"
+            >
+              <Icon icon="ic:baseline-whatsapp" className="text-xl" />
+              WhatsApp Us
+            </Link>
+            <Link
+              href="tel:+9714XXXXXXX"
+              className="flex items-center justify-center gap-2 bg-primary text-white font-semibold px-8 py-4 rounded-lg hover:bg-blue-700 animate-wobble-left"
+            >
+              <Icon icon="ic:baseline-call" className="text-xl" />
+              Call Us
+            </Link>
+          </div>
         </div>
       </section>
 
-      {/* Comparison */}
+            {/* Comparison */}
       <section className="bg-midnight_text dark:bg-darkmode py-20 px-4">
         <div className="container mx-auto max-w-6xl text-center">
           <h2
@@ -481,6 +512,7 @@ const Page = () => {
         </div>
       </section>
 
+
       {/* Journey */}
       <section className="bg-section dark:bg-darklight py-20 px-4">
         <div className="container mx-auto max-w-6xl text-center">
@@ -522,6 +554,7 @@ const Page = () => {
           </div>
         </div>
       </section>
+
 
       {/* Trust wall */}
       <section className="bg-white dark:bg-darkmode py-20 px-4">
@@ -636,6 +669,7 @@ const Page = () => {
         </div>
       </section>
 
+
       {/* CTA */}
       <section className="bg-midnight_text dark:bg-darkmode py-20 px-4 text-center">
         <div className="container mx-auto max-w-4xl">
@@ -663,16 +697,20 @@ const Page = () => {
             data-aos-duration="1000"
           >
             <Link
-              href="/contact"
-              className="bg-yellow-400 font-semibold text-midnight_text px-8 py-4 rounded-full hover:opacity-90"
+              href="https://wa.me/9714XXXXXXX"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 bg-[#25D366] text-white font-semibold px-8 py-4 rounded-lg hover:bg-[#1ebe57] animate-wobble-left"
             >
-              Book Your Free Consultation
+              <Icon icon="ic:baseline-whatsapp" className="text-xl" />
+              WhatsApp Us
             </Link>
             <Link
-              href="/contact"
-              className="border border-white/40 text-white font-semibold px-8 py-4 rounded-full hover:bg-white/10"
+              href="tel:+9714XXXXXXX"
+              className="flex items-center justify-center gap-2 bg-primary text-white font-semibold px-8 py-4 rounded-lg hover:bg-blue-700 animate-wobble-left"
             >
-              WhatsApp Us
+              <Icon icon="ic:baseline-call" className="text-xl" />
+              Call Us
             </Link>
           </div>
         </div>

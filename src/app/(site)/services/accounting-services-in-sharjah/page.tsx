@@ -1,5 +1,7 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
+import { Icon } from "@iconify/react/dist/iconify.js";
 import { Metadata } from "next";
 import FAQAccordion from "@/components/SharedComponent/FAQAccordion";
 
@@ -105,10 +107,6 @@ const Page = () => {
             <span className="inline-block bg-yellow-400 text-midnight_text font-semibold rounded-full px-6 py-2 mb-6">Professional Accounting Services in Sharjah</span>
             <h1 className="text-white text-4xl md:text-5xl font-bold leading-tight">Accounting Services in Sharjah</h1>
             <p className="text-white/70 text-lg my-7">Simplify your business finances with professional accounting services from Nafaz. We provide expert bookkeeping, QuickBooks accounting, VAT, Corporate Tax, payroll, financial reporting, and business advisory services for startups, SMEs, and established businesses throughout Sharjah.</p>
-            <div className="flex flex-wrap gap-4 mb-8">
-              <Link href="/contact" className="bg-yellow-400 font-semibold text-midnight_text px-8 py-4 rounded-full hover:opacity-90">Book Free Consultation</Link>
-              <Link href="/contact" className="border border-white/40 text-white font-semibold px-8 py-4 rounded-full hover:bg-white/10">Speak With Our Accountant</Link>
-            </div>
             <div className="grid grid-cols-2 gap-3">
               {heroChecklist.map((item, index) => (
                 <span key={index} className="bg-white/10 text-white text-sm font-medium rounded-full px-4 py-3">✓ {item}</span>
@@ -122,7 +120,18 @@ const Page = () => {
                 <p className="text-grey text-sm mt-2">{stat.description}</p>
               </div>
             ))}
-            <div className="col-span-2 aspect-video rounded-md border-2 border-dashed border-grey/30 flex items-center justify-center text-grey/50 text-sm">Image placeholder</div>
+            <div className="col-span-2 aspect-video rounded-md overflow-hidden relative">
+              <Image
+                src="/images/services-images/03-Accounting Services in Sharjah.png"
+                alt="Accounting Services in Sharjah"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+          <div className="col-span-full flex flex-wrap gap-4 justify-center mt-4">
+            <Link href="https://wa.me/9714XXXXXXX" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 bg-[#25D366] text-white font-semibold px-8 py-4 rounded-lg hover:bg-[#1ebe57] animate-wobble-left"><Icon icon="ic:baseline-whatsapp" className="text-xl" />WhatsApp Us</Link>
+              <Link href="tel:+9714XXXXXXX" className="flex items-center justify-center gap-2 bg-primary text-white font-semibold px-8 py-4 rounded-lg hover:bg-blue-700 animate-wobble-left"><Icon icon="ic:baseline-call" className="text-xl" />Call Us</Link>
           </div>
         </div>
       </section>
@@ -152,6 +161,7 @@ const Page = () => {
         </div>
       </section>
 
+
       <section className="bg-white dark:bg-darkmode py-20 px-4">
         <div className="container mx-auto max-w-6xl text-center">
           <span className="bg-section dark:bg-darklight text-primary font-semibold rounded-full px-6 py-2" data-aos="fade-up" data-aos-duration="1000">OUR SERVICES</span>
@@ -171,10 +181,14 @@ const Page = () => {
               </div>
             ))}
           </div>
+          <div className="flex flex-wrap gap-4 justify-center mt-8" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+            <Link href="https://wa.me/9714XXXXXXX" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 bg-[#25D366] text-white font-semibold px-8 py-4 rounded-lg hover:bg-[#1ebe57] animate-wobble-left"><Icon icon="ic:baseline-whatsapp" className="text-xl" />WhatsApp Us</Link>
+            <Link href="tel:+9714XXXXXXX" className="flex items-center justify-center gap-2 bg-primary text-white font-semibold px-8 py-4 rounded-lg hover:bg-blue-700 animate-wobble-left"><Icon icon="ic:baseline-call" className="text-xl" />Call Us</Link>
+          </div>
         </div>
       </section>
 
-      <section className="bg-section dark:bg-darklight py-20 px-4 text-center">
+            <section className="bg-section dark:bg-darklight py-20 px-4 text-center">
         <div className="container mx-auto max-w-6xl">
           <span className="bg-white dark:bg-darkmode text-primary font-semibold rounded-full px-6 py-2" data-aos="fade-up" data-aos-duration="1000">INDUSTRIES WE SERVE</span>
           <h2 className="text-midnight_text dark:text-white text-3xl md:text-4xl font-bold leading-tight mt-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Industries We Support in Sharjah</h2>
@@ -189,6 +203,7 @@ const Page = () => {
           </div>
         </div>
       </section>
+
 
       <section className="bg-midnight_text dark:bg-darkmode py-20 px-4">
         <div className="container mx-auto max-w-6xl text-center">
@@ -209,6 +224,7 @@ const Page = () => {
         </div>
       </section>
 
+
       <section className="bg-white dark:bg-darkmode py-20 px-4">
         <div className="container mx-auto max-w-6xl text-center">
           <span className="bg-section dark:bg-darklight text-primary font-semibold rounded-full px-6 py-2" data-aos="fade-up" data-aos-duration="1000">OUR PROCESS</span>
@@ -225,6 +241,7 @@ const Page = () => {
           </div>
         </div>
       </section>
+
 
       <section className="bg-section dark:bg-darklight py-20 px-4 text-center">
         <div className="container mx-auto max-w-6xl">
@@ -252,18 +269,8 @@ const Page = () => {
         </div>
       </section>
 
-      <section className="bg-midnight_text dark:bg-darkmode py-20 px-4 text-center">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="text-white text-3xl md:text-4xl font-bold leading-tight" data-aos="fade-up" data-aos-duration="1000">Looking for Reliable Accounting Services in Sharjah?</h2>
-          <p className="text-white/70 text-lg max-w-2xl mx-auto mt-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Whether you're a startup, SME, manufacturer, retailer, or free zone company, Nafaz provides reliable accounting solutions that help your business remain compliant and financially organized.</p>
-          <div className="flex flex-wrap gap-4 justify-center mt-8" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-            <Link href="/contact" className="bg-yellow-400 font-semibold text-midnight_text px-8 py-4 rounded-full hover:opacity-90">Book Your Free Consultation</Link>
-            <Link href="/contact" className="border border-white/40 text-white font-semibold px-8 py-4 rounded-full hover:bg-white/10">WhatsApp Us</Link>
-          </div>
-        </div>
-      </section>
 
-      <section className="bg-section dark:bg-darklight py-20 px-4 text-center">
+            <section className="bg-section dark:bg-darklight py-20 px-4 text-center">
         <div className="container mx-auto max-w-6xl">
           <span className="bg-white dark:bg-darkmode text-primary font-semibold rounded-full px-6 py-2" data-aos="fade-up" data-aos-duration="1000">USEFUL LINKS</span>
           <h2 className="text-midnight_text dark:text-white text-3xl md:text-4xl font-bold leading-tight mt-6 mb-12" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Related Accounting & Tax Services</h2>
@@ -279,8 +286,9 @@ const Page = () => {
         <div className="container mx-auto max-w-3xl">
           <h2 className="text-white text-3xl md:text-4xl font-bold leading-tight" data-aos="fade-up" data-aos-duration="1000">Ready to Get Compliant?</h2>
           <p className="text-white/80 text-lg mt-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Let Nafaz manage your accounting while you focus on growing your business with confidence.</p>
-          <div className="mt-8" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-            <Link href="/contact" className="inline-block bg-yellow-400 font-semibold text-midnight_text px-8 py-4 rounded-full hover:opacity-90">Book Your Free Consultation</Link>
+          <div className="flex flex-wrap gap-4 justify-center mt-8" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+            <Link href="https://wa.me/9714XXXXXXX" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 bg-[#25D366] text-white font-semibold px-8 py-4 rounded-lg hover:bg-[#1ebe57] animate-wobble-left"><Icon icon="ic:baseline-whatsapp" className="text-xl" />WhatsApp Us</Link>
+            <Link href="tel:+9714XXXXXXX" className="flex items-center justify-center gap-2 bg-primary text-white font-semibold px-8 py-4 rounded-lg hover:bg-blue-700 animate-wobble-left"><Icon icon="ic:baseline-call" className="text-xl" />Call Us</Link>
           </div>
         </div>
       </section>

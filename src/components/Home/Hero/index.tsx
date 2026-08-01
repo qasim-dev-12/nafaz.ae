@@ -1,6 +1,7 @@
 'use client'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Icon } from '@iconify/react/dist/iconify.js'
 
 const Hero = () => {
   return (
@@ -39,9 +40,12 @@ const Hero = () => {
           </ul>
           <div className='flex items-center gap-4 flex-wrap'>
             <a
-              href='#contact'
-              className='py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-300 px-8'>
-              Book a Free Consultation
+              href='https://wa.me/9714XXXXXXX'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='flex items-center gap-2 py-3 bg-[#25D366] text-white rounded-md hover:bg-[#1ebe57] transition duration-300 px-8'>
+              <Icon icon='ic:baseline-whatsapp' className='text-xl' />
+              WhatsApp Us
             </a>
             <a
               href='#services'
@@ -90,11 +94,12 @@ const Hero = () => {
 
         <div className="md:col-span-6 col-span-12 relative before:absolute before:content-[''] before:bg-[url('/images/hero/line-leyar.svg')] before:bg-no-repeat before:left-1/2 before:top-0 before:h-24 before:w-52 before:-z-10 before:translate-x-70% before:-translate-y-40% lg:before:inline-block before:hidden after:absolute after:content-[''] after:bg-[url('/images/hero/round-leyar.svg')] after:bg-no-repeat xl:after:inline-block after:hidden after:left-0 after:bottom-0 after:h-6.25 after:w-6.25 after:-z-10 after:-translate-x-1/2 after:translate-y-1/2">
           <Image
-            src='/images/hero/hero-image.png'
-            alt='hero-image'
+            src='/images/hero/nafaz-homepage-banner.jpg'
+            alt='Nafaz accounting and tax consultants in Dubai'
             width={350}
             height={150}
             quality={100}
+            className='rounded-xl'
             style={{ width: '100%', height: 'auto' }}
           />
           <div

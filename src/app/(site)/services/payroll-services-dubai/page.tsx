@@ -1,5 +1,7 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
+import { Icon } from "@iconify/react/dist/iconify.js";
 import { Metadata } from "next";
 import FAQAccordion from "@/components/SharedComponent/FAQAccordion";
 
@@ -116,14 +118,6 @@ const Page = () => {
               submissions, calculate leave salaries and gratuity, and deliver secure payroll solutions for
               businesses across Dubai.
             </p>
-            <div className="flex flex-wrap gap-4 mb-8">
-              <Link href="/contact" className="bg-yellow-400 font-semibold text-midnight_text px-8 py-4 rounded-full hover:opacity-90">
-                Book Free Consultation
-              </Link>
-              <Link href="/contact" className="border border-white/40 text-white font-semibold px-8 py-4 rounded-full hover:bg-white/10">
-                Speak With Our Payroll Expert
-              </Link>
-            </div>
             <div className="grid grid-cols-2 gap-3">
               {heroChecklist.map((item, index) => (
                 <span key={index} className="bg-white/10 text-white text-sm font-medium rounded-full px-4 py-3">
@@ -144,9 +138,24 @@ const Page = () => {
                 <p className="text-grey text-sm mt-2">{stat.description}</p>
               </div>
             ))}
-            <div className="col-span-2 aspect-video rounded-md border-2 border-dashed border-grey/30 flex items-center justify-center text-grey/50 text-sm">
-              Image placeholder
+            <div className="col-span-2 aspect-video rounded-md overflow-hidden relative">
+              <Image
+                src="/images/services-images/08-Payroll (WPS) Services in Dubai.png"
+                alt="Payroll (WPS) Services in Dubai"
+                fill
+                className="object-cover"
+              />
             </div>
+          </div>
+          <div className="col-span-full flex flex-wrap gap-4 justify-center mt-4">
+            <Link href="https://wa.me/9714XXXXXXX" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 bg-[#25D366] text-white font-semibold px-8 py-4 rounded-lg hover:bg-[#1ebe57] animate-wobble-left">
+                <Icon icon="ic:baseline-whatsapp" className="text-xl" />
+                WhatsApp Us
+              </Link>
+              <Link href="tel:+9714XXXXXXX" className="flex items-center justify-center gap-2 bg-primary text-white font-semibold px-8 py-4 rounded-lg hover:bg-blue-700 animate-wobble-left">
+                <Icon icon="ic:baseline-call" className="text-xl" />
+                Call Us
+              </Link>
           </div>
         </div>
       </section>
@@ -231,6 +240,7 @@ const Page = () => {
         </div>
       </section>
 
+
       {/* Services */}
       <section className="bg-white dark:bg-darkmode py-20 px-4">
         <div className="container mx-auto max-w-6xl text-center">
@@ -286,10 +296,25 @@ const Page = () => {
               </div>
             ))}
           </div>
+                  <div
+            className="flex flex-wrap gap-4 justify-center mt-8"
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-duration="1000"
+          >
+            <Link href="https://wa.me/9714XXXXXXX" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 bg-[#25D366] text-white font-semibold px-8 py-4 rounded-lg hover:bg-[#1ebe57] animate-wobble-left">
+              <Icon icon="ic:baseline-whatsapp" className="text-xl" />
+              WhatsApp Us
+            </Link>
+            <Link href="tel:+9714XXXXXXX" className="flex items-center justify-center gap-2 bg-primary text-white font-semibold px-8 py-4 rounded-lg hover:bg-blue-700 animate-wobble-left">
+              <Icon icon="ic:baseline-call" className="text-xl" />
+              Call Us
+            </Link>
+          </div>
         </div>
       </section>
 
-      {/* Industries */}
+            {/* Industries */}
       <section className="bg-section dark:bg-darklight py-20 px-4">
         <div className="container mx-auto max-w-6xl text-center">
           <span
@@ -333,6 +358,7 @@ const Page = () => {
         </div>
       </section>
 
+
       {/* Comparison */}
       <section className="bg-midnight_text dark:bg-darkmode py-20 px-4">
         <div className="container mx-auto max-w-6xl text-center">
@@ -373,6 +399,7 @@ const Page = () => {
         </div>
       </section>
 
+
       {/* Process */}
       <section className="bg-white dark:bg-darkmode py-20 px-4">
         <div className="container mx-auto max-w-6xl text-center">
@@ -411,6 +438,7 @@ const Page = () => {
           </div>
         </div>
       </section>
+
 
       {/* Service areas */}
       <section className="bg-section dark:bg-darklight py-20 px-4 text-center">
@@ -471,42 +499,9 @@ const Page = () => {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="bg-midnight_text dark:bg-darkmode py-20 px-4 text-center">
-        <div className="container mx-auto max-w-4xl">
-          <h2
-            className="text-white text-3xl md:text-4xl font-bold leading-tight"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
-            Payroll Made Simple. Compliance Made Easy.
-          </h2>
-          <p
-            className="text-white/70 text-lg max-w-2xl mx-auto mt-6"
-            data-aos="fade-up"
-            data-aos-delay="200"
-            data-aos-duration="1000"
-          >
-            Let Nafaz handle your payroll, WPS processing, and employee salary calculations while you focus on
-            growing your business with confidence.
-          </p>
-          <div
-            className="flex flex-wrap gap-4 justify-center mt-8"
-            data-aos="fade-up"
-            data-aos-delay="400"
-            data-aos-duration="1000"
-          >
-            <Link href="/contact" className="bg-yellow-400 font-semibold text-midnight_text px-8 py-4 rounded-full hover:opacity-90">
-              Book Your Free Consultation Today
-            </Link>
-            <Link href="/contact" className="border border-white/40 text-white font-semibold px-8 py-4 rounded-full hover:bg-white/10">
-              WhatsApp Us
-            </Link>
-          </div>
-        </div>
-      </section>
 
-      {/* Useful links */}
+      {/* CTA */}
+            {/* Useful links */}
       <section className="bg-section dark:bg-darklight py-20 px-4 text-center">
         <div className="container mx-auto max-w-6xl">
           <span
@@ -557,9 +552,14 @@ const Page = () => {
             Partner with Nafaz for reliable payroll and WPS services that ensure timely salary processing and
             full UAE compliance.
           </p>
-          <div className="mt-8" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-            <Link href="/contact" className="inline-block bg-yellow-400 font-semibold text-midnight_text px-8 py-4 rounded-full hover:opacity-90">
-              Book Your Free Consultation
+          <div className="flex flex-wrap gap-4 justify-center mt-8" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+            <Link href="https://wa.me/9714XXXXXXX" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 bg-[#25D366] text-white font-semibold px-8 py-4 rounded-lg hover:bg-[#1ebe57] animate-wobble-left">
+              <Icon icon="ic:baseline-whatsapp" className="text-xl" />
+              WhatsApp Us
+            </Link>
+            <Link href="tel:+9714XXXXXXX" className="flex items-center justify-center gap-2 bg-primary text-white font-semibold px-8 py-4 rounded-lg hover:bg-blue-700 animate-wobble-left">
+              <Icon icon="ic:baseline-call" className="text-xl" />
+              Call Us
             </Link>
           </div>
         </div>

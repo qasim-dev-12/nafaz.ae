@@ -1,5 +1,7 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
+import { Icon } from "@iconify/react/dist/iconify.js";
 import { Metadata } from "next";
 import FAQAccordion from "@/components/SharedComponent/FAQAccordion";
 
@@ -151,51 +153,77 @@ const Page = () => {
   return (
     <>
       {/* Hero */}
-      <section className="bg-midnight_text dark:bg-darkmode py-20 md:pt-44 pt-36 px-4">
-        <div className="container mx-auto max-w-6xl grid md:grid-cols-2 grid-cols-1 gap-10 items-center">
-          <div data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
-            <span className="inline-block bg-yellow-400 text-midnight_text font-semibold rounded-full px-6 py-2 mb-6">
-              TRANSFER PRICING • UAE CORPORATE TAX • OECD COMPLIANCE
-            </span>
-            <h1 className="text-white text-4xl md:text-5xl font-bold leading-tight">
-              Transfer Pricing Services in Dubai
-            </h1>
-            <p className="text-white/70 text-lg my-7">
-              Ensure your related-party transactions comply with UAE Corporate Tax regulations through
-              professional Transfer Pricing advisory, documentation, benchmarking studies, and compliance
-              support. Nafaz helps businesses meet Federal Tax Authority (FTA) requirements while reducing
-              transfer pricing risks.
-            </p>
-            <div className="flex flex-wrap gap-4 mb-8">
-              <Link href="/contact" className="bg-yellow-400 font-semibold text-midnight_text px-8 py-4 rounded-full hover:opacity-90">
-                Book Free Transfer Pricing Consultation
-              </Link>
-              <Link href="/contact" className="border border-white/40 text-white font-semibold px-8 py-4 rounded-full hover:bg-white/10">
-                Speak With Our Tax Specialists
-              </Link>
+      <section className="bg-midnight_text dark:bg-darkmode py-20 md:pt-44 pt-36 px-4 text-center overflow-hidden">
+        <div className="container mx-auto max-w-4xl" data-aos="zoom-in" data-aos-duration="1000">
+          <span className="inline-block bg-yellow-400 text-midnight_text font-semibold rounded-full px-6 py-2 mb-6">
+            TRANSFER PRICING • UAE CORPORATE TAX • OECD COMPLIANCE
+          </span>
+          <h1 className="text-white text-4xl md:text-5xl font-bold leading-tight">
+            Transfer Pricing Services in Dubai
+          </h1>
+          <p className="text-white/70 text-lg my-7 max-w-2xl mx-auto">
+            Ensure your related-party transactions comply with UAE Corporate Tax regulations through
+            professional Transfer Pricing advisory, documentation, benchmarking studies, and compliance
+            support. Nafaz helps businesses meet Federal Tax Authority (FTA) requirements while reducing
+            transfer pricing risks.
+          </p>
+        </div>
+        <div className="container mx-auto max-w-3xl grid grid-cols-2 md:grid-cols-4 gap-4">
+          {heroChecklist.map((item, index) => (
+            <div
+              key={index}
+              className="bg-white/10 rounded-md p-4 flex flex-col items-center gap-2 text-center"
+              data-aos="flip-up"
+              data-aos-delay={`${index * 150}`}
+              data-aos-duration="800"
+            >
+              <Icon icon="ic:round-check-circle" className="text-yellow-400 text-2xl" />
+              <span className="text-white text-sm font-medium">{item}</span>
             </div>
-            <div className="grid grid-cols-2 gap-3">
-              {heroChecklist.map((item, index) => (
-                <span key={index} className="bg-white/10 text-white text-sm font-medium rounded-full px-4 py-3">
-                  ✓ {item}
-                </span>
-              ))}
+          ))}
+        </div>
+        <div
+          className="container mx-auto max-w-5xl mt-14 aspect-[21/9] rounded-xl overflow-hidden relative"
+          data-aos="zoom-in"
+          data-aos-delay="200"
+          data-aos-duration="1000"
+        >
+          <Image
+            src="/images/hero/hero-image.png"
+            alt="Transfer Pricing Services in Dubai"
+            fill
+            className="object-cover"
+          />
+        </div>
+        <div className="container mx-auto max-w-4xl grid grid-cols-2 md:grid-cols-4 gap-4 mt-10">
+          {heroStats.map((stat, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-md p-6 text-center shadow-service"
+              data-aos="fade-up"
+              data-aos-delay={`${index * 150}`}
+              data-aos-duration="800"
+            >
+              <p className="text-grey text-xs font-semibold uppercase tracking-wide">{stat.title}</p>
+              <h3 className="text-2xl font-bold text-midnight_text mt-2">{stat.value}</h3>
+              <p className="text-grey text-sm mt-1">{stat.description}</p>
             </div>
-          </div>
-          <div
-            className="grid grid-cols-2 gap-4"
-            data-aos="fade-left"
-            data-aos-delay="200"
-            data-aos-duration="1000"
-          >
-            {heroStats.map((stat, index) => (
-              <div key={index} className="bg-white rounded-md p-6 text-center shadow-service">
-                <p className="text-grey text-xs font-semibold uppercase tracking-wide">{stat.title}</p>
-                <h3 className="text-2xl font-bold text-midnight_text mt-2">{stat.value}</h3>
-                <p className="text-grey text-sm mt-1">{stat.description}</p>
-              </div>
-            ))}
-          </div>
+          ))}
+        </div>
+        <div
+          className="flex flex-wrap gap-4 justify-center mt-10"
+          data-aos="fade-up"
+          data-aos-delay="400"
+          data-aos-duration="1000"
+        >
+          <Link href="https://wa.me/9714XXXXXXX" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 bg-[#25D366] text-white font-semibold px-8 py-4 rounded-lg hover:bg-[#1ebe57] animate-wobble-left">
+            <Icon icon="ic:baseline-whatsapp" className="text-xl" />
+            WhatsApp Us
+          </Link>
+          <Link href="tel:+9714XXXXXXX" className="flex items-center justify-center gap-2 bg-primary text-white font-semibold px-8 py-4 rounded-lg hover:bg-blue-700 animate-wobble-left">
+            <Icon icon="ic:baseline-call" className="text-xl" />
+            Call Us
+          </Link>
         </div>
       </section>
 
@@ -300,10 +328,20 @@ const Page = () => {
               </div>
             ))}
           </div>
+          <div className="flex flex-wrap gap-4 justify-center mt-8">
+              <Link href="https://wa.me/9714XXXXXXX" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 bg-[#25D366] text-white font-semibold px-8 py-4 rounded-lg hover:bg-[#1ebe57] animate-wobble-left">
+                <Icon icon="ic:baseline-whatsapp" className="text-xl" />
+                WhatsApp Us
+              </Link>
+              <Link href="tel:+9714XXXXXXX" className="flex items-center justify-center gap-2 bg-primary text-white font-semibold px-8 py-4 rounded-lg hover:bg-blue-700 animate-wobble-left">
+                <Icon icon="ic:baseline-call" className="text-xl" />
+                Call Us
+              </Link>
+            </div>
         </div>
       </section>
 
-      {/* Benefits + Why Choose Nafaz card */}
+            {/* Benefits + Why Choose Nafaz card */}
       <section className="bg-section dark:bg-darklight py-20 px-4">
         <div className="container mx-auto max-w-6xl grid lg:grid-cols-2 grid-cols-1 gap-12 items-start">
           <div data-aos="fade-right" data-aos-duration="1000">
@@ -349,6 +387,7 @@ const Page = () => {
         </div>
       </section>
 
+
       {/* Process */}
       <section className="bg-white dark:bg-darkmode py-20 px-4">
         <div className="container mx-auto max-w-6xl text-center">
@@ -388,6 +427,7 @@ const Page = () => {
         </div>
       </section>
 
+
       {/* Industries */}
       <section className="bg-section dark:bg-darklight py-20 px-4 text-center">
         <div className="container mx-auto max-w-6xl">
@@ -424,51 +464,7 @@ const Page = () => {
       </section>
 
       {/* Documentation + What You'll Receive card */}
-      <section className="bg-white dark:bg-darkmode py-20 px-4">
-        <div className="container mx-auto max-w-6xl grid lg:grid-cols-2 grid-cols-1 gap-12 items-start">
-          <div data-aos="fade-right" data-aos-duration="1000">
-            <span className="bg-section dark:bg-darklight text-primary font-semibold rounded-full px-6 py-2">
-              DOCUMENTATION
-            </span>
-            <h2 className="text-midnight_text dark:text-white text-3xl md:text-4xl font-bold leading-tight mt-6">
-              Transfer Pricing Documentation That Supports Compliance
-            </h2>
-            <p className="text-grey dark:text-white/50 text-lg mt-6">
-              Strong documentation helps businesses demonstrate that related-party transactions comply with
-              the arm's length principle while meeting UAE Corporate Tax documentation requirements.
-            </p>
-            <div className="grid sm:grid-cols-2 grid-cols-1 gap-3 mt-8">
-              {documentationBenefits.map((item, index) => (
-                <span
-                  key={index}
-                  className="bg-section dark:bg-darklight text-midnight_text dark:text-white text-sm font-medium rounded-md px-4 py-3"
-                >
-                  ✔ {item}
-                </span>
-              ))}
-            </div>
-          </div>
-          <div
-            className="bg-section dark:bg-darklight rounded-md shadow-service p-10"
-            data-aos="fade-left"
-            data-aos-duration="1000"
-          >
-            <h3 className="text-2xl font-bold text-midnight_text dark:text-white mb-6">What You'll Receive</h3>
-            <div className="flex flex-col gap-3 mb-8">
-              {whatYoullReceive.map((item, index) => (
-                <span key={index} className="text-midnight_text dark:text-white font-medium">
-                  ✔ {item}
-                </span>
-              ))}
-            </div>
-            <Link href="/contact" className="inline-block bg-yellow-400 font-semibold text-midnight_text px-8 py-4 rounded-full hover:opacity-90">
-              Book Free Transfer Pricing Review
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Comparison */}
+            {/* Comparison */}
       <section className="bg-midnight_text dark:bg-darkmode py-20 px-4 text-center">
         <div className="container mx-auto max-w-6xl">
           <span
@@ -546,12 +542,10 @@ const Page = () => {
                 </span>
               ))}
             </div>
-            <Link href="/contact" className="inline-block bg-yellow-400 font-semibold text-midnight_text px-8 py-4 rounded-full hover:opacity-90">
-              Schedule Free Consultation
-            </Link>
           </div>
         </div>
       </section>
+
 
       {/* FAQ */}
       <section className="bg-white dark:bg-darkmode py-20 px-4">
@@ -567,6 +561,7 @@ const Page = () => {
           <FAQAccordion items={faqs} />
         </div>
       </section>
+
 
       {/* CTA */}
       <section className="bg-midnight_text dark:bg-darkmode py-20 px-4 text-center">
@@ -594,11 +589,13 @@ const Page = () => {
             data-aos-delay="400"
             data-aos-duration="1000"
           >
-            <Link href="/contact" className="bg-yellow-400 font-semibold text-midnight_text px-8 py-4 rounded-full hover:opacity-90">
-              Book Free Transfer Pricing Consultation
+            <Link href="https://wa.me/9714XXXXXXX" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 bg-[#25D366] text-white font-semibold px-8 py-4 rounded-lg hover:bg-[#1ebe57] animate-wobble-left">
+              <Icon icon="ic:baseline-whatsapp" className="text-xl" />
+              WhatsApp Us
             </Link>
-            <Link href="/contact" className="border border-white/40 text-white font-semibold px-8 py-4 rounded-full hover:bg-white/10">
-              Speak With Our Specialists
+            <Link href="tel:+9714XXXXXXX" className="flex items-center justify-center gap-2 bg-primary text-white font-semibold px-8 py-4 rounded-lg hover:bg-blue-700 animate-wobble-left">
+              <Icon icon="ic:baseline-call" className="text-xl" />
+              Call Us
             </Link>
           </div>
         </div>

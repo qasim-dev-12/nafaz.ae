@@ -24,13 +24,13 @@ const Progresswork = ({ isColorMode }: { isColorMode: Boolean }) => {
         <div className='grid md:grid-cols-12 items-center gap-7'>
           <div className='md:col-span-6'>
             <Image
-              src='/images/work-progress/progress-work.png'
-              alt='logo'
+              src='/images/work-progress/nafaz-business-partnership.png'
+              alt='Nafaz long-term business partnership'
               width={375}
               height={0}
               quality={100}
               style={{ width: '100%', height: 'auto' }}
-              className='md:block hidden'
+              className='md:block hidden rounded-xl'
             />
           </div>
           <div
