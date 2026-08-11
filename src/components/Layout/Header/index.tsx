@@ -97,7 +97,7 @@ const Header: React.FC = () => {
           </button>
           <div className='hidden lg:flex items-center gap-4'>
             <Link
-              href='https://wa.me/9714XXXXXXX'
+              href='https://wa.me/971559549922'
               target='_blank'
               rel='noopener noreferrer'
               className='flex items-center gap-2 bg-[#25D366] text-white px-4 py-2 rounded-lg hover:bg-[#1ebe57] font-semibold animate-wobble-left'>
@@ -105,7 +105,7 @@ const Header: React.FC = () => {
               WhatsApp Us
             </Link>
             <Link
-              href='tel:+9714XXXXXXX'
+              href='tel:+971559549922'
               className='flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-700 font-semibold animate-wobble-left'>
               <Icon icon='ic:baseline-call' className='text-xl' />
               Call Us
@@ -160,7 +160,7 @@ const Header: React.FC = () => {
           ))}
           <div className='mt-4 flex flex-row gap-4 w-full'>
             <Link
-              href='https://wa.me/9714XXXXXXX'
+              href='https://wa.me/971559549922'
               target='_blank'
               rel='noopener noreferrer'
               className='flex-1 flex items-center justify-center gap-2 bg-[#25D366] text-white px-4 py-2 rounded-lg hover:bg-[#1ebe57] font-semibold animate-wobble-left'
@@ -169,7 +169,7 @@ const Header: React.FC = () => {
               WhatsApp
             </Link>
             <Link
-              href='tel:+9714XXXXXXX'
+              href='tel:+971559549922'
               className='flex-1 flex items-center justify-center gap-2 bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-700 font-semibold animate-wobble-left'
               onClick={() => setNavbarOpen(false)}>
               <Icon icon='ic:baseline-call' className='text-xl' />

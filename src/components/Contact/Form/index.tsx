@@ -1,8 +1,44 @@
-import React from 'react'
-import Link from 'next/link'
+'use client'
+import React, { useState } from 'react'
 import Image from 'next/image'
+import toast from 'react-hot-toast'
 
 const ContactForm = () => {
+  const [form, setForm] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    specialist: '',
+    date: '',
+    time: '',
+  })
+  const [submitting, setSubmitting] = useState(false)
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
+  ) => {
+    setForm({ ...form, [e.target.name]: e.target.value })
+  }
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setSubmitting(true)
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      })
+      if (!res.ok) throw new Error()
+      toast.success('Request sent! We will get back to you shortly.')
+      setForm({ firstName: '', lastName: '', email: '', specialist: '', date: '', time: '' })
+    } catch {
+      toast.error('Something went wrong. Please try again.')
+    } finally {
+      setSubmitting(false)
+    }
+  }
+
   return (
     <>
       <section className='dark:bg-darkmode md:pb-24 pb-16'>
@@ -12,7 +48,7 @@ const ContactForm = () => {
               <h2 className='max-w-72 text-[40px] leading-tight font-bold mb-9 text-midnight_text dark:text-white'>
                 Get Online Consultation
               </h2>
-              <form className='flex flex-wrap w-full m-auto justify-between'>
+              <form className='flex flex-wrap w-full m-auto justify-between' onSubmit={handleSubmit}>
                 <div className='sm:flex gap-3 w-full'>
                   <div className='mx-0 my-2.5 flex-1'>
                     <label
@@ -23,6 +59,10 @@ const ContactForm = () => {
                     <input
                       className='w-full text-base px-4 rounded-lg py-2.5 border-border dark:border-dark_border border-solid dark:text-white  dark:bg-darkmode border transition-all duration-500 focus:border-primary dark:focus:border-primary focus:border-solid focus:outline-0'
                       type='text'
+                      name='firstName'
+                      value={form.firstName}
+                      onChange={handleChange}
+                      required
                     />
                   </div>
                   <div className='mx-0 my-2.5 flex-1'>
@@ -34,6 +74,10 @@ const ContactForm = () => {
                     <input
                       className='w-full text-base px-4 py-2.5 rounded-lg border-border dark:border-dark_border border-solid dark:text-white  dark:bg-darkmode border transition-all duration-500 focus:border-primary dark:focus:border-primary focus:border-solid focus:outline-0'
                       type='text'
+                      name='lastName'
+                      value={form.lastName}
+                      onChange={handleChange}
+                      required
                     />
                   </div>
                 </div>
@@ -46,6 +90,10 @@ const ContactForm = () => {
                     </label>
                     <input
                       type='email'
+                      name='email'
+                      value={form.email}
+                      onChange={handleChange}
+                      required
                       className='w-full text-base px-4 py-2.5 rounded-lg border-border dark:border-dark_border border-solid dark:text-white  dark:bg-darkmode border transition-all duration-500 focus:border-primary dark:focus:border-primary focus:border-solid focus:outline-0'
                     />
                   </div>
@@ -55,16 +103,16 @@ const ContactForm = () => {
                       className='pb-3 inline-block text-base'>
                       Specialist*
                     </label>
-                    <select className='w-full text-base px-4 py-2.5 rounded-lg border-border dark:text-white border-solid dark:bg-darkmode border transition-all duration-500 focus:border-primary dark:focus:border-primary dark:border-dark_border focus:border-solid focus:outline-0'>
+                    <select
+                      name='specialist'
+                      value={form.specialist}
+                      onChange={handleChange}
+                      className='w-full text-base px-4 py-2.5 rounded-lg border-border dark:text-white border-solid dark:bg-darkmode border transition-all duration-500 focus:border-primary dark:focus:border-primary dark:border-dark_border focus:border-solid focus:outline-0'>
                       <option value=''>Choose a specialist</option>
-                      <option value='Baking &amp; Pastry'>
-                        Choose a specialist
-                      </option>
-                      <option value='Exotic Cuisine'>Exotic Cuisine</option>
-                      <option value='French Desserts'>French Desserts</option>
-                      <option value='Seafood &amp; Wine'>
-                        Choose a specialist
-                      </option>
+                      <option value='VAT'>VAT</option>
+                      <option value='Corporate Tax'>Corporate Tax</option>
+                      <option value='Bookkeeping'>Bookkeeping</option>
+                      <option value='Payroll'>Payroll</option>
                     </select>
                   </div>
                 </div>
@@ -78,6 +126,10 @@ const ContactForm = () => {
                     <input
                       className='w-full text-base px-4 rounded-lg  py-2.5 outline-hidden dark:text-white dark:bg-darkmode border-border border-solid border transition-all duration-500 focus:border-primary dark:focus:border-primary dark:border-dark_border focus:border-solid focus:outline-0'
                       type='date'
+                      name='date'
+                      value={form.date}
+                      onChange={handleChange}
+                      required
                     />
                   </div>
                   <div className='mx-0 my-2.5 flex-1'>
@@ -89,16 +141,20 @@ const ContactForm = () => {
                     <input
                       className='w-full text-base px-4 rounded-lg py-2.5 border-border outline-hidden dark:text-white dark:bg-darkmode border-solid border transition-all duration-500 focus:border-primary dark:focus:border-primary dark:border-dark_border focus:border-solid focus:outline-0'
                       type='time'
+                      name='time'
+                      value={form.time}
+                      onChange={handleChange}
+                      required
                     />
                   </div>
                 </div>
                 <div className='mx-0 my-2.5 w-full'>
-                  <Link
-                    href='#'
-                    className='bg-primary rounded-lg text-white py-4 px-8 mt-4 inline-block hover:bg-blue-700'
-                    type='submit'>
-                    Make an appointment
-                  </Link>
+                  <button
+                    type='submit'
+                    disabled={submitting}
+                    className='bg-primary rounded-lg text-white py-4 px-8 mt-4 inline-block hover:bg-blue-700 disabled:opacity-60'>
+                    {submitting ? 'Sending...' : 'Make an appointment'}
+                  </button>
                 </div>
               </form>
             </div>

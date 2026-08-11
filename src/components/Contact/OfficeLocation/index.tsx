@@ -24,15 +24,15 @@ const Location = () => {
               </div>
               <div className='col-span-3'>
                 <Link
-                  href='mailto:headoffice@venus.com'
+                  href='mailto:Zohaib@nafaz.ae'
                   className='sm:text-2xl text-xl text-white font-medium underline'>
-                  headoffice@venus.com
+                  Zohaib@nafaz.ae
                 </Link>
                 <Link
-                  href='tel:731-621-5503'
+                  href='tel:+971559549922'
                   className='sm:text-2xl text-xl text-white/80 flex items-center gap-2 hover:text-opacity-100 w-fit'>
                   <span className='text-white/40!'>Call</span>
-                  731-621-5503
+                  0559549922
                 </Link>
               </div>
             </div>
@@ -49,15 +49,15 @@ const Location = () => {
               </div>
               <div className='col-span-3'>
                 <Link
-                  href='mailto:Office@venus.com'
+                  href='mailto:Zohaib@nafaz.ae'
                   className='sm:text-2xl text-xl text-white font-medium underline'>
-                  Office@venus.com
+                  Zohaib@nafaz.ae
                 </Link>
                 <Link
-                  href='tel:731-235-7993'
+                  href='tel:+971559549922'
                   className='sm:text-2xl text-white/80 text-xl text-IceBlue flex items-center gap-2 hover:text-opacity-100 w-fit'>
                   <span className='text-white/40!'>Call</span>
-                  731-235-7993
+                  0559549922
                 </Link>
               </div>
             </div>

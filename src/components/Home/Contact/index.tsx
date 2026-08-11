@@ -34,13 +34,13 @@ const Contactform = () => {
               <div className='col-span-3'>
                 <span className='text-white/50 text-lg'>Phone</span>
                 <p className='bg-transparent border-0 text-white text-lg'>
-                  +971 XX XXX XXXX
+                  +971 55 954 9922
                 </p>
               </div>
               <div className='col-span-3'>
                 <span className='text-white/50 text-lg'>Email</span>
                 <p className='bg-transparent border-0 text-white text-lg'>
-                  info@nafaz.ae
+                  Zohaib@nafaz.ae
                 </p>
               </div>
               <div className='col-span-6 pt-8'>

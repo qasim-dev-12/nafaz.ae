@@ -123,8 +123,8 @@ const Page = () => {
             </div>
           </div>
           <div className="col-span-full flex flex-wrap gap-4 justify-center mt-4">
-            <Link href="https://wa.me/9714XXXXXXX" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 bg-[#25D366] text-white font-semibold px-8 py-4 rounded-lg hover:bg-[#1ebe57] animate-wobble-left"><Icon icon="ic:baseline-whatsapp" className="text-xl" />WhatsApp Us</Link>
-            <Link href="tel:+9714XXXXXXX" className="flex items-center justify-center gap-2 bg-primary text-white font-semibold px-8 py-4 rounded-lg hover:bg-blue-700 animate-wobble-left"><Icon icon="ic:baseline-call" className="text-xl" />Call Us</Link>
+            <Link href="https://wa.me/971559549922" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 bg-[#25D366] text-white font-semibold px-8 py-4 rounded-lg hover:bg-[#1ebe57] animate-wobble-left"><Icon icon="ic:baseline-whatsapp" className="text-xl" />WhatsApp Us</Link>
+            <Link href="tel:+971559549922" className="flex items-center justify-center gap-2 bg-primary text-white font-semibold px-8 py-4 rounded-lg hover:bg-blue-700 animate-wobble-left"><Icon icon="ic:baseline-call" className="text-xl" />Call Us</Link>
           </div>
         </div>
       </section>
@@ -169,8 +169,8 @@ const Page = () => {
             ))}
           </div>
           <div className="flex flex-wrap gap-4 justify-center mt-8" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-            <Link href="https://wa.me/9714XXXXXXX" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 bg-[#25D366] text-white font-semibold px-8 py-4 rounded-lg hover:bg-[#1ebe57] animate-wobble-left"><Icon icon="ic:baseline-whatsapp" className="text-xl" />WhatsApp Us</Link>
-            <Link href="tel:+9714XXXXXXX" className="flex items-center justify-center gap-2 bg-primary text-white font-semibold px-8 py-4 rounded-lg hover:bg-blue-700 animate-wobble-left"><Icon icon="ic:baseline-call" className="text-xl" />Call Us</Link>
+            <Link href="https://wa.me/971559549922" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 bg-[#25D366] text-white font-semibold px-8 py-4 rounded-lg hover:bg-[#1ebe57] animate-wobble-left"><Icon icon="ic:baseline-whatsapp" className="text-xl" />WhatsApp Us</Link>
+            <Link href="tel:+971559549922" className="flex items-center justify-center gap-2 bg-primary text-white font-semibold px-8 py-4 rounded-lg hover:bg-blue-700 animate-wobble-left"><Icon icon="ic:baseline-call" className="text-xl" />Call Us</Link>
           </div>
         </div>
       </section>
@@ -258,8 +258,8 @@ const Page = () => {
           <h2 className="text-white text-3xl md:text-4xl font-bold leading-tight" data-aos="fade-up" data-aos-duration="1000">Ready to Get Compliant Without Overspending?</h2>
           <p className="text-white/80 text-lg mt-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Partner with Nafaz for affordable bookkeeping solutions that keep your business organized, compliant, and financially healthy.</p>
           <div className="flex flex-wrap gap-4 justify-center mt-8" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-            <Link href="https://wa.me/9714XXXXXXX" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 bg-[#25D366] text-white font-semibold px-8 py-4 rounded-lg hover:bg-[#1ebe57] animate-wobble-left"><Icon icon="ic:baseline-whatsapp" className="text-xl" />WhatsApp Us</Link>
-            <Link href="tel:+9714XXXXXXX" className="flex items-center justify-center gap-2 bg-primary text-white font-semibold px-8 py-4 rounded-lg hover:bg-blue-700 animate-wobble-left"><Icon icon="ic:baseline-call" className="text-xl" />Call Us</Link>
+            <Link href="https://wa.me/971559549922" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 bg-[#25D366] text-white font-semibold px-8 py-4 rounded-lg hover:bg-[#1ebe57] animate-wobble-left"><Icon icon="ic:baseline-whatsapp" className="text-xl" />WhatsApp Us</Link>
+            <Link href="tel:+971559549922" className="flex items-center justify-center gap-2 bg-primary text-white font-semibold px-8 py-4 rounded-lg hover:bg-blue-700 animate-wobble-left"><Icon icon="ic:baseline-call" className="text-xl" />Call Us</Link>
           </div>
         </div>
       </section>

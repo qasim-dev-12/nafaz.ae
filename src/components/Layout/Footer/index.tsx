@@ -1,9 +1,33 @@
-import React, { FC } from 'react'
+'use client'
+import React, { FC, useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Icon } from '@iconify/react/dist/iconify.js'
+import toast from 'react-hot-toast'
 
 const Footer: FC = () => {
+  const [newsletterEmail, setNewsletterEmail] = useState('')
+  const [subscribing, setSubscribing] = useState(false)
+
+  const handleNewsletterSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setSubscribing(true)
+    try {
+      const res = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: newsletterEmail }),
+      })
+      if (!res.ok) throw new Error()
+      toast.success('Subscribed! Thanks for joining.')
+      setNewsletterEmail('')
+    } catch {
+      toast.error('Subscription failed. Please try again.')
+    } finally {
+      setSubscribing(false)
+    }
+  }
+
   return (
     <footer className='bg-darkmode relative z-1 border-t border-dark_border px-6'>
       <div className='container mx-auto max-w-6xl px-4'>
@@ -25,7 +49,7 @@ const Footer: FC = () => {
                 Ready to get compliant?
               </h2>
               <Link
-                href='https://wa.me/9714XXXXXXX'
+                href='https://wa.me/971559549922'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='inline-flex items-center gap-2 px-9 py-3 rounded-lg bg-[#25D366] text-white hover:bg-[#1ebe57] hover:shadow-none animate-wobble-left'>
@@ -42,17 +66,17 @@ const Footer: FC = () => {
               <div className='pb-5 sm:block flex'>
                 <p className='text-base font-bold text-white'>Phone</p>
                 <Link
-                  href='tel:+9714XXXXXXX'
+                  href='tel:+971559549922'
                   className='text-2xl text-white/50 hover:text-white'>
-                  +971 4 XXX XXXX
+                  +971 55 954 9922
                 </Link>
               </div>
               <div className='sm:block flex items-center gap-3'>
                 <p className='text-base font-bold text-white'>Email</p>
                 <Link
-                  href='mailto:info@yourfirm.ae'
+                  href='mailto:Zohaib@nafaz.ae'
                   className='text-2xl text-white/50 hover:text-white'>
-                  info@yourfirm.ae
+                  Zohaib@nafaz.ae
                 </Link>
               </div>
               <div>
@@ -129,16 +153,20 @@ const Footer: FC = () => {
               <p className='text-MistyBlue text-base pb-7 text-white/50'>
                 Stay updated on UAE VAT, Corporate Tax and compliance changes
               </p>
-              <form className='newsletter-form flex rounded-lg sm:w-full w-3/4 sm:mx-0 mx-auto'>
+              <form className='newsletter-form flex rounded-lg sm:w-full w-3/4 sm:mx-0 mx-auto' onSubmit={handleNewsletterSubmit}>
                 <input
                   type='email'
                   placeholder='Email*'
+                  required
+                  value={newsletterEmail}
+                  onChange={(e) => setNewsletterEmail(e.target.value)}
                   className='p-4 text-base border-transparent rounded-s-lg rounded-e-none! outline-0 focus:border-primary dark:focus:border-primary w-[calc(100%_-_137px)] flex bg-white dark:bg-midnight_text dark:text-white dark:border-solid dark:border dark:border-border_color'
                 />
                 <button
                   type='submit'
-                  className='p-[0.625rem] text-base font-medium bg-primary text-white border-none cursor-pointer rounded-e-lg outline-0 text-center w-[8.5625rem] hover:bg-blue-700 hover:shadow-none'>
-                  Subscribe
+                  disabled={subscribing}
+                  className='p-[0.625rem] text-base font-medium bg-primary text-white border-none cursor-pointer rounded-e-lg outline-0 text-center w-[8.5625rem] hover:bg-blue-700 hover:shadow-none disabled:opacity-60'>
+                  {subscribing ? '...' : 'Subscribe'}
                 </button>
               </form>
             </div>
@@ -161,11 +189,6 @@ const Footer: FC = () => {
             <li className='text-base text-white/50'>
               <Link href='/#testimonials' className='hover:text-primary'>
                 Reviews
-              </Link>
-            </li>
-            <li className='text-base text-white/50'>
-              <Link href='/blog' className='hover:text-primary'>
-                Blog
               </Link>
             </li>
             <li className='text-base text-white/50'>

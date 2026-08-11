@@ -40,7 +40,7 @@ const Hero = () => {
           </ul>
           <div className='flex items-center gap-4 flex-wrap'>
             <a
-              href='https://wa.me/9714XXXXXXX'
+              href='https://wa.me/971559549922'
               target='_blank'
               rel='noopener noreferrer'
               className='flex items-center gap-2 py-3 bg-[#25D366] text-white rounded-md hover:bg-[#1ebe57] transition duration-300 px-8'>

@@ -11,7 +11,15 @@ const Logo: React.FC = () => {
         width={130}
         height={123}
         quality={100}
-        className="h-14 w-auto"
+        className="h-14 w-auto dark:hidden"
+      />
+      <Image
+        src="/images/logo/nafaz-logo-dark.png"
+        alt="Nafaz Logo"
+        width={140}
+        height={140}
+        quality={100}
+        className="hidden h-20 w-auto dark:block"
       />
     </Link>
   );
