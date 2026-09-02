@@ -135,6 +135,12 @@ export const AccountingServices = [
         description: 'Professionally prepared financial statements for reporting, lenders and regulators.',
         href: '/services/financial-statement-services-dubai',
     },
+    {
+        icon: '/images/services-images/09-Financial Statement Preparation Services in Dubai.png',
+        title: 'Telecom Expense Management',
+        description: 'Bill audits, contract review and cost optimization for corporate Etisalat and du accounts.',
+        href: '/services/telecom-expense-management-services-dubai',
+    },
 ];
 
 export const portfolioinfo = [

@@ -181,6 +181,23 @@ Nav dropdown "Tax Services" > "Transfer Pricing" in menuData.tsx repointed from
 "Tax Services" submenu placeholders still unbuilt: Excise Tax (`#excise-tax`), Tax Audit & Assurance
 (`#audit` — referenced by 5 sibling pages' "Audit Support" related-links, repoint those too once built).
 
+## telecom-expense-management-services-dubai (new page, created 2026-09-02)
+Not an accounting/tax page — added because the user asked to "add telecom service also in the
+services" and told me to generate the content myself for a Dubai-operating business. Framed as
+Telecom Expense Management (TEM): auditing corporate Etisalat/du bills, contract review, cost
+optimization — a back-office/finance-adjacent service that fits alongside Payroll and Financial
+Statements rather than a literal telecom carrier offering. Built with the same two-column hero
+template as payroll-services-dubai (Hero, ABOUT TELECOM EXPENSE MANAGEMENT, WHY NAFAZ, OUR
+SERVICES, INDUSTRIES WE SERVE, WHY OUTSOURCE comparison, OUR PROCESS, SERVICE AREAS, FAQ, Useful
+Links→"Related Services", Footer CTA). No dedicated hero/service-grid image exists for this
+service — reused `09-Financial Statement Preparation Services in Dubai.png` as a placeholder in
+both the hero image and the homepage `AccountingServices` grid icon; swap for a real telecom image
+when one is provided. Added as a new entry in `AccountingServices` in `src/app/api/data.tsx`
+(not a new top-level category, to avoid touching the `Services` component's two-heading layout)
+and as a new submenu item under "Accounting Services" in
+`src/components/Layout/Header/Navigation/menuData.tsx`. All content (copy, FAQs, stats) is
+self-generated placeholder text, not from a client brief — flag for client review/replacement.
+
 ## Sibling pages with the same template shape
 `src/app/(site)/services/{premier-accounting-services-in-dubai, bookkeeping-firm-dubai,
 ecommerce-accounting-dubai, amazon-accounting-dubai, accurate-affordable-bookkeeping-dubai,
