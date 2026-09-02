@@ -137,8 +137,8 @@ export const AccountingServices = [
     },
     {
         icon: '/images/services-images/09-Financial Statement Preparation Services in Dubai.png',
-        title: 'Telecom Expense Management',
-        description: 'Bill audits, contract review and cost optimization for corporate Etisalat and du accounts.',
+        title: 'Telecom Services',
+        description: 'Business line, connectivity and VoIP setup, vendor procurement, and bill audits for Etisalat and du accounts.',
         href: '/services/telecom-expense-management-services-dubai',
     },
 ];

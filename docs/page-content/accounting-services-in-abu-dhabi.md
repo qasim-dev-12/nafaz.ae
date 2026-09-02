@@ -198,6 +198,24 @@ and as a new submenu item under "Accounting Services" in
 `src/components/Layout/Header/Navigation/menuData.tsx`. All content (copy, FAQs, stats) is
 self-generated placeholder text, not from a client brief — flag for client review/replacement.
 
+Update 2026-09-02: broadened from a pure TEM (bill audit/cost optimization) page to a general
+"Telecom Services" page, per user request ("telecom services not telecom expense management in
+the services dropdown"). Nav label (menuData.tsx) and `AccountingServices` entry (data.tsx) both
+renamed "Telecom Expense Management" → "Telecom Services"; slug/href left unchanged
+(`telecom-expense-management-services-dubai`) since only one telecom page exists. Added 4 new
+`services` cards ahead of the original 6 (Business Mobile & SIM Provisioning, Corporate
+Connectivity & Internet Setup, VoIP & Unified Communications, Telecom Vendor Procurement) so the
+page now reads as full-lifecycle telecom (setup + connectivity + procurement) rather than
+audit-only; kept all 6 original TEM cards since expense management is still one real offering.
+Added 3 `whyChooseUs` cards (End-to-End Telecom Lifecycle, Single Point of Contact, Scalable as
+You Grow) for 9 total. Renamed section headings/badges site-wide on this page from "Telecom
+Expense Management" → "Telecom Services" (hero badge/h1, ABOUT badge, WHY NAFAZ heading, OUR
+SERVICES heading, comparison/process/service-areas/FAQ headings, footer CTA copy) while keeping
+TEM terminology inside the relevant FAQ/description text where it's naming that specific
+sub-service. Added 2 new FAQs (services overview, new-line/connectivity setup) ahead of the
+original 7. This is still self-generated placeholder content, not a client brief — same
+flag-for-review caveat as the original build applies to the new sections too.
+
 ## Sibling pages with the same template shape
 `src/app/(site)/services/{premier-accounting-services-in-dubai, bookkeeping-firm-dubai,
 ecommerce-accounting-dubai, amazon-accounting-dubai, accurate-affordable-bookkeeping-dubai,

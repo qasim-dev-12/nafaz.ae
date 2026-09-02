@@ -6,24 +6,24 @@ import { Metadata } from "next";
 import FAQAccordion from "@/components/SharedComponent/FAQAccordion";
 
 export const metadata: Metadata = {
-  title: "Telecom Expense Management Services in Dubai | Bill Audit & Cost Optimization | Nafaz",
+  title: "Telecom Services in Dubai | Setup, Connectivity & Bill Audit | Nafaz",
   description:
-    "Looking for telecom expense management services in Dubai? Nafaz audits corporate telecom bills, reviews Etisalat and du contracts, eliminates billing errors, and cuts telecom costs for businesses across the UAE.",
+    "Looking for telecom services in Dubai? Nafaz sets up business mobile lines, corporate connectivity and VoIP, manages vendor procurement, and audits Etisalat and du bills to keep your business connected and cut telecom costs.",
   keywords: [
+    "Telecom Services Dubai",
+    "Business Telecom Services UAE",
+    "Corporate Connectivity Setup Dubai",
+    "Business Mobile Line Setup UAE",
+    "VoIP Services Dubai",
     "Telecom Expense Management Dubai",
     "Telecom Bill Audit Dubai",
     "Etisalat Bill Audit UAE",
     "du Bill Audit UAE",
-    "Corporate Telecom Cost Optimization",
-    "Telecom Contract Review Dubai",
-    "TEM Services UAE",
-    "Business Telecom Cost Reduction Dubai",
-    "Telecom Invoice Reconciliation Dubai",
     "Telecom Vendor Management UAE",
   ],
 };
 
-const heroChecklist = ["Telecom Bill Audits", "Vendor Contract Review", "Cost Optimization", "Etisalat & du Billing Support"];
+const heroChecklist = ["Business Line & SIM Setup", "Corporate Connectivity & VoIP", "Telecom Bill Audits", "Vendor Contract Review", "Cost Optimization", "Etisalat & du Support"];
 const heroStats = [
   { label: "500+", description: "Businesses Supported" },
   { label: "30%", description: "Avg. Telecom Cost Savings" },
@@ -37,8 +37,15 @@ const whyChooseUs = [
   { title: "Vendor-Neutral Advice", description: "Independent recommendations focused on your business needs, not carrier commissions." },
   { title: "Detailed Audit Reports", description: "Line-by-line invoice reviews with clear findings, savings summaries, and action plans." },
   { title: "Ongoing Bill Monitoring", description: "Continuous tracking of telecom invoices to catch billing errors before they add up." },
+  { title: "End-to-End Telecom Lifecycle", description: "From new line and connectivity setup to ongoing bill audits, we manage the full telecom lifecycle." },
+  { title: "Single Point of Contact", description: "One team handles new lines, connectivity, vendor coordination, and billing — no juggling multiple providers." },
+  { title: "Scalable as You Grow", description: "Telecom setup and management that scales smoothly as you add locations, staff, and services." },
 ];
 const services = [
+  { badge: "Mobile", title: "Business Mobile & SIM Provisioning", description: "New corporate mobile lines and SIM setup with Etisalat and du, matched to the right plans for your team.", includes: ["New Line Provisioning", "Multi-SIM Rollout", "Plan Matching"] },
+  { badge: "Connectivity", title: "Corporate Connectivity & Internet Setup", description: "Office internet, leased lines, and connectivity setup for new locations and expanding teams.", includes: ["Office Internet Setup", "Multi-Site Rollout", "Bandwidth Planning"] },
+  { badge: "VoIP", title: "VoIP & Unified Communications", description: "Set up VoIP and unified communications systems to modernize business calling and collaboration.", includes: ["VoIP Deployment", "Number Porting", "System Integration"] },
+  { badge: "Procurement", title: "Telecom Vendor Procurement", description: "Source and onboard the right carriers and service providers for your business needs.", includes: ["Vendor Sourcing", "Rate Negotiation", "Onboarding Support"] },
   { badge: "Audit", title: "Telecom Bill Audits", description: "Comprehensive review of mobile, landline, and internet invoices to identify errors and overcharges.", includes: ["Invoice Line-Item Review", "Overcharge Detection", "Historical Bill Analysis"] },
   { badge: "Contracts", title: "Vendor Contract Review", description: "Review and benchmark Etisalat and du contracts to ensure competitive rates and terms.", includes: ["Contract Benchmarking", "Renewal Negotiation Support", "Rate Plan Comparison"] },
   { badge: "Optimization", title: "Cost Optimization", description: "Right-size plans, remove unused lines, and consolidate services to lower monthly telecom spend.", includes: ["Plan Right-Sizing", "Unused Line Removal", "Service Consolidation"] },
@@ -63,26 +70,28 @@ const comparison = [
   { area: "Time Investment", inHouse: "Ongoing Internal Effort", accountant: "Fully Managed for You" },
 ];
 const process = [
-  { step: "01", title: "Free Consultation", description: "Understand your current telecom setup, carriers, and monthly spend." },
-  { step: "02", title: "Bill Collection", description: "Gather recent invoices and contracts from Etisalat, du, and other providers." },
-  { step: "03", title: "Line-Item Audit", description: "Review every charge for accuracy, unused services, and billing errors." },
+  { step: "01", title: "Free Consultation", description: "Understand your telecom needs, current setup, carriers, and monthly spend." },
+  { step: "02", title: "Setup or Bill Collection", description: "Scope new lines and connectivity requirements, or gather existing invoices and contracts." },
+  { step: "03", title: "Provisioning or Audit", description: "Provision new services with carriers, or review every charge for accuracy and billing errors." },
   { step: "04", title: "Contract Benchmarking", description: "Compare your rates and terms against current market offers." },
-  { step: "05", title: "Savings Implementation", description: "Action plan takes effect: disputes filed, plans right-sized, contracts renegotiated." },
-  { step: "06", title: "Ongoing Monitoring", description: "Monthly bill checks and reporting to keep telecom costs under control." },
+  { step: "05", title: "Rollout & Savings Implementation", description: "New services go live; disputes filed, plans right-sized, contracts renegotiated." },
+  { step: "06", title: "Ongoing Monitoring", description: "Monthly bill checks and reporting to keep telecom services running and costs under control." },
 ];
 const localAreas = [
-  { title: "Dubai Mainland", description: "Telecom expense management for SMEs and large enterprises." },
-  { title: "Dubai Free Zones", description: "Bill audits and contract reviews for businesses in DMCC, DIFC, IFZA, DAFZA, Dubai South, JAFZA, and other free zones." },
-  { title: "Across the UAE", description: "Remote telecom expense management for businesses across all Emirates." },
+  { title: "Dubai Mainland", description: "Telecom setup, connectivity, and expense management for SMEs and large enterprises." },
+  { title: "Dubai Free Zones", description: "Line setup, connectivity, bill audits, and contract reviews for businesses in DMCC, DIFC, IFZA, DAFZA, Dubai South, JAFZA, and other free zones." },
+  { title: "Across the UAE", description: "Remote telecom services and expense management for businesses across all Emirates." },
 ];
 const faqs = [
-  { question: "What is telecom expense management?", answer: "Telecom expense management (TEM) is the process of auditing, tracking, and optimizing a business's telecom bills, contracts, and services to reduce costs and eliminate billing errors." },
-  { question: "Which carriers do you work with?", answer: "We review bills and contracts from Etisalat, du, and other UAE telecom and internet providers." },
+  { question: "What telecom services does Nafaz provide?", answer: "We handle the full range of business telecom needs: new mobile line and SIM setup, corporate connectivity and internet setup, VoIP deployment, vendor procurement, plus ongoing bill audits and cost optimization." },
+  { question: "Can you set up new mobile lines and connectivity for us?", answer: "Yes. We provision new business mobile lines, SIMs, office internet, and VoIP systems with Etisalat, du, and other UAE providers." },
+  { question: "What is telecom expense management?", answer: "Telecom expense management (TEM) is the process of auditing, tracking, and optimizing a business's telecom bills, contracts, and services to reduce costs and eliminate billing errors — it's one part of our broader telecom services." },
+  { question: "Which carriers do you work with?", answer: "We set up services with and review bills from Etisalat, du, and other UAE telecom and internet providers." },
   { question: "How much can businesses typically save?", answer: "Savings vary by business, but clients typically see meaningful reductions once unused lines, outdated plans, and billing errors are identified and corrected." },
   { question: "Do you handle billing disputes with carriers?", answer: "Yes. We manage the dispute process with your telecom providers to recover overcharges and correct billing errors on your behalf." },
-  { question: "Will this disrupt our current services?", answer: "No. Our audits and optimizations are designed to run alongside your existing telecom services without any service interruption." },
+  { question: "Will this disrupt our current services?", answer: "No. Our setup work and audits are designed to run alongside your existing telecom services without any service interruption." },
   { question: "How often do you review our telecom bills?", answer: "We offer both one-time audits and ongoing monthly monitoring, depending on your business needs." },
-  { question: "How do I get started?", answer: "Book a free consultation, and our team will review your current telecom setup and identify potential savings." },
+  { question: "How do I get started?", answer: "Book a free consultation, and our team will review your telecom needs — whether that's new setup, connectivity, or cost optimization." },
 ];
 const usefulLinks = [
   { text: "Accounting Services in Dubai", href: "/services/premier-accounting-services-in-dubai" },
@@ -103,15 +112,15 @@ const Page = () => {
         <div className="container mx-auto max-w-6xl grid md:grid-cols-2 grid-cols-1 gap-10 items-center">
           <div data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
             <span className="inline-block bg-yellow-400 text-midnight_text font-semibold rounded-full px-6 py-2 mb-6">
-              Professional Telecom Expense Management Services in Dubai
+              Professional Telecom Services in Dubai
             </span>
             <h1 className="text-white text-4xl md:text-5xl font-bold leading-tight">
-              Telecom Expense Management Services in Dubai
+              Telecom Services in Dubai
             </h1>
             <p className="text-white/70 text-lg my-7">
-              Take control of your business telecom spend with Nafaz's Telecom Expense Management services. We
-              audit mobile, landline, and internet invoices, review carrier contracts, eliminate billing errors,
-              and identify real savings across Etisalat, du, and other providers for businesses in Dubai.
+              Nafaz is your single partner for business telecom: we set up mobile lines, corporate connectivity,
+              and VoIP, manage vendor procurement, and audit mobile, landline, and internet invoices to eliminate
+              billing errors and cut real costs across Etisalat, du, and other providers for businesses in Dubai.
             </p>
             <div className="grid grid-cols-2 gap-3">
               {heroChecklist.map((item, index) => (
@@ -136,7 +145,7 @@ const Page = () => {
             <div className="col-span-2 aspect-video rounded-md overflow-hidden relative">
               <Image
                 src="/images/services-images/09-Financial Statement Preparation Services in Dubai.png"
-                alt="Telecom Expense Management Services in Dubai"
+                alt="Telecom Services in Dubai"
                 fill
                 className="object-cover"
               />
@@ -163,7 +172,7 @@ const Page = () => {
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            ABOUT TELECOM EXPENSE MANAGEMENT
+            ABOUT TELECOM SERVICES
           </span>
           <h2
             className="text-midnight_text dark:text-white text-3xl md:text-4xl font-bold leading-tight mt-6"
@@ -171,7 +180,7 @@ const Page = () => {
             data-aos-delay="200"
             data-aos-duration="1000"
           >
-            What Is Telecom Expense Management?
+            What Do Our Telecom Services Cover?
           </h2>
           <p
             className="text-grey dark:text-white/50 text-lg mt-6"
@@ -179,10 +188,10 @@ const Page = () => {
             data-aos-delay="400"
             data-aos-duration="1000"
           >
-            Telecom Expense Management (TEM) is the process of auditing, tracking, and optimizing a business's
-            telecom invoices, contracts, and usage. It covers mobile lines, landlines, and internet services,
-            helping businesses catch billing errors, remove unused services, and negotiate better rates with
-            carriers like Etisalat and du — reducing telecom costs without disrupting day-to-day operations.
+            Our telecom services cover the full lifecycle of your business connectivity: setting up mobile lines,
+            SIMs, office internet, and VoIP with providers like Etisalat and du, sourcing and onboarding the right
+            vendors, and then auditing, tracking, and optimizing invoices, contracts, and usage — catching billing
+            errors, removing unused services, and negotiating better rates without disrupting day-to-day operations.
           </p>
         </div>
       </section>
@@ -203,7 +212,7 @@ const Page = () => {
             data-aos-delay="200"
             data-aos-duration="1000"
           >
-            Why Businesses Choose Nafaz for Telecom Expense Management
+            Why Businesses Choose Nafaz for Telecom Services
           </h2>
           <p
             className="text-grey dark:text-white/50 text-lg max-w-3xl mx-auto mt-6"
@@ -211,8 +220,8 @@ const Page = () => {
             data-aos-delay="400"
             data-aos-duration="1000"
           >
-            Telecom bills are often overlooked, leading to overcharges and wasted spend. Nafaz helps businesses
-            audit, optimize, and manage telecom costs so nothing slips through the cracks.
+            From setting up new lines and connectivity to auditing bills that are often overlooked, Nafaz helps
+            businesses set up, manage, and optimize their telecom services so nothing slips through the cracks.
           </p>
           <div className="grid md:grid-cols-3 grid-cols-1 gap-7 mt-12">
             {whyChooseUs.map((item, index) => (
@@ -252,7 +261,7 @@ const Page = () => {
             data-aos-delay="200"
             data-aos-duration="1000"
           >
-            Telecom Expense Management Services in Dubai
+            Telecom Services in Dubai
           </h2>
           <p
             className="text-grey dark:text-white/50 text-lg max-w-3xl mx-auto mt-6"
@@ -260,7 +269,8 @@ const Page = () => {
             data-aos-delay="400"
             data-aos-duration="1000"
           >
-            Complete telecom cost management solutions that keep your business connected without overpaying.
+            Complete telecom solutions — from setup and connectivity to cost management — that keep your business
+            connected without overpaying.
           </p>
           <div className="grid md:grid-cols-2 grid-cols-1 gap-7 mt-12">
             {services.map((service, index) => (
@@ -324,7 +334,7 @@ const Page = () => {
             data-aos-delay="200"
             data-aos-duration="1000"
           >
-            Telecom Cost Solutions for Every Industry
+            Telecom Solutions for Every Industry
           </h2>
           <p
             className="text-grey dark:text-white/50 text-lg max-w-3xl mx-auto mt-6"
@@ -332,7 +342,7 @@ const Page = () => {
             data-aos-delay="400"
             data-aos-duration="1000"
           >
-            We provide telecom expense management for businesses across various industries throughout Dubai.
+            We provide telecom setup, connectivity, and expense management for businesses across various industries throughout Dubai.
           </p>
           <div className="grid md:grid-cols-3 grid-cols-1 gap-7 mt-12">
             {industries.map((item, index) => (
@@ -369,7 +379,7 @@ const Page = () => {
             data-aos-delay="200"
             data-aos-duration="1000"
           >
-            Why Outsource Telecom Expense Management?
+            Why Outsource Your Telecom Services?
           </h2>
           <div
             className="bg-white/5 rounded-md mt-12 text-left overflow-x-auto"
@@ -410,7 +420,7 @@ const Page = () => {
             data-aos-delay="200"
             data-aos-duration="1000"
           >
-            Our Telecom Expense Management Process
+            Our Telecom Services Process
           </h2>
           <div className="grid md:grid-cols-3 grid-cols-1 gap-7 mt-12">
             {process.map((item, index) => (
@@ -450,7 +460,7 @@ const Page = () => {
             data-aos-delay="200"
             data-aos-duration="1000"
           >
-            Telecom Expense Management Services Across Dubai
+            Telecom Services Across Dubai
           </h2>
           <p
             className="text-grey dark:text-white/50 text-lg max-w-3xl mx-auto mt-6"
@@ -458,7 +468,7 @@ const Page = () => {
             data-aos-delay="400"
             data-aos-duration="1000"
           >
-            Nafaz supports businesses throughout Dubai with reliable telecom bill audits and cost management.
+            Nafaz supports businesses throughout Dubai with reliable telecom setup, connectivity, and bill audits.
           </p>
           <div className="grid md:grid-cols-3 grid-cols-1 gap-7 mt-12">
             {localAreas.map((item, index) => (
@@ -486,7 +496,7 @@ const Page = () => {
               FAQ
             </span>
             <h2 className="text-midnight_text dark:text-white text-3xl md:text-4xl font-bold leading-tight mt-6">
-              Telecom Expense Management FAQs
+              Telecom Services FAQs
             </h2>
           </div>
           <FAQAccordion items={faqs} />
@@ -543,8 +553,8 @@ const Page = () => {
             data-aos-delay="200"
             data-aos-duration="1000"
           >
-            Partner with Nafaz for telecom expense management that audits your bills, fixes billing errors, and
-            cuts unnecessary telecom costs across your business.
+            Partner with Nafaz for telecom services that set up your lines and connectivity, audit your bills,
+            fix billing errors, and cut unnecessary telecom costs across your business.
           </p>
           <div className="flex flex-wrap gap-4 justify-center mt-8" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
             <Link href="https://wa.me/971559549922" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 bg-[#25D366] text-white font-semibold px-8 py-4 rounded-lg hover:bg-[#1ebe57] animate-wobble-left">
