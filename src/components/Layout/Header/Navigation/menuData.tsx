@@ -27,7 +27,7 @@ export const headerData: HeaderItem[] = [
       { label: "Accurate and Affordable Bookkeeping", href: "/services/accurate-affordable-bookkeeping-dubai" },
       { label: "Payroll (WPS)", href: "/services/payroll-services-dubai" },
       { label: "Financial Statements", href: "/services/financial-statement-services-dubai" },
-      { label: "Telecom Expense Management", href: "/services/telecom-expense-management-services-dubai" },
+      { label: "Telecom Services", href: "/services/telecom-expense-management-services-dubai" },
     ],
   },
   { label: "About", href: "/about" },
