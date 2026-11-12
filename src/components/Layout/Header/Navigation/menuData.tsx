@@ -31,5 +31,6 @@ export const headerData: HeaderItem[] = [
     ],
   },
   { label: "About", href: "/about" },
+  { label: "Free Consultation", href: "/free-consultation" },
   { label: "Contact", href: "/contact" },
 ];
