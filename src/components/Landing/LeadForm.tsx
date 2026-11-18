@@ -61,7 +61,7 @@ const LeadForm = () => {
           ✓
         </span>
         <h3 className='text-2xl font-bold text-midnight_text dark:text-white mb-2'>
-          Request received!
+          Form Submitted — Thank you!
         </h3>
         <p className='text-grey dark:text-white/70'>
           One of our specialists will call you back within 24 hours. In a hurry? WhatsApp us

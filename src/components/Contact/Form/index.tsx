@@ -13,6 +13,7 @@ const ContactForm = () => {
     time: '',
   })
   const [submitting, setSubmitting] = useState(false)
+  const [submitted, setSubmitted] = useState(false)
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
@@ -31,6 +32,7 @@ const ContactForm = () => {
       })
       if (!res.ok) throw new Error()
       toast.success('Request sent! We will get back to you shortly.')
+      setSubmitted(true)
       setForm({ firstName: '', lastName: '', email: '', specialist: '', date: '', time: '' })
     } catch {
       toast.error('Something went wrong. Please try again.')
@@ -48,6 +50,24 @@ const ContactForm = () => {
               <h2 className='max-w-72 text-[40px] leading-tight font-bold mb-9 text-midnight_text dark:text-white'>
                 Get Online Consultation
               </h2>
+              {submitted ? (
+                <div className='text-center py-10'>
+                  <span className='inline-flex items-center justify-center w-16 h-16 rounded-full bg-success/10 text-success text-3xl mb-4'>
+                    ✓
+                  </span>
+                  <h3 className='text-2xl font-bold text-midnight_text dark:text-white mb-2'>
+                    Thank you!
+                  </h3>
+                  <p className='text-grey dark:text-white/70'>
+                    Your appointment request has been received. We will get back to you shortly.
+                  </p>
+                  <button
+                    onClick={() => setSubmitted(false)}
+                    className='mt-6 text-primary font-medium hover:text-blue-700'>
+                    Submit another request
+                  </button>
+                </div>
+              ) : (
               <form className='flex flex-wrap w-full m-auto justify-between' onSubmit={handleSubmit}>
                 <div className='sm:flex gap-3 w-full'>
                   <div className='mx-0 my-2.5 flex-1'>
@@ -157,6 +177,7 @@ const ContactForm = () => {
                   </button>
                 </div>
               </form>
+              )}
             </div>
             <div className='col-span-6'>
               <Image
