@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server'
 import { getTransporter, NAFAZ_PHONE } from '@/lib/mailer'
 
-const LEADS_EMAIL = 'Zohaib7475@gmail.com'
+const LEADS_EMAIL = 'Zohaib@nafaz.ae'
 
 export async function POST(req: Request) {
   try {

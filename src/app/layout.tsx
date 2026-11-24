@@ -9,6 +9,7 @@ import Aoscompo from "@/utils/aos";
 import NextTopLoader from 'nextjs-toploader';
 import SessionProviderComp from "@/components/nextauth/SessionProvider";
 import { AuthDialogProvider } from "./context/AuthDialogContext";
+import ToasterContext from "./api/contex/ToasetContex";
 const inter = Inter({ subsets: ["latin"] });
 
 
@@ -37,6 +38,7 @@ export default function RootLayout({
           </Aoscompo>
           <ScrollToTop />
           <FloatingContactButtons />
+          <ToasterContext />
         </ThemeProvider>
         </SessionProviderComp>
         </AuthDialogProvider>
