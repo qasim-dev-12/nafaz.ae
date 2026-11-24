@@ -1,0 +1,312 @@
+{
+  "pages": {
+    "/api/leads/route": [
+      "static/chunks/webpack-215be5abf9716a4a.js",
+      "static/chunks/4bd1b696-5b748286cf6a3590.js",
+      "static/chunks/1517-ab68b90feaa2655b.js",
+      "static/chunks/main-app-7d6deed7b34c3784.js",
+      "static/chunks/app/api/leads/route-f381e18f9a094015.js"
+    ],
+    "/api/auth/[...nextauth]/route": [
+      "static/chunks/webpack-215be5abf9716a4a.js",
+      "static/chunks/4bd1b696-5b748286cf6a3590.js",
+      "static/chunks/1517-ab68b90feaa2655b.js",
+      "static/chunks/main-app-7d6deed7b34c3784.js",
+      "static/chunks/app/api/auth/[...nextauth]/route-4a4afcf31e93f1f8.js"
+    ],
+    "/api/newsletter/route": [
+      "static/chunks/webpack-215be5abf9716a4a.js",
+      "static/chunks/4bd1b696-5b748286cf6a3590.js",
+      "static/chunks/1517-ab68b90feaa2655b.js",
+      "static/chunks/main-app-7d6deed7b34c3784.js",
+      "static/chunks/app/api/newsletter/route-6fb0cb80f9e9405d.js"
+    ],
+    "/api/contact/route": [
+      "static/chunks/webpack-215be5abf9716a4a.js",
+      "static/chunks/4bd1b696-5b748286cf6a3590.js",
+      "static/chunks/1517-ab68b90feaa2655b.js",
+      "static/chunks/main-app-7d6deed7b34c3784.js",
+      "static/chunks/app/api/contact/route-af9de6a47ba1b92b.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-215be5abf9716a4a.js",
+      "static/chunks/4bd1b696-5b748286cf6a3590.js",
+      "static/chunks/1517-ab68b90feaa2655b.js",
+      "static/chunks/main-app-7d6deed7b34c3784.js",
+      "static/css/6adc0e29c1d2fd11.css",
+      "static/css/708642b61a4bdcc7.css",
+      "static/chunks/6742-1a4819ae89255cb9.js",
+      "static/chunks/4788-e3edd3cbfca8efad.js",
+      "static/chunks/5037-264b707fe1758004.js",
+      "static/chunks/5551-27e2bc45959ed425.js",
+      "static/chunks/2244-55c72ba021ac31b7.js",
+      "static/chunks/app/layout-1621c59645d68d02.js"
+    ],
+    "/not-found": [
+      "static/chunks/webpack-215be5abf9716a4a.js",
+      "static/chunks/4bd1b696-5b748286cf6a3590.js",
+      "static/chunks/1517-ab68b90feaa2655b.js",
+      "static/chunks/main-app-7d6deed7b34c3784.js",
+      "static/chunks/6742-1a4819ae89255cb9.js",
+      "static/chunks/app/not-found-c3e656ad7cdebe36.js"
+    ],
+    "/(site)/blog/page": [
+      "static/chunks/webpack-215be5abf9716a4a.js",
+      "static/chunks/4bd1b696-5b748286cf6a3590.js",
+      "static/chunks/1517-ab68b90feaa2655b.js",
+      "static/chunks/main-app-7d6deed7b34c3784.js",
+      "static/chunks/6742-1a4819ae89255cb9.js",
+      "static/chunks/app/(site)/blog/page-1a7085013aebf58d.js"
+    ],
+    "/(site)/blog/[slug]/page": [
+      "static/chunks/webpack-215be5abf9716a4a.js",
+      "static/chunks/4bd1b696-5b748286cf6a3590.js",
+      "static/chunks/1517-ab68b90feaa2655b.js",
+      "static/chunks/main-app-7d6deed7b34c3784.js",
+      "static/chunks/6742-1a4819ae89255cb9.js",
+      "static/chunks/app/(site)/blog/[slug]/page-c3bc74187e505ada.js"
+    ],
+    "/(site)/portfolio/[slug]/page": [
+      "static/chunks/webpack-215be5abf9716a4a.js",
+      "static/chunks/4bd1b696-5b748286cf6a3590.js",
+      "static/chunks/1517-ab68b90feaa2655b.js",
+      "static/chunks/main-app-7d6deed7b34c3784.js",
+      "static/css/3a24c022f69a36a9.css",
+      "static/chunks/6742-1a4819ae89255cb9.js",
+      "static/chunks/1088-caaf3952cfd66ee1.js",
+      "static/chunks/app/(site)/portfolio/[slug]/page-f68c4b20db4c081d.js"
+    ],
+    "/(site)/(auth)/signup/page": [
+      "static/chunks/webpack-215be5abf9716a4a.js",
+      "static/chunks/4bd1b696-5b748286cf6a3590.js",
+      "static/chunks/1517-ab68b90feaa2655b.js",
+      "static/chunks/main-app-7d6deed7b34c3784.js",
+      "static/chunks/6742-1a4819ae89255cb9.js",
+      "static/chunks/5037-264b707fe1758004.js",
+      "static/chunks/5551-27e2bc45959ed425.js",
+      "static/chunks/app/(site)/(auth)/signup/page-8fb45d83c079c201.js"
+    ],
+    "/(site)/(auth)/signin/page": [
+      "static/chunks/webpack-215be5abf9716a4a.js",
+      "static/chunks/4bd1b696-5b748286cf6a3590.js",
+      "static/chunks/1517-ab68b90feaa2655b.js",
+      "static/chunks/main-app-7d6deed7b34c3784.js",
+      "static/chunks/6742-1a4819ae89255cb9.js",
+      "static/chunks/5037-264b707fe1758004.js",
+      "static/chunks/5551-27e2bc45959ed425.js",
+      "static/chunks/app/(site)/(auth)/signin/page-db8e7d14ec6226d0.js"
+    ],
+    "/(site)/about/page": [
+      "static/chunks/webpack-215be5abf9716a4a.js",
+      "static/chunks/4bd1b696-5b748286cf6a3590.js",
+      "static/chunks/1517-ab68b90feaa2655b.js",
+      "static/chunks/main-app-7d6deed7b34c3784.js",
+      "static/chunks/6742-1a4819ae89255cb9.js",
+      "static/chunks/app/(site)/about/page-58189fd138c28999.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack-215be5abf9716a4a.js",
+      "static/chunks/4bd1b696-5b748286cf6a3590.js",
+      "static/chunks/1517-ab68b90feaa2655b.js",
+      "static/chunks/main-app-7d6deed7b34c3784.js",
+      "static/chunks/app/_not-found/page-e5cfddfc39aa94b6.js"
+    ],
+    "/(site)/documentation/page": [
+      "static/chunks/webpack-215be5abf9716a4a.js",
+      "static/chunks/4bd1b696-5b748286cf6a3590.js",
+      "static/chunks/1517-ab68b90feaa2655b.js",
+      "static/chunks/main-app-7d6deed7b34c3784.js",
+      "static/chunks/6742-1a4819ae89255cb9.js",
+      "static/chunks/4788-e3edd3cbfca8efad.js",
+      "static/chunks/app/(site)/documentation/page-ffe2e430b8a67cb0.js"
+    ],
+    "/(site)/contact/page": [
+      "static/chunks/webpack-215be5abf9716a4a.js",
+      "static/chunks/4bd1b696-5b748286cf6a3590.js",
+      "static/chunks/1517-ab68b90feaa2655b.js",
+      "static/chunks/main-app-7d6deed7b34c3784.js",
+      "static/chunks/6742-1a4819ae89255cb9.js",
+      "static/chunks/5037-264b707fe1758004.js",
+      "static/chunks/app/(site)/contact/page-9c15ad0338460fd3.js"
+    ],
+    "/(site)/portfolio/page": [
+      "static/chunks/webpack-215be5abf9716a4a.js",
+      "static/chunks/4bd1b696-5b748286cf6a3590.js",
+      "static/chunks/1517-ab68b90feaa2655b.js",
+      "static/chunks/main-app-7d6deed7b34c3784.js",
+      "static/chunks/6742-1a4819ae89255cb9.js",
+      "static/chunks/app/(site)/portfolio/page-bf0b35db4845bb86.js"
+    ],
+    "/(site)/free-consultation/page": [
+      "static/chunks/webpack-215be5abf9716a4a.js",
+      "static/chunks/4bd1b696-5b748286cf6a3590.js",
+      "static/chunks/1517-ab68b90feaa2655b.js",
+      "static/chunks/main-app-7d6deed7b34c3784.js",
+      "static/chunks/4788-e3edd3cbfca8efad.js",
+      "static/chunks/5037-264b707fe1758004.js",
+      "static/chunks/app/(site)/free-consultation/page-05bbc5fbdfc5de63.js"
+    ],
+    "/(site)/services/accounting-services-in-abu-dhabi/page": [
+      "static/chunks/webpack-215be5abf9716a4a.js",
+      "static/chunks/4bd1b696-5b748286cf6a3590.js",
+      "static/chunks/1517-ab68b90feaa2655b.js",
+      "static/chunks/main-app-7d6deed7b34c3784.js",
+      "static/chunks/6742-1a4819ae89255cb9.js",
+      "static/chunks/4788-e3edd3cbfca8efad.js",
+      "static/chunks/app/(site)/services/accounting-services-in-abu-dhabi/page-e35a66efb3b8a472.js"
+    ],
+    "/(site)/services/amazon-accounting-dubai/page": [
+      "static/chunks/webpack-215be5abf9716a4a.js",
+      "static/chunks/4bd1b696-5b748286cf6a3590.js",
+      "static/chunks/1517-ab68b90feaa2655b.js",
+      "static/chunks/main-app-7d6deed7b34c3784.js",
+      "static/chunks/6742-1a4819ae89255cb9.js",
+      "static/chunks/4788-e3edd3cbfca8efad.js",
+      "static/chunks/app/(site)/services/amazon-accounting-dubai/page-a729969291b0f13b.js"
+    ],
+    "/(site)/services/accounting-services-in-sharjah/page": [
+      "static/chunks/webpack-215be5abf9716a4a.js",
+      "static/chunks/4bd1b696-5b748286cf6a3590.js",
+      "static/chunks/1517-ab68b90feaa2655b.js",
+      "static/chunks/main-app-7d6deed7b34c3784.js",
+      "static/chunks/6742-1a4819ae89255cb9.js",
+      "static/chunks/4788-e3edd3cbfca8efad.js",
+      "static/chunks/app/(site)/services/accounting-services-in-sharjah/page-cfd2bb51457b8b85.js"
+    ],
+    "/(site)/services/bookkeeping-firm-dubai/page": [
+      "static/chunks/webpack-215be5abf9716a4a.js",
+      "static/chunks/4bd1b696-5b748286cf6a3590.js",
+      "static/chunks/1517-ab68b90feaa2655b.js",
+      "static/chunks/main-app-7d6deed7b34c3784.js",
+      "static/chunks/6742-1a4819ae89255cb9.js",
+      "static/chunks/4788-e3edd3cbfca8efad.js",
+      "static/chunks/app/(site)/services/bookkeeping-firm-dubai/page-f75a5ace2dac6532.js"
+    ],
+    "/(site)/services/accurate-affordable-bookkeeping-dubai/page": [
+      "static/chunks/webpack-215be5abf9716a4a.js",
+      "static/chunks/4bd1b696-5b748286cf6a3590.js",
+      "static/chunks/1517-ab68b90feaa2655b.js",
+      "static/chunks/main-app-7d6deed7b34c3784.js",
+      "static/chunks/6742-1a4819ae89255cb9.js",
+      "static/chunks/4788-e3edd3cbfca8efad.js",
+      "static/chunks/app/(site)/services/accurate-affordable-bookkeeping-dubai/page-9f34ce94edde11de.js"
+    ],
+    "/(site)/services/ecommerce-accounting-dubai/page": [
+      "static/chunks/webpack-215be5abf9716a4a.js",
+      "static/chunks/4bd1b696-5b748286cf6a3590.js",
+      "static/chunks/1517-ab68b90feaa2655b.js",
+      "static/chunks/main-app-7d6deed7b34c3784.js",
+      "static/chunks/6742-1a4819ae89255cb9.js",
+      "static/chunks/4788-e3edd3cbfca8efad.js",
+      "static/chunks/app/(site)/services/ecommerce-accounting-dubai/page-379b10249d393d72.js"
+    ],
+    "/(site)/services/corporate-tax-registration-filing-dubai/page": [
+      "static/chunks/webpack-215be5abf9716a4a.js",
+      "static/chunks/4bd1b696-5b748286cf6a3590.js",
+      "static/chunks/1517-ab68b90feaa2655b.js",
+      "static/chunks/main-app-7d6deed7b34c3784.js",
+      "static/chunks/6742-1a4819ae89255cb9.js",
+      "static/chunks/4788-e3edd3cbfca8efad.js",
+      "static/chunks/app/(site)/services/corporate-tax-registration-filing-dubai/page-91e6e236b394a939.js"
+    ],
+    "/(site)/services/page": [
+      "static/chunks/webpack-215be5abf9716a4a.js",
+      "static/chunks/4bd1b696-5b748286cf6a3590.js",
+      "static/chunks/1517-ab68b90feaa2655b.js",
+      "static/chunks/main-app-7d6deed7b34c3784.js",
+      "static/chunks/6742-1a4819ae89255cb9.js",
+      "static/chunks/4788-e3edd3cbfca8efad.js",
+      "static/chunks/app/(site)/services/page-d9f63ec5d2333063.js"
+    ],
+    "/(site)/services/financial-statement-services-dubai/page": [
+      "static/chunks/webpack-215be5abf9716a4a.js",
+      "static/chunks/4bd1b696-5b748286cf6a3590.js",
+      "static/chunks/1517-ab68b90feaa2655b.js",
+      "static/chunks/main-app-7d6deed7b34c3784.js",
+      "static/chunks/6742-1a4819ae89255cb9.js",
+      "static/chunks/4788-e3edd3cbfca8efad.js",
+      "static/chunks/app/(site)/services/financial-statement-services-dubai/page-cb26b741806b3dce.js"
+    ],
+    "/(site)/services/excise-tax-services-dubai/page": [
+      "static/chunks/webpack-215be5abf9716a4a.js",
+      "static/chunks/4bd1b696-5b748286cf6a3590.js",
+      "static/chunks/1517-ab68b90feaa2655b.js",
+      "static/chunks/main-app-7d6deed7b34c3784.js",
+      "static/chunks/6742-1a4819ae89255cb9.js",
+      "static/chunks/4788-e3edd3cbfca8efad.js",
+      "static/chunks/app/(site)/services/excise-tax-services-dubai/page-988fdf512e987cd0.js"
+    ],
+    "/(site)/services/tax-audit-assurance-services-dubai/page": [
+      "static/chunks/webpack-215be5abf9716a4a.js",
+      "static/chunks/4bd1b696-5b748286cf6a3590.js",
+      "static/chunks/1517-ab68b90feaa2655b.js",
+      "static/chunks/main-app-7d6deed7b34c3784.js",
+      "static/chunks/6742-1a4819ae89255cb9.js",
+      "static/chunks/4788-e3edd3cbfca8efad.js",
+      "static/chunks/app/(site)/services/tax-audit-assurance-services-dubai/page-42c19aa62e998b67.js"
+    ],
+    "/(site)/services/payroll-services-dubai/page": [
+      "static/chunks/webpack-215be5abf9716a4a.js",
+      "static/chunks/4bd1b696-5b748286cf6a3590.js",
+      "static/chunks/1517-ab68b90feaa2655b.js",
+      "static/chunks/main-app-7d6deed7b34c3784.js",
+      "static/chunks/6742-1a4819ae89255cb9.js",
+      "static/chunks/4788-e3edd3cbfca8efad.js",
+      "static/chunks/app/(site)/services/payroll-services-dubai/page-ffe4e6f092eb63c9.js"
+    ],
+    "/(site)/services/telecom-expense-management-services-dubai/page": [
+      "static/chunks/webpack-215be5abf9716a4a.js",
+      "static/chunks/4bd1b696-5b748286cf6a3590.js",
+      "static/chunks/1517-ab68b90feaa2655b.js",
+      "static/chunks/main-app-7d6deed7b34c3784.js",
+      "static/chunks/6742-1a4819ae89255cb9.js",
+      "static/chunks/4788-e3edd3cbfca8efad.js",
+      "static/chunks/app/(site)/services/telecom-expense-management-services-dubai/page-ec4b152a9c588742.js"
+    ],
+    "/(site)/services/transfer-pricing-services-dubai/page": [
+      "static/chunks/webpack-215be5abf9716a4a.js",
+      "static/chunks/4bd1b696-5b748286cf6a3590.js",
+      "static/chunks/1517-ab68b90feaa2655b.js",
+      "static/chunks/main-app-7d6deed7b34c3784.js",
+      "static/chunks/6742-1a4819ae89255cb9.js",
+      "static/chunks/4788-e3edd3cbfca8efad.js",
+      "static/chunks/app/(site)/services/transfer-pricing-services-dubai/page-2f3609da0ece9904.js"
+    ],
+    "/(site)/services/premier-accounting-services-in-dubai/page": [
+      "static/chunks/webpack-215be5abf9716a4a.js",
+      "static/chunks/4bd1b696-5b748286cf6a3590.js",
+      "static/chunks/1517-ab68b90feaa2655b.js",
+      "static/chunks/main-app-7d6deed7b34c3784.js",
+      "static/chunks/6742-1a4819ae89255cb9.js",
+      "static/chunks/4788-e3edd3cbfca8efad.js",
+      "static/chunks/app/(site)/services/premier-accounting-services-in-dubai/page-13c016291f142c81.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-215be5abf9716a4a.js",
+      "static/chunks/4bd1b696-5b748286cf6a3590.js",
+      "static/chunks/1517-ab68b90feaa2655b.js",
+      "static/chunks/main-app-7d6deed7b34c3784.js",
+      "static/chunks/6742-1a4819ae89255cb9.js",
+      "static/chunks/4788-e3edd3cbfca8efad.js",
+      "static/chunks/app/page-0954f94f4debac18.js"
+    ],
+    "/(site)/services/tax-residency-certificate-services-dubai/page": [
+      "static/chunks/webpack-215be5abf9716a4a.js",
+      "static/chunks/4bd1b696-5b748286cf6a3590.js",
+      "static/chunks/1517-ab68b90feaa2655b.js",
+      "static/chunks/main-app-7d6deed7b34c3784.js",
+      "static/chunks/6742-1a4819ae89255cb9.js",
+      "static/chunks/4788-e3edd3cbfca8efad.js",
+      "static/chunks/app/(site)/services/tax-residency-certificate-services-dubai/page-296fda3fb97cc428.js"
+    ],
+    "/(site)/services/vat-registration-return-filing-dubai/page": [
+      "static/chunks/webpack-215be5abf9716a4a.js",
+      "static/chunks/4bd1b696-5b748286cf6a3590.js",
+      "static/chunks/1517-ab68b90feaa2655b.js",
+      "static/chunks/main-app-7d6deed7b34c3784.js",
+      "static/chunks/6742-1a4819ae89255cb9.js",
+      "static/chunks/4788-e3edd3cbfca8efad.js",
+      "static/chunks/app/(site)/services/vat-registration-return-filing-dubai/page-6cf3033179d29d97.js"
+    ]
+  }
+}
