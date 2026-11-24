@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server'
-import { getTransporter, NAFAZ_PHONE } from '@/lib/mailer'
+import { getResend, NAFAZ_PHONE, SENDER_EMAIL } from '@/lib/mailer'
 
-const LEADS_EMAIL = 'Zohaib@nafaz.ae'
+const LEADS_EMAIL = 'staytopdev@gmail.com'
 
 export async function POST(req: Request) {
   try {
@@ -12,8 +12,8 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: 'Name, email and phone are required' }, { status: 400 })
     }
 
-    await getTransporter().sendMail({
-      from: process.env.SMTP_USER,
+    const { error } = await getResend().emails.send({
+      from: SENDER_EMAIL,
       to: LEADS_EMAIL,
       replyTo: email,
       subject: `New website lead: ${name}${service ? ` (${service})` : ''}`,
@@ -28,6 +28,8 @@ Message: ${message || '-'}
 
 Nafaz contact: ${NAFAZ_PHONE}`,
     })
+
+    if (error) throw error
 
     return NextResponse.json({ success: true })
   } catch (err) {
